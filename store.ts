@@ -11,7 +11,7 @@ const MOCK_PASSWORDS: Record<string, string> = {
 };
 
 // Start using a dynamic base URL to handle both local dev (via proxy) and production
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://faty2002.pythonanywhere.com/api';
 
 interface PropFirmState {
   // Auth & Users
