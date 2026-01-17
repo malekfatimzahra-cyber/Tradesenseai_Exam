@@ -5,7 +5,7 @@ import json
 print("Testing login endpoint...")
 try:
     response = requests.post(
-        'http://localhost:5000/api/auth/login',
+        'https://faty2002.pythonanywhere.com/api/auth/login',
         json={'email': 'admin@tradesense.com', 'password': 'admin123'},
         timeout=5
     )

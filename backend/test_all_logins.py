@@ -18,7 +18,7 @@ for email, password in credentials:
     print(f"\nTrying: {email} / {password}")
     try:
         r = requests.post(
-            'http://localhost:5000/api/auth/login',
+            'https://faty2002.pythonanywhere.com/api/auth/login',
             json={'email': email, 'password': password},
             timeout=5
         )

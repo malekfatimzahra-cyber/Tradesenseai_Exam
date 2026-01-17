@@ -1,7 +1,7 @@
 import requests
 
 try:
-    url = "http://localhost:5000/api/admin/dashboard"
+    url = "https://faty2002.pythonanywhere.com/api/admin/dashboard"
     headers = {"X-ADMIN-KEY": "TRADESENSE_SUPER_SECRET_2026"}
     res = requests.get(url, headers=headers)
     print(f"Status: {res.status_code}")

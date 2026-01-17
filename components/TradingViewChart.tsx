@@ -32,7 +32,7 @@ const TradingViewWidget: React.FC<{ symbol: string }> = ({ symbol }) => {
 
 // 2. Lightweight Chart Component (Encapsulates all the local chart logic)
 const LightweightChart: React.FC<ChartProps> = ({ symbol, colors = {}, marketType }) => {
-    const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:5000';
+    const apiBase = import.meta.env.VITE_API_BASE || 'https://faty2002.pythonanywhere.com';
     const chartContainerRef = useRef<HTMLDivElement>(null);
     const chartRef = useRef<IChartApi | null>(null);
     const seriesRef = useRef<ISeriesApi<"Candlestick"> | null>(null);

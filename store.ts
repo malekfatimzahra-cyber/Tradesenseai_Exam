@@ -161,7 +161,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
 
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch('http://127.0.0.1:5000/api/trading/open', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/open', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -234,7 +234,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
         return;
       }
 
-      const res = await fetch('http://127.0.0.1:5000/api/trading/close', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/close', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -286,7 +286,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     const timeoutId = setTimeout(() => controller.abort(), 8000);
 
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/auth/login', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -328,7 +328,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       console.error(e);
       const errorMessage = e instanceof Error && e.name === 'AbortError'
         ? 'Request timed out. Backend might be slow or offline.'
-        : 'Network error. Is the backend running on port 5000?';
+        : 'Network error. Is the backend running?';
       set({ error: errorMessage, isLoading: false });
       return false;
     }
@@ -338,7 +338,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     set({ isLoading: true, error: null });
 
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/auth/register', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -401,7 +401,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       await get().fetchCourses();
 
       // 2. Fetch active challenge from UNIFIED endpoint (garantit persistance SQL)
-      const res = await fetch('http://127.0.0.1:5000/api/unified-payment/active-challenge', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/unified-payment/active-challenge', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -492,7 +492,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       const token = localStorage.getItem('auth_token');
       if (!token) return;
 
-      const res = await fetch('http://127.0.0.1:5000/api/auth/me', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/me', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -529,7 +529,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('http://127.0.0.1:5000/api/admin/users', { headers: { 'Authorization': `Bearer ${token}` } });
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/admin/users', { headers: { 'Authorization': `Bearer ${token}` } });
       if (res.ok) {
         const data = await res.json();
         const users: User[] = data.map((u: any) => ({
@@ -549,7 +549,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   updateUserStatus: async (userId, status) => {
     try {
       const token = localStorage.getItem('auth_token');
-      await fetch(`http://localhost:5000/api/admin/users/${userId}/status`, {
+      await fetch(`https://faty2002.pythonanywhere.com/api/admin/users/${userId}/status`, {
         method: 'POST',
         body: JSON.stringify({ status }),
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
@@ -561,7 +561,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   updateUserRole: async (userId, role) => {
     try {
       const token = localStorage.getItem('auth_token');
-      await fetch(`http://localhost:5000/api/admin/users/${userId}/role`, {
+      await fetch(`https://faty2002.pythonanywhere.com/api/admin/users/${userId}/role`, {
         method: 'POST',
         body: JSON.stringify({ role }),
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
@@ -574,7 +574,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('http://127.0.0.1:5000/api/trading/account', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/account', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -601,7 +601,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
 
   fetchPlans: async () => {
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/challenges/plans');
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/challenges/plans');
       if (res.ok) {
         const json = await res.json();
         if (json.ok && json.data) {
@@ -616,7 +616,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       const token = localStorage.getItem('auth_token');
       if (!token) return;
 
-      const res = await fetch('http://127.0.0.1:5000/api/academy/courses', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/academy/courses', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -641,7 +641,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('http://127.0.0.1:5000/api/trading/active', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/active', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -667,7 +667,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('http://127.0.0.1:5000/api/trading/history', {
+      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/history', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -694,7 +694,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   fetchAiSignals: async (asset) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`http://localhost:5000/api/ai-agency/signals?asset=${asset}`, {
+      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/signals?asset=${asset}`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -711,7 +711,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   fetchRiskCheck: async () => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`http://localhost:5000/api/ai-agency/risk-check`, {
+      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/risk-check`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -730,7 +730,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   validateTrade: async (trade) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`http://localhost:5000/api/ai-agency/validate-trade`, {
+      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/validate-trade`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -751,7 +751,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   explainPriceAction: async (asset, price, change) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`http://localhost:5000/api/ai-agency/explain-price-action`, {
+      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/explain-price-action`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

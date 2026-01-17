@@ -7,7 +7,7 @@ GREEN = '\033[92m'
 RED = '\033[91m'
 RESET = '\033[0m'
 
-BASE_URL = "http://127.0.0.1:5000"
+BASE_URL = "https://faty2002.pythonanywhere.com"
 
 def test_unified_payment_persistence():
     print(f"--- TEST: Unified Payment & Persistence ---\n")

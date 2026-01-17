@@ -61,7 +61,7 @@ const CourseViewer: React.FC = () => {
         setLoading(true);
         try {
             const token = localStorage.getItem('auth_token');
-            const res = await fetch(`http://127.0.0.1:5000/api/academy/courses/${courseId}`, {
+            const res = await fetch(`https://faty2002.pythonanywhere.com/api/academy/courses/${courseId}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -110,7 +110,7 @@ const CourseViewer: React.FC = () => {
             // Fetch if not found (fallback)
             try {
                 const token = localStorage.getItem('auth_token');
-                const res = await fetch(`http://127.0.0.1:5000/api/academy/lesson/${lessonId}`, {
+                const res = await fetch(`https://faty2002.pythonanywhere.com/api/academy/lesson/${lessonId}`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 if (res.ok) {
@@ -128,7 +128,7 @@ const CourseViewer: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const res = await fetch(`http://127.0.0.1:5000/api/academy/lessons/${selectedLessonId}/complete`, {
+            const res = await fetch(`https://faty2002.pythonanywhere.com/api/academy/lessons/${selectedLessonId}/complete`, {
                 method: 'POST',
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -207,7 +207,7 @@ const CourseViewer: React.FC = () => {
         try {
             const token = localStorage.getItem('auth_token');
             // We need to pass the answers to the backend for persistence as requested
-            const res = await fetch(`http://127.0.0.1:5000/api/academy/quizzes/${activeQuizId}/submit`, {
+            const res = await fetch(`https://faty2002.pythonanywhere.com/api/academy/quizzes/${activeQuizId}/submit`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

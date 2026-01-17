@@ -167,7 +167,7 @@ const Settings: React.FC = () => {
       // 1. Call Backend (best effort)
       const token = localStorage.getItem('auth_token');
       if (token) {
-        await fetch('http://127.0.0.1:5000/api/auth/logout', {
+        await fetch('https://faty2002.pythonanywhere.com/api/auth/logout', {
           method: 'POST',
           headers: { 'Authorization': `Bearer ${token}` }
         }).catch(() => { }); // Ignore errors if backend endpoint missing

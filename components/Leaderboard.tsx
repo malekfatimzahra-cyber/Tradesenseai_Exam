@@ -37,7 +37,7 @@ const Leaderboard: React.FC = () => {
     const fetchLeaders = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`http://localhost:5000/api/community/leaderboard?period=${timeframe}`, {
+        const res = await fetch(`https://faty2002.pythonanywhere.com/api/community/leaderboard?period=${timeframe}`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
           }
