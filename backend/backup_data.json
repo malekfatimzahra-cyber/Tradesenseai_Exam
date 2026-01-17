@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "full_name": "Karim Trader",
+      "email": "karim@trade.ma",
+      "password_hash": "scrypt:32768:8:1$ehamMZQJ6M6ShHov$775fecaab971657f4bb8a1d922728cca2d6f5ddf744cf9475d2c2980557e0024aa2cf6a689c412d485fbc59873ca13903c7225eb88a66423239a3ef86adcee22",
+      "role": "USER",
+      "created_at": "2026-01-10 17:51:56.499151",
+      "username": "karim"
+    },
+    {
+      "id": 2,
+      "full_name": "Sara Admin",
+      "email": "sara@admin.ma",
+      "password_hash": "scrypt:32768:8:1$4cPaJCeO4ix3GCwZ$bbdb98775a1c1106f76c8b77cfe6435183197c3ad8a66dbe97ceb69bb5ea067ae6f50d48ace9e4471d52c479c36f1d32a9367fef288a98cb581cc05565cf9caf",
+      "role": "ADMIN",
+      "created_at": "2026-01-10 17:51:56.499151",
+      "username": "sara"
+    },
+    {
+      "id": 3,
+      "full_name": "Boss Super",
+      "email": "ceo@tradesense.ma",
+      "password_hash": "scrypt:32768:8:1$wd86EYsIoExtAj4a$c4629e2a5585130b4a68cf395894caa59ce49eb612ac99441eb656e45652b1cf825b7b7ee6e42926b3424bbdcea1d8fc5179e71f97a0bb0dde10d57fb501e48f",
+      "role": "SUPERADMIN",
+      "created_at": "2026-01-10 17:51:56.499151",
+      "username": "ceo"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "plan_name": "STARTER",
+      "initial_balance": 5000.0,
+      "current_balance": 5000.0,
+      "equity": 5000.0,
+      "daily_starting_equity": 5000.0,
+      "status": "ACTIVE",
+      "created_at": "2026-01-10 21:33:29.460719"
+    }
+  ],
+  "trades": [
+    {
+      "id": 1,
+      "account_id": 1,
+      "symbol": "AAPL",
+      "trade_type": "BUY",
+      "amount": 1000.0,
+      "entry_price": 189.48,
+      "exit_price": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "commission": 0.0,
+      "swap": 0.0,
+      "notes": null,
+      "status": "OPEN",
+      "pnl": 0.0,
+      "created_at": "2026-01-10 21:33:45.895198",
+      "closed_at": null
+    },
+    {
+      "id": 2,
+      "account_id": 1,
+      "symbol": "AAPL",
+      "trade_type": "BUY",
+      "amount": 1000.0,
+      "entry_price": 189.44,
+      "exit_price": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "commission": 0.0,
+      "swap": 0.0,
+      "notes": null,
+      "status": "OPEN",
+      "pnl": 0.0,
+      "created_at": "2026-01-10 21:33:49.676827",
+      "closed_at": null
+    }
+  ]
+}

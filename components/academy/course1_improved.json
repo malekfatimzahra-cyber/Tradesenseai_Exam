@@ -1,0 +1,568 @@
+{
+    "id": 1,
+    "slug": "trading-fundamentals-market-mechanics",
+    "title": "Trading Fundamentals & Market Mechanics",
+    "category": "TECHNICAL",
+    "level": "Beginner",
+    "duration_minutes": 90,
+    "is_pro": false,
+    "short_description": "Master the core mechanics of financial markets and build a solid foundation for your trading career.",
+    "learning_objectives": [
+        "Understand market structure and participants",
+        "Master order types and execution",
+        "Read candlestick charts effectively",
+        "Analyze volume and volatility patterns"
+    ],
+    "modules": [
+        {
+            "module_id": "1-1",
+            "module_title": "Market Basics",
+            "lessons": [
+                {
+                    "lesson_id": "1-1-1",
+                    "lesson_title": "What is a Financial Market?",
+                    "content_markdown": "# What is a Financial Market?\n\n## 1) Concept (Definition)\n\n- A financial market is a **decentralized auction system** where buyers and sellers meet to exchange assets at agreed prices\n- Unlike retail stores with fixed prices, market prices fluctuate based on **supply and demand** in real-time\n- Markets operate through **order books** that match buy orders (bids) with sell orders (asks)\n- **Liquidity providers** (banks, institutions) ensure there's always someone to trade with\n- Markets can be **centralized** (exchanges like NYSE) or **decentralized** (Forex, OTC)\n\n## 2) Why it Matters (Trader Perspective)\n\n- Understanding market structure helps you **identify who moves prices** (retail vs institutions)\n- Knowing market participants helps you **avoid being liquidity** for larger players\n- Recognizing auction dynamics explains why prices **gap, spike, or consolidate**\n- Market mechanics determine **execution quality** (slippage, fills, rejections)\n\n## 3) Example (Concrete Scenario)\n\n**Scenario:** EUR/USD at 1.1000\n- **Retail trader** wants to buy 0.1 lot (10,000 units)\n- **Market maker** (bank) provides liquidity by offering to sell at 1.1002 (Ask)\n- Trader pays the **2 pip spread** as the cost of instant execution\n- Behind the scenes: The bank aggregates thousands of small retail orders to offset risk with institutional counterparties\n\n## 4) Common Mistakes\n\n- **Thinking markets are random** - They follow auction logic and order flow\n- **Ignoring who's on the other side** - Every trade has a counterparty with opposite intent\n- **Trading during low liquidity** - Wide spreads and erratic price action\n- **Not understanding broker business model** - Market makers profit from your spread, not necessarily your loss\n- **Confusing price movement with market direction** - Noise vs signal\n\n## 5) Quick Checklist\n\n- [ ] Identify if your broker is a market maker or ECN\n- [ ] Check typical spread for your trading pair during your session\n- [ ] Understand who provides liquidity in your market (banks, institutions, retail)\n- [ ] Know the difference between centralized and decentralized markets\n- [ ] Recognize that price = last agreed transaction between buyer and seller\n\n## 6) Mini Exercise (Do it Now)\n\nOpen your trading platform and observe the order book (if available) or price ladder:\n- Watch how Bid and Ask prices change in real-time\n- Note the **spread width** during different times of day\n- Identify a moment when spread **widens** (usually during news or session gaps)\n- Write down: \"I understand that I pay the spread every time I enter a trade\""
+                },
+                {
+                    "lesson_id": "1-1-2",
+                    "lesson_title": "Bid, Ask & Spread",
+                    "content_markdown": "# Bid, Ask & Spread\n\n## 1) Concept (Definition)\n\n- **Bid** = The highest price a buyer is willing to pay right now (you SELL at this price)\n- **Ask (Offer)** = The lowest price a seller is willing to accept (you BUY at this price)\n- **Spread** = Ask - Bid (the difference between the two prices)\n- The spread is the **transaction cost** you pay to enter a trade instantly\n- Spread width varies by **liquidity, volatility, and session**\n\n## 2) Why it Matters (Trader Perspective)\n\n- You start every trade **in the red** by the amount of the spread\n- Wide spreads eat into profits, especially for **scalpers and day traders**\n- Spread widens during **news events, low liquidity, and session transitions**\n- Understanding spread helps you **choose optimal entry times** (tight spread = lower cost)\n- Spread is how **market makers and brokers profit** from facilitating your trades\n\n## 3) Example (Concrete Scenario)\n\n**EUR/USD Example:**\n- Bid: 1.10000\n- Ask: 1.10020\n- Spread: 2 pips (0.00020)\n\n**If you BUY at 1.10020:**\n- You can immediately SELL at 1.10000 (the current Bid)\n- Instant loss: 2 pips = $2 per 0.1 lot\n- Price must move UP by 2 pips just to **break even**\n\n**During London Open (high liquidity):**\n- Spread might be 0.5-1 pip\n\n**During Asian session (low liquidity):**\n- Spread might widen to 3-5 pips\n\n## 4) Common Mistakes\n\n- **Ignoring spread when calculating risk/reward** - A 2-pip spread on a 10-pip target is 20% of your profit\n- **Trading during wide spread periods** - Entering during news or low liquidity sessions\n- **Not comparing broker spreads** - Some brokers charge 3x more than others\n- **Thinking Bid/Ask is the \"real price\"** - There's no single price, only the last transaction\n- **Forgetting spread doubles your cost** - You pay it on entry AND exit\n\n## 5) Quick Checklist\n\n- [ ] Always check current spread before entering a trade\n- [ ] Avoid trading 30 minutes before/after major news (spread spikes)\n- [ ] Compare your broker's spread to industry averages\n- [ ] Factor spread into your risk/reward calculation\n- [ ] Understand: Tighter spread = lower transaction cost\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Open your platform and measure the spread:\n1. Note the Bid and Ask for EUR/USD right now\n2. Calculate: Ask - Bid = Spread in pips\n3. Multiply spread by your typical position size to find **cost per trade**\n4. Check the same pair during London open vs Asian session - compare spreads\n5. Write down: \"I will avoid trading when spread is wider than [X] pips\""
+                }
+            ],
+            "module_quiz": [
+                {
+                    "question": "What is the 'Bid' price?",
+                    "options": [
+                        "The price you buy at",
+                        "The price you sell at",
+                        "The average of buy and sell",
+                        "The closing price"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Bid is the highest price buyers are willing to pay, so when you sell, you receive the Bid price."
+                },
+                {
+                    "question": "If EUR/USD Bid is 1.1000 and Ask is 1.1003, what is the spread?",
+                    "options": [
+                        "1 pip",
+                        "2 pips",
+                        "3 pips",
+                        "0.5 pips"
+                    ],
+                    "correct_index": 2,
+                    "explanation": "Spread = Ask - Bid = 1.1003 - 1.1000 = 0.0003 = 3 pips."
+                },
+                {
+                    "question": "Who primarily provides liquidity in the Forex market?",
+                    "options": [
+                        "Retail traders",
+                        "Banks and institutions",
+                        "Governments",
+                        "News agencies"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Banks and large institutions act as market makers, providing the liquidity that allows retail traders to execute instantly."
+                },
+                {
+                    "question": "When does spread typically widen the most?",
+                    "options": [
+                        "During high liquidity sessions",
+                        "During major news releases",
+                        "When markets are closed",
+                        "During trending markets"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Spread widens during news because uncertainty increases and liquidity providers widen their quotes to manage risk."
+                },
+                {
+                    "question": "If you buy EUR/USD at the Ask price, you can immediately sell at:",
+                    "options": [
+                        "The same Ask price",
+                        "The Bid price (lower)",
+                        "A higher price",
+                        "The mid-price"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "When you buy at Ask and immediately sell, you receive the Bid price, which is lower, resulting in an instant loss equal to the spread."
+                },
+                {
+                    "question": "What is the main cost of entering a trade with instant execution?",
+                    "options": [
+                        "Commission only",
+                        "The spread",
+                        "Swap fees",
+                        "Margin requirement"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "The spread is the immediate transaction cost you pay for instant market execution, separate from any commissions."
+                },
+                {
+                    "question": "A market maker profits primarily from:",
+                    "options": [
+                        "Traders losing money",
+                        "The spread",
+                        "Leverage fees",
+                        "Subscription fees"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Market makers earn the spread as compensation for providing liquidity and taking on the risk of holding inventory."
+                }
+            ]
+        },
+        {
+            "module_id": "1-2",
+            "module_title": "Order Types",
+            "lessons": [
+                {
+                    "lesson_id": "1-2-1",
+                    "lesson_title": "Market vs Limit Orders",
+                    "content_markdown": "# Market vs Limit Orders\n\n## 1) Concept (Definition)\n\n- **Market Order** = Execute immediately at the best available price (guarantees fill, not price)\n- **Limit Order** = Execute only at your specified price or better (guarantees price, not fill)\n- **Pending Orders** = Limit orders placed in advance that trigger when price reaches your level\n- **Slippage** = The difference between expected price and actual fill price (common with market orders)\n- Market orders are for **urgency**, limit orders are for **precision**\n\n## 2) Why it Matters (Trader Perspective)\n\n- Market orders can suffer **slippage** during fast markets or low liquidity\n- Limit orders let you **control entry price** but risk missing the move if not filled\n- Using limit orders reduces **transaction costs** (you set the spread you're willing to pay)\n- Understanding order types prevents **unexpected fills** at bad prices\n- Proper order selection is part of **execution risk management**\n\n## 3) Example (Concrete Scenario)\n\n**Market Order Example:**\n- EUR/USD trading at 1.1000/1.1002 (Bid/Ask)\n- You place a **market BUY order**\n- Expected fill: 1.1002\n- Actual fill: 1.1005 (3 pip slippage due to fast market)\n- You paid more than expected\n\n**Limit Order Example:**\n- EUR/USD at 1.1020, you want to buy at 1.1000\n- You place a **Buy Limit at 1.1000**\n- Price drops to 1.1000 → Order fills\n- Price never reaches 1.1000 → Order never fills (you miss the trade)\n- **Advantage:** You got your exact price\n- **Risk:** Might miss the opportunity\n\n## 4) Common Mistakes\n\n- **Using market orders during news** - Guaranteed slippage of 5-20+ pips\n- **Placing limit orders too far from price** - They never fill and you miss trades\n- **Not understanding partial fills** - Limit orders can fill partially in low liquidity\n- **Confusing Buy Limit with Buy Stop** - Limit is below price, Stop is above (for buys)\n- **Ignoring order expiration** - Some platforms cancel pending orders after a time period\n\n## 5) Quick Checklist\n\n- [ ] Use **market orders** only when speed matters more than price\n- [ ] Use **limit orders** when you have a specific entry price target\n- [ ] Always check current spread before placing market orders\n- [ ] Set realistic limit prices (within recent price range)\n- [ ] Understand your platform's order types and execution policy\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Practice order placement (demo account):\n1. Place a **Buy Limit** 10 pips below current price\n2. Place a **Sell Limit** 10 pips above current price\n3. Observe which one fills first (if any)\n4. Cancel unfilled orders\n5. Note: \"Limit orders give me price control but require patience\""
+                },
+                {
+                    "lesson_id": "1-2-2",
+                    "lesson_title": "Stop Loss & Take Profit",
+                    "content_markdown": "# Stop Loss & Take Profit\n\n## 1) Concept (Definition)\n\n- **Stop Loss (SL)** = An automatic exit order that closes your trade if price moves against you\n- **Take Profit (TP)** = An automatic exit order that closes your trade when target profit is reached\n- SL protects you from **catastrophic losses** (risk management tool)\n- TP locks in **profits** without needing to monitor the trade constantly\n- Both are **pending orders** attached to an open position\n\n## 2) Why it Matters (Trader Perspective)\n\n- **Without SL:** A single bad trade can wipe out weeks of profits\n- **Without TP:** Profits can evaporate if you're not watching (market reverses)\n- SL allows you to **define maximum risk** before entering (e.g., \"I risk $50 on this trade\")\n- TP enforces **discipline** - you take profit at plan, not emotion\n- Proper SL/TP placement is the difference between **surviving and blowing accounts**\n\n## 3) Example (Concrete Scenario)\n\n**Long Trade Setup:**\n- Entry: Buy EUR/USD at 1.1000\n- Stop Loss: 1.0980 (20 pips below entry)\n- Take Profit: 1.1040 (40 pips above entry)\n- Risk/Reward: 1:2 (risking 20 to make 40)\n\n**Outcome A (SL Hit):**\n- Price drops to 1.0980\n- SL triggers, trade closes automatically\n- Loss: 20 pips = $20 (on 0.1 lot)\n- **You protected capital**\n\n**Outcome B (TP Hit):**\n- Price rises to 1.1040\n- TP triggers, trade closes automatically\n- Profit: 40 pips = $40 (on 0.1 lot)\n- **You locked in profit while sleeping**\n\n## 4) Common Mistakes\n\n- **Not using a Stop Loss** - \"I'll watch it\" → Account blown\n- **SL too tight** - Normal volatility stops you out, then price goes your way\n- **SL too wide** - Risk is too large relative to account size\n- **Moving SL further away** when losing - Turning small loss into big loss\n- **No Take Profit** - Greed leads to giving back profits\n- **TP too ambitious** - Price never reaches it, you miss realistic profit\n\n## 5) Quick Checklist\n\n- [ ] **NEVER enter a trade without a Stop Loss**\n- [ ] Place SL based on **chart structure** (below support/above resistance), not arbitrary pips\n- [ ] Risk no more than **1-2% of account** per trade\n- [ ] Set TP at a **realistic target** (previous high/low, key level)\n- [ ] Use at least **1:2 Risk/Reward ratio** (risk 10 to make 20)\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Calculate proper position size with SL:\n1. Account balance: $1,000\n2. Risk per trade: 1% = $10\n3. Entry: 1.1000, SL: 1.0980 (20 pips)\n4. Calculate lot size: $10 risk ÷ 20 pips ÷ $1/pip = 0.05 lot\n5. Write down: \"My SL distance determines my position size, not my emotions\""
+                }
+            ],
+            "module_quiz": [
+                {
+                    "question": "A Market Order guarantees:",
+                    "options": [
+                        "Best price",
+                        "Execution/fill",
+                        "No slippage",
+                        "Profit"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Market orders prioritize execution speed over price, guaranteeing you get filled but not at a specific price."
+                },
+                {
+                    "question": "A Limit Order guarantees:",
+                    "options": [
+                        "Execution",
+                        "Your specified price or better",
+                        "Immediate fill",
+                        "No fees"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Limit orders will only execute at your price or better, but there's no guarantee the order will fill."
+                },
+                {
+                    "question": "What is the primary purpose of a Stop Loss?",
+                    "options": [
+                        "Guarantee profit",
+                        "Limit maximum loss",
+                        "Increase position size",
+                        "Avoid spread"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Stop Loss is a risk management tool that automatically exits a losing trade to prevent catastrophic losses."
+                },
+                {
+                    "question": "If you BUY at 1.1000 with SL at 1.0980, where should your SL be?",
+                    "options": [
+                        "Above entry",
+                        "Below entry",
+                        "At entry",
+                        "No SL needed"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "For long positions, SL must be below entry because you lose money if price drops."
+                },
+                {
+                    "question": "What is slippage?",
+                    "options": [
+                        "The spread cost",
+                        "Difference between expected and actual fill price",
+                        "Commission fee",
+                        "Leverage ratio"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Slippage occurs when your order fills at a different price than expected, common with market orders in fast markets."
+                },
+                {
+                    "question": "When is slippage most likely to occur?",
+                    "options": [
+                        "During high liquidity",
+                        "During major news releases",
+                        "When using limit orders",
+                        "During weekends"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "News events cause rapid price movement and reduced liquidity, leading to significant slippage on market orders."
+                },
+                {
+                    "question": "A 1:2 Risk/Reward ratio means:",
+                    "options": [
+                        "Risk $1 to make $2",
+                        "Risk $2 to make $1",
+                        "50% win rate needed",
+                        "Guaranteed profit"
+                    ],
+                    "correct_index": 0,
+                    "explanation": "1:2 RR means for every $1 you risk, you aim to make $2, allowing profitability even with lower win rates."
+                }
+            ]
+        },
+        {
+            "module_id": "1-3",
+            "module_title": "Reading Charts",
+            "lessons": [
+                {
+                    "lesson_id": "1-3-1",
+                    "lesson_title": "Candlestick Anatomy",
+                    "content_markdown": "# Candlestick Anatomy\n\n## 1) Concept (Definition)\n\n- **Candlestick** = Visual representation of price action over a specific time period\n- **OHLC** = Open, High, Low, Close (the four price points)\n- **Body** = Rectangle between Open and Close (shows direction and strength)\n- **Wicks (Shadows)** = Lines above/below body showing High and Low extremes\n- **Color:** Green/White = Close > Open (bullish), Red/Black = Close < Open (bearish)\n\n## 2) Why it Matters (Trader Perspective)\n\n- Candlesticks show **who won the battle** (buyers or sellers) during that period\n- **Long wicks** = Rejection (price tested a level and got pushed back)\n- **Small body** = Indecision, consolidation\n- **Large body** = Strong conviction, momentum\n- Reading candles helps you **anticipate reversals and continuations**\n\n## 3) Example (Concrete Scenario)\n\n**Bullish Candle:**\n- Open: 1.1000\n- High: 1.1050\n- Low: 1.0990\n- Close: 1.1040\n- **Body:** 1.1000 to 1.1040 (40 pips, green)\n- **Upper wick:** 1.1040 to 1.1050 (10 pips) - slight rejection\n- **Lower wick:** 1.0990 to 1.1000 (10 pips) - buyers defended this level\n- **Interpretation:** Buyers in control, tested lower, closed near highs\n\n**Bearish Candle with Long Upper Wick:**\n- Open: 1.1000, High: 1.1060, Low: 1.0995, Close: 1.1005\n- **Long upper wick** (55 pips) = Strong rejection at 1.1060\n- **Small body** (5 pips) = Weak conviction\n- **Interpretation:** Sellers rejected the high, potential reversal signal\n\n## 4) Common Mistakes\n\n- **Ignoring wicks** - Wicks show rejection, which is critical information\n- **Trading single candles in isolation** - Context matters (where is the candle on the chart?)\n- **Confusing color with direction** - A red candle in an uptrend might be a healthy pullback\n- **Not considering timeframe** - A 1-minute candle is noise, a Daily candle is significant\n- **Overcomplicating** - Focus on body size and wick length first\n\n## 5) Quick Checklist\n\n- [ ] Identify Open, High, Low, Close on any candle\n- [ ] Recognize: Long wick = rejection, Long body = conviction\n- [ ] Understand: Green = buyers won, Red = sellers won\n- [ ] Check candle **in context** (support/resistance, trend)\n- [ ] Use higher timeframes (H4, Daily) for more reliable signals\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Analyze the last 10 candles on your chart:\n1. Find a candle with a **long upper wick** - What happened? (Rejection)\n2. Find a candle with a **long lower wick** - What happened? (Support/buying)\n3. Find a candle with a **large body** - Strong move in that direction\n4. Find a **Doji** (open = close, small body) - Indecision\n5. Write down: \"Wicks tell me where price was rejected\""
+                },
+                {
+                    "lesson_id": "1-3-2",
+                    "lesson_title": "Timeframes",
+                    "content_markdown": "# Timeframes\n\n## 1) Concept (Definition)\n\n- **Timeframe** = The duration each candlestick represents (1min, 5min, 1H, 4H, Daily, etc.)\n- **Higher Timeframe (HTF)** = Daily, 4H, 1H - shows the bigger picture/trend\n- **Lower Timeframe (LTF)** = 15min, 5min, 1min - shows detailed price action for entries\n- **Fractal nature:** A Daily candle contains 24 one-hour candles\n- Different timeframes show different \"stories\" of the same price movement\n\n## 2) Why it Matters (Trader Perspective)\n\n- **HTF determines direction** - \"Is the trend up or down?\"\n- **LTF refines entry** - \"Where exactly do I enter within that trend?\"\n- Trading against HTF trend is **counter-trend** (higher risk)\n- **Timeframe alignment** = HTF and LTF agree (high probability setup)\n- Lower timeframes have more **noise** (false signals)\n\n## 3) Example (Concrete Scenario)\n\n**Multi-Timeframe Analysis:**\n\n**Daily Chart (HTF):**\n- EUR/USD in clear uptrend\n- Price above 50-day moving average\n- **Bias: LONG only**\n\n**4-Hour Chart (MTF):**\n- Pullback to support zone at 1.1000\n- Bullish candle forming (rejection of lows)\n- **Setup: Wait for confirmation**\n\n**15-Minute Chart (LTF):**\n- Price breaks above 1.1010 (mini resistance)\n- **Entry: Buy at 1.1012**\n- SL: 1.0995 (below 4H support)\n- TP: 1.1050 (next 4H resistance)\n\n**Result:** You traded WITH the Daily trend, entered on 4H pullback, refined entry on 15min breakout\n\n## 4) Common Mistakes\n\n- **Trading only one timeframe** - Missing the bigger picture\n- **Using too low a timeframe** - 1-minute charts are mostly noise\n- **Ignoring HTF trend** - Shorting in a Daily uptrend (low probability)\n- **Analysis paralysis** - Checking 10 timeframes and getting confused\n- **Timeframe hopping** - Switching timeframes to justify a losing trade\n\n## 5) Quick Checklist\n\n- [ ] **Start with HTF** (Daily or 4H) to identify trend\n- [ ] **Drop to MTF** (1H or 4H) to find setup zones\n- [ ] **Use LTF** (15min or 5min) for precise entry\n- [ ] **Trade WITH the HTF trend** for higher probability\n- [ ] Stick to 2-3 timeframes max (e.g., Daily, 4H, 15min)\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Multi-timeframe drill:\n1. Open **Daily chart** - Is price trending up, down, or ranging?\n2. Open **4-Hour chart** - Where is the nearest support/resistance?\n3. Open **15-Minute chart** - Is price respecting the 4H level?\n4. Identify: Does LTF align with HTF? (If yes, high probability setup)\n5. Write down: \"I will check Daily trend before every trade\""
+                }
+            ],
+            "module_quiz": [
+                {
+                    "question": "What does the 'body' of a candlestick represent?",
+                    "options": [
+                        "High and Low",
+                        "Open and Close range",
+                        "Volume",
+                        "Spread"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "The body shows the range between the opening and closing prices, indicating the net change for that period."
+                },
+                {
+                    "question": "A long upper wick indicates:",
+                    "options": [
+                        "Strong buying",
+                        "Price rejection at highs",
+                        "Trend continuation",
+                        "Low volume"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "A long upper wick shows that price tested higher levels but was rejected by sellers, pushing it back down."
+                },
+                {
+                    "question": "Which timeframe is best for identifying the overall trend?",
+                    "options": [
+                        "1-minute",
+                        "5-minute",
+                        "Daily or 4-Hour",
+                        "Tick chart"
+                    ],
+                    "correct_index": 2,
+                    "explanation": "Higher timeframes like Daily and 4-Hour filter out noise and clearly show the dominant trend direction."
+                },
+                {
+                    "question": "A Doji candlestick (open = close) suggests:",
+                    "options": [
+                        "Strong trend",
+                        "Indecision/balance",
+                        "Reversal confirmed",
+                        "High volume"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "A Doji shows that buyers and sellers ended in a stalemate, indicating indecision or potential reversal."
+                },
+                {
+                    "question": "What is the main advantage of using multiple timeframes?",
+                    "options": [
+                        "More trades",
+                        "Confirmation and context",
+                        "Faster execution",
+                        "Lower spread"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Multiple timeframes provide context (HTF trend) and precision (LTF entry), increasing probability of success."
+                },
+                {
+                    "question": "A large-bodied green candle indicates:",
+                    "options": [
+                        "Weak buying",
+                        "Strong bullish conviction",
+                        "Rejection",
+                        "Consolidation"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "A large green body shows buyers dominated the period, closing significantly higher than the open."
+                },
+                {
+                    "question": "If Daily chart is bullish but 15-min is bearish, you should:",
+                    "options": [
+                        "Short immediately",
+                        "Wait for 15-min to align with Daily",
+                        "Ignore Daily",
+                        "Trade both directions"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Trading with HTF trend (Daily) increases probability. Wait for LTF pullback to end and align with Daily direction."
+                }
+            ]
+        },
+        {
+            "module_id": "1-4",
+            "module_title": "Volume & Volatility",
+            "lessons": [
+                {
+                    "lesson_id": "1-4-1",
+                    "lesson_title": "Understanding Volume",
+                    "content_markdown": "# Understanding Volume\n\n## 1) Concept (Definition)\n\n- **Volume** = The number of contracts/lots traded during a specific period\n- **High volume** = Many participants active (institutions, strong interest)\n- **Low volume** = Few participants (retail only, holidays, off-hours)\n- Volume shows **conviction** behind a price move\n- **Volume ≠ Volatility** (you can have high volume with small price movement)\n\n## 2) Why it Matters (Trader Perspective)\n\n- **High volume + big move** = Strong trend, likely to continue\n- **High volume + small move** = Absorption (big players accumulating/distributing)\n- **Low volume + big move** = Weak move, likely to reverse (no conviction)\n- Volume helps **confirm breakouts** (real vs fake)\n- Volume analysis separates **institutional activity from retail noise**\n\n## 3) Example (Concrete Scenario)\n\n**Scenario 1: Strong Breakout**\n- EUR/USD breaks resistance at 1.1050\n- Volume **spikes 3x average**\n- Price rallies 50 pips in 2 hours\n- **Interpretation:** Institutions are buying, breakout is real\n\n**Scenario 2: Weak Breakout**\n- EUR/USD breaks resistance at 1.1050\n- Volume is **below average**\n- Price struggles, only gains 10 pips\n- **Interpretation:** Retail FOMO, likely false breakout, expect reversal\n\n**Scenario 3: Absorption**\n- Price at support 1.1000, attempts to break lower\n- **High volume** but price barely moves (tight range)\n- **Interpretation:** Big players are buying (absorbing sell orders), expect bounce\n\n## 4) Common Mistakes\n\n- **Ignoring volume** - Trading price action alone misses half the story\n- **Confusing volume with volatility** - High volume can occur in tight ranges\n- **Trading low-volume breakouts** - These usually fail (fakeouts)\n- **Not comparing to average volume** - \"Is this volume high or normal?\"\n- **Forgetting volume varies by session** - Asian session naturally has lower volume\n\n## 5) Quick Checklist\n\n- [ ] Check if your platform shows volume (Forex uses tick volume as proxy)\n- [ ] Compare current volume to **20-period average**\n- [ ] Look for **volume spikes** during breakouts (confirmation)\n- [ ] Be cautious of moves on **declining volume** (weak)\n- [ ] Higher volume = higher conviction = more reliable signal\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Volume analysis drill:\n1. Add volume indicator to your chart (usually at bottom)\n2. Find the last **breakout** (price broke support/resistance)\n3. Check: Was volume **above or below average** during breakout?\n4. If above average → Breakout likely real\n5. If below average → Breakout likely false\n6. Write down: \"I will not trade breakouts without volume confirmation\""
+                },
+                {
+                    "lesson_id": "1-4-2",
+                    "lesson_title": "Sessions & Volatility",
+                    "content_markdown": "# Sessions & Volatility\n\n## 1) Concept (Definition)\n\n- **Trading Sessions:** Asian (Tokyo), European (London), American (New York)\n- **Volatility** = The rate and magnitude of price changes (how fast/far price moves)\n- **High volatility** = Large price swings (opportunities but also risk)\n- **Low volatility** = Small price movements (choppy, range-bound)\n- Each session has **different characteristics** (volume, volatility, participants)\n\n## 2) Why it Matters (Trader Perspective)\n\n- **London/NY sessions** = Highest volume and volatility (best for day trading)\n- **Asian session** = Lower volatility (best for range trading or avoiding)\n- **Session overlaps** = Maximum volatility (London + NY overlap)\n- Trading during **wrong session** = Wide spreads, choppy price action\n- Knowing session times helps you **avoid low-liquidity traps**\n\n## 3) Example (Concrete Scenario)\n\n**Session Comparison (EUR/USD):**\n\n**Asian Session (Tokyo: 00:00-09:00 GMT):**\n- Average range: 20-30 pips\n- Spread: 2-3 pips (wider)\n- Character: Consolidation, range-bound\n- **Strategy:** Range trading or avoid\n\n**London Session (08:00-17:00 GMT):**\n- Average range: 80-120 pips\n- Spread: 0.5-1 pip (tight)\n- Character: Trending, breakouts\n- **Strategy:** Trend following, breakout trading\n\n**NY Session (13:00-22:00 GMT):**\n- Average range: 70-100 pips\n- Spread: 0.5-1 pip\n- Character: Volatile, news-driven\n- **Strategy:** News trading, momentum\n\n**London/NY Overlap (13:00-17:00 GMT):**\n- **Highest volume and volatility**\n- Best time for scalping and day trading\n\n## 4) Common Mistakes\n\n- **Trading Asian session with day trading strategy** - Not enough movement\n- **Ignoring session transitions** - Spread widens, liquidity drops\n- **Trading during lunch hours** (12:00-14:00 GMT) - Dead zone, choppy\n- **Not adjusting strategy to session** - Range strategy in trending London session fails\n- **Forgetting daylight saving time changes** - Session times shift\n\n## 5) Quick Checklist\n\n- [ ] Know your local time for **London open** (08:00 GMT) and **NY open** (13:00 GMT)\n- [ ] **Avoid trading 1 hour before/after session transitions** (spread widens)\n- [ ] Trade **London and NY sessions** for best liquidity\n- [ ] Use **Asian session** for planning, not trading (unless ranging)\n- [ ] Mark **London/NY overlap** on your chart (prime time)\n\n## 6) Mini Exercise (Do it Now)\n\n**Task:** Session awareness drill:\n1. Convert **08:00 GMT** (London open) to your local time\n2. Convert **13:00 GMT** (NY open) to your local time\n3. Set **alerts** for these times on your phone\n4. Observe: Compare price movement during London vs Asian session\n5. Write down: \"I will focus my trading during London and NY sessions\""
+                }
+            ],
+            "module_quiz": [
+                {
+                    "question": "High volume during a price breakout indicates:",
+                    "options": [
+                        "Weak move",
+                        "Strong conviction/real breakout",
+                        "Reversal",
+                        "Low liquidity"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "High volume confirms that many participants (including institutions) are involved, validating the breakout."
+                },
+                {
+                    "question": "Which session typically has the highest volatility for EUR/USD?",
+                    "options": [
+                        "Asian (Tokyo)",
+                        "London",
+                        "Sydney",
+                        "Weekend"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "London session sees the highest EUR/USD volume and volatility as European markets open."
+                },
+                {
+                    "question": "What does 'absorption' mean in volume analysis?",
+                    "options": [
+                        "Price falling",
+                        "High volume with little price movement",
+                        "Low volume",
+                        "Spread widening"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Absorption occurs when large players are buying/selling heavily but price doesn't move much, indicating accumulation."
+                },
+                {
+                    "question": "The London/NY overlap is significant because:",
+                    "options": [
+                        "Markets are closed",
+                        "Highest volume and volatility",
+                        "Lowest spread",
+                        "No news"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "When both major financial centers are open simultaneously, volume and volatility peak."
+                },
+                {
+                    "question": "A breakout with declining volume is likely:",
+                    "options": [
+                        "Very strong",
+                        "A false breakout",
+                        "Confirmed",
+                        "Institutional"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "Declining volume during a breakout suggests lack of conviction and often leads to a reversal (fakeout)."
+                },
+                {
+                    "question": "What is the typical characteristic of the Asian trading session?",
+                    "options": [
+                        "High volatility",
+                        "Trending markets",
+                        "Low volatility/consolidation",
+                        "Major news releases"
+                    ],
+                    "correct_index": 2,
+                    "explanation": "Asian session typically has lower volume and volatility, often consolidating within ranges."
+                },
+                {
+                    "question": "Why should you avoid trading during session transitions?",
+                    "options": [
+                        "Too much volume",
+                        "Spread widens and liquidity drops",
+                        "Too many traders",
+                        "Guaranteed profit"
+                    ],
+                    "correct_index": 1,
+                    "explanation": "During session transitions, liquidity providers adjust positions, causing spreads to widen and erratic price action."
+                }
+            ]
+        }
+    ],
+    "final_exam": {
+        "passing_score": 70,
+        "questions": [
+            {
+                "question": "What is the primary role of market makers in financial markets?",
+                "options": [
+                    "Predict future prices",
+                    "Provide liquidity by quoting bid/ask prices",
+                    "Guarantee trader profits",
+                    "Set government policy"
+                ],
+                "correct_index": 1,
+                "explanation": "Market makers facilitate trading by continuously quoting buy and sell prices, ensuring liquidity."
+            },
+            {
+                "question": "If you buy EUR/USD at 1.1020 and the Bid is 1.1018, what is your immediate P&L?",
+                "options": [
+                    "+2 pips profit",
+                    "-2 pips loss",
+                    "Breakeven",
+                    "+20 pips profit"
+                ],
+                "correct_index": 1,
+                "explanation": "You bought at Ask (1.1020) but can only sell at Bid (1.1018), resulting in an immediate 2-pip loss (the spread)."
+            },
+            {
+                "question": "Which order type guarantees execution but not price?",
+                "options": [
+                    "Limit Order",
+                    "Market Order",
+                    "Stop Limit",
+                    "Pending Order"
+                ],
+                "correct_index": 1,
+                "explanation": "Market orders execute immediately at the best available price, prioritizing speed over price certainty."
+            },
+            {
+                "question": "Where should you place a Stop Loss for a long (buy) position?",
+                "options": [
+                    "Above entry price",
+                    "Below entry price",
+                    "At entry price",
+                    "No SL needed"
+                ],
+                "correct_index": 1,
+                "explanation": "For long positions, SL goes below entry because you lose money if price drops."
+            },
+            {
+                "question": "A candlestick with a long lower wick at support suggests:",
+                "options": [
+                    "Sellers are strong",
+                    "Buyers rejected lower prices",
+                    "Trend reversal down",
+                    "Low volume"
+                ],
+                "correct_index": 1,
+                "explanation": "A long lower wick shows price tested lower but buyers pushed it back up, indicating support."
+            },
+            {
+                "question": "What is the main advantage of using higher timeframes (Daily, 4H)?",
+                "options": [
+                    "More trading opportunities",
+                    "Less noise, clearer trend",
+                    "Faster execution",
+                    "Lower spread"
+                ],
+                "correct_index": 1,
+                "explanation": "Higher timeframes filter out market noise and provide a clearer view of the dominant trend."
+            },
+            {
+                "question": "High volume with minimal price movement typically indicates:",
+                "options": [
+                    "Weak market",
+                    "Accumulation/distribution by institutions",
+                    "Breakout imminent",
+                    "Market closed"
+                ],
+                "correct_index": 1,
+                "explanation": "This pattern suggests large players are absorbing orders, often preceding a significant move."
+            },
+            {
+                "question": "The best time to trade EUR/USD for maximum volatility is:",
+                "options": [
+                    "Asian session only",
+                    "London/NY overlap",
+                    "Weekends",
+                    "During holidays"
+                ],
+                "correct_index": 1,
+                "explanation": "The London/NY overlap (13:00-17:00 GMT) has the highest volume and volatility for EUR/USD."
+            },
+            {
+                "question": "What is slippage?",
+                "options": [
+                    "The spread cost",
+                    "Difference between expected and actual fill price",
+                    "Broker commission",
+                    "Swap fee"
+                ],
+                "correct_index": 1,
+                "explanation": "Slippage occurs when your order executes at a different price than expected, common in fast markets."
+            },
+            {
+                "question": "A 1:3 Risk/Reward ratio means you need a win rate of at least:",
+                "options": [
+                    "75%",
+                    "50%",
+                    "25%",
+                    "10%"
+                ],
+                "correct_index": 2,
+                "explanation": "With 1:3 RR, you make 3x your risk per win. Winning 25% of trades (1 in 4) keeps you breakeven."
+            },
+            {
+                "question": "Which statement about limit orders is TRUE?",
+                "options": [
+                    "They guarantee immediate execution",
+                    "They guarantee price but not execution",
+                    "They have no spread cost",
+                    "They cannot be cancelled"
+                ],
+                "correct_index": 1,
+                "explanation": "Limit orders will only fill at your specified price or better, but may never fill if price doesn't reach that level."
+            },
+            {
+                "question": "A Doji candlestick pattern indicates:",
+                "options": [
+                    "Strong bullish trend",
+                    "Strong bearish trend",
+                    "Market indecision",
+                    "High volume"
+                ],
+                "correct_index": 2,
+                "explanation": "A Doji (open ≈ close) shows neither buyers nor sellers won, indicating indecision or potential reversal."
+            },
+            {
+                "question": "Why is trading during major news releases risky?",
+                "options": [
+                    "Markets are closed",
+                    "Extreme volatility and spread widening",
+                    "No volume",
+                    "Guaranteed losses"
+                ],
+                "correct_index": 1,
+                "explanation": "News causes rapid price swings and liquidity providers widen spreads, leading to slippage and unpredictable fills."
+            },
+            {
+                "question": "What does a breakout with declining volume suggest?",
+                "options": [
+                    "Very strong move",
+                    "Likely a false breakout",
+                    "Institutional buying",
+                    "Trend continuation"
+                ],
+                "correct_index": 1,
+                "explanation": "Low volume during a breakout indicates lack of conviction and often results in a failed breakout (fakeout)."
+            },
+            {
+                "question": "The primary purpose of using multiple timeframes is to:",
+                "options": [
+                    "Increase trading frequency",
+                    "Confirm trend direction and refine entries",
+                    "Avoid risk",
+                    "Eliminate losses"
+                ],
+                "correct_index": 1,
+                "explanation": "Multiple timeframes provide context (HTF trend) and precision (LTF entry), improving trade probability."
+            }
+        ]
+    }
+}

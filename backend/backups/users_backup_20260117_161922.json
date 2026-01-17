@@ -1,0 +1,9605 @@
+{
+  "deleted_at": "20260117_161922",
+  "user_ids": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    50,
+    51,
+    52,
+    53,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "users": [
+    {
+      "id": 28,
+      "full_name": "Alex Momentum",
+      "username": "alex_pro",
+      "email": "alex_pro@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:01:42"
+    },
+    {
+      "id": 29,
+      "full_name": "Sarah Sniper",
+      "username": "sarah_x",
+      "email": "sarah_x@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:54"
+    },
+    {
+      "id": 30,
+      "full_name": "Mike Macro",
+      "username": "mike_m",
+      "email": "mike_m@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:55"
+    },
+    {
+      "id": 31,
+      "full_name": "Emma Elliott",
+      "username": "emma_e",
+      "email": "emma_e@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:56"
+    },
+    {
+      "id": 32,
+      "full_name": "David Day",
+      "username": "david_d",
+      "email": "david_d@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:56"
+    },
+    {
+      "id": 33,
+      "full_name": "Lucas Long",
+      "username": "lucas_l",
+      "email": "lucas_l@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:57"
+    },
+    {
+      "id": 34,
+      "full_name": "Julia Just",
+      "username": "julia_j",
+      "email": "julia_j@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:57"
+    },
+    {
+      "id": 35,
+      "full_name": "Tom Trend",
+      "username": "tom_t",
+      "email": "tom_t@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:58"
+    },
+    {
+      "id": 36,
+      "full_name": "Ryan Risk",
+      "username": "ryan_r",
+      "email": "ryan_r@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:59"
+    },
+    {
+      "id": 37,
+      "full_name": "Nina News",
+      "username": "nina_n",
+      "email": "nina_n@trade.com",
+      "role": "USER",
+      "created_at": "2026-01-16T22:02:59"
+    },
+    {
+      "id": 50,
+      "full_name": "Sarah Connor",
+      "username": "SarahFX",
+      "email": "sarahfx@tradesense.ai",
+      "role": "USER",
+      "created_at": "2026-01-17T14:17:25"
+    },
+    {
+      "id": 51,
+      "full_name": "Kenji Sato",
+      "username": "TokyoDrift",
+      "email": "tokyodrift@tradesense.ai",
+      "role": "USER",
+      "created_at": "2026-01-17T14:17:25"
+    },
+    {
+      "id": 52,
+      "full_name": "Hans Zimmer",
+      "username": "EuroKing",
+      "email": "euroking@tradesense.ai",
+      "role": "USER",
+      "created_at": "2026-01-17T14:17:26"
+    },
+    {
+      "id": 53,
+      "full_name": "Ahmed Al-Maktoum",
+      "username": "DubaiWhale",
+      "email": "dubaiwhale@tradesense.ai",
+      "role": "USER",
+      "created_at": "2026-01-17T14:17:27"
+    },
+    {
+      "id": 55,
+      "full_name": "Lucas Martin",
+      "username": "lucasm",
+      "email": "lucas.martin@gmail.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:57"
+    },
+    {
+      "id": 56,
+      "full_name": "Sophia Nguyen",
+      "username": "sophian",
+      "email": "sophia.nguyen@example.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:58"
+    },
+    {
+      "id": 57,
+      "full_name": "Mohammed El Amrani",
+      "username": "mohamedel",
+      "email": "mohammed.ela@example.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:58"
+    },
+    {
+      "id": 58,
+      "full_name": "Emily Zhang",
+      "username": "emilyz",
+      "email": "emily.zhang@example.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:58"
+    },
+    {
+      "id": 59,
+      "full_name": "Ali Ben Said",
+      "username": "alibs",
+      "email": "alibensaid@example.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:59"
+    },
+    {
+      "id": 60,
+      "full_name": "Oliver Garcia",
+      "username": "oliverg",
+      "email": "oliver.garcia@example.com",
+      "role": "USER",
+      "created_at": "2026-01-17T14:48:59"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "user_id": 28,
+      "plan_name": "Elite",
+      "initial_balance": 100000.0,
+      "equity": 125400.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 14,
+      "user_id": 50,
+      "plan_name": "Pro $200k",
+      "initial_balance": 200000.0,
+      "equity": 238000.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 15,
+      "user_id": 51,
+      "plan_name": "Starter $50k",
+      "initial_balance": 50000.0,
+      "equity": 58200.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 16,
+      "user_id": 52,
+      "plan_name": "Elite $100k",
+      "initial_balance": 100000.0,
+      "equity": 112000.0,
+      "status": "PASSED"
+    },
+    {
+      "id": 17,
+      "user_id": 53,
+      "plan_name": "VIP $500k",
+      "initial_balance": 500000.0,
+      "equity": 545000.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 19,
+      "user_id": 50,
+      "plan_name": "Pro $200k",
+      "initial_balance": 200000.0,
+      "equity": 238000.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 20,
+      "user_id": 51,
+      "plan_name": "Starter $50k",
+      "initial_balance": 50000.0,
+      "equity": 58200.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 21,
+      "user_id": 52,
+      "plan_name": "Elite $100k",
+      "initial_balance": 100000.0,
+      "equity": 112000.0,
+      "status": "PASSED"
+    },
+    {
+      "id": 22,
+      "user_id": 53,
+      "plan_name": "VIP $500k",
+      "initial_balance": 500000.0,
+      "equity": 545000.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 24,
+      "user_id": 50,
+      "plan_name": "Pro $200k",
+      "initial_balance": 200000.0,
+      "equity": 238000.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 25,
+      "user_id": 51,
+      "plan_name": "Starter $50k",
+      "initial_balance": 50000.0,
+      "equity": 58200.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 26,
+      "user_id": 52,
+      "plan_name": "Elite $100k",
+      "initial_balance": 100000.0,
+      "equity": 112000.0,
+      "status": "PASSED"
+    },
+    {
+      "id": 27,
+      "user_id": 53,
+      "plan_name": "VIP $500k",
+      "initial_balance": 500000.0,
+      "equity": 545000.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 29,
+      "user_id": 50,
+      "plan_name": "Pro $200k",
+      "initial_balance": 200000.0,
+      "equity": 238000.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 30,
+      "user_id": 51,
+      "plan_name": "Starter $50k",
+      "initial_balance": 50000.0,
+      "equity": 58200.0,
+      "status": "FUNDED"
+    },
+    {
+      "id": 31,
+      "user_id": 52,
+      "plan_name": "Elite $100k",
+      "initial_balance": 100000.0,
+      "equity": 112000.0,
+      "status": "PASSED"
+    },
+    {
+      "id": 32,
+      "user_id": 53,
+      "plan_name": "VIP $500k",
+      "initial_balance": 500000.0,
+      "equity": 545000.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 34,
+      "user_id": 55,
+      "plan_name": "Starter",
+      "initial_balance": 5000.0,
+      "equity": 5200.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 35,
+      "user_id": 56,
+      "plan_name": "Elite",
+      "initial_balance": 100000.0,
+      "equity": 110500.0,
+      "status": "PASSED"
+    },
+    {
+      "id": 36,
+      "user_id": 57,
+      "plan_name": "Pro",
+      "initial_balance": 25000.0,
+      "equity": 22500.0,
+      "status": "FAILED"
+    },
+    {
+      "id": 37,
+      "user_id": 58,
+      "plan_name": "Starter",
+      "initial_balance": 5000.0,
+      "equity": 4500.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 38,
+      "user_id": 59,
+      "plan_name": "Pro",
+      "initial_balance": 25000.0,
+      "equity": 27800.0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 39,
+      "user_id": 60,
+      "plan_name": "Starter",
+      "initial_balance": 5000.0,
+      "equity": 4250.0,
+      "status": "FAILED"
+    }
+  ],
+  "trades": [
+    {
+      "id": 1,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "US30",
+      "pnl": 1966.9
+    },
+    {
+      "id": 2,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "EUR/USD",
+      "pnl": 3540.65
+    },
+    {
+      "id": 3,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "USD/JPY",
+      "pnl": 1092.63
+    },
+    {
+      "id": 4,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": 2358.6
+    },
+    {
+      "id": 5,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "GBP/USD",
+      "pnl": 3291.67
+    },
+    {
+      "id": 6,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "NAS100",
+      "pnl": 1700.59
+    },
+    {
+      "id": 7,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "GBP/USD",
+      "pnl": 2879.05
+    },
+    {
+      "id": 8,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": 2939.66
+    },
+    {
+      "id": 9,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": 1853.93
+    },
+    {
+      "id": 10,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "USD/JPY",
+      "pnl": 2867.96
+    },
+    {
+      "id": 11,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": 1489.7
+    },
+    {
+      "id": 12,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "USD/JPY",
+      "pnl": 3543.51
+    },
+    {
+      "id": 13,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": 2160.82
+    },
+    {
+      "id": 14,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "EUR/USD",
+      "pnl": 1279.68
+    },
+    {
+      "id": 15,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": 1957.21
+    },
+    {
+      "id": 16,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "XAU/USD",
+      "pnl": 2792.32
+    },
+    {
+      "id": 17,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "US30",
+      "pnl": 2725.25
+    },
+    {
+      "id": 18,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": -739.24
+    },
+    {
+      "id": 19,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": -1365.15
+    },
+    {
+      "id": 20,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "US30",
+      "pnl": -1023.71
+    },
+    {
+      "id": 21,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": -1011.76
+    },
+    {
+      "id": 22,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "GBP/USD",
+      "pnl": -1275.52
+    },
+    {
+      "id": 23,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": -541.44
+    },
+    {
+      "id": 24,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "NAS100",
+      "pnl": -1633.0
+    },
+    {
+      "id": 25,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "EUR/USD",
+      "pnl": -1589.7
+    },
+    {
+      "id": 26,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "XAU/USD",
+      "pnl": -929.15
+    },
+    {
+      "id": 27,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "USD/JPY",
+      "pnl": -1737.47
+    },
+    {
+      "id": 28,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": -1246.12
+    },
+    {
+      "id": 29,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "ETH/USD",
+      "pnl": -826.47
+    },
+    {
+      "id": 30,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "NAS100",
+      "pnl": -1606.12
+    },
+    {
+      "id": 31,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "US30",
+      "pnl": -825.42
+    },
+    {
+      "id": 32,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "USD/JPY",
+      "pnl": -1488.22
+    },
+    {
+      "id": 33,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": -966.86
+    },
+    {
+      "id": 34,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "BTC/USD",
+      "pnl": -1346.2
+    },
+    {
+      "id": 35,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "GBP/USD",
+      "pnl": -1438.03
+    },
+    {
+      "id": 36,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "XAU/USD",
+      "pnl": -1408.63
+    },
+    {
+      "id": 37,
+      "account_id": 1,
+      "user_id": 28,
+      "symbol": "XAU/USD",
+      "pnl": 7958.1
+    },
+    {
+      "id": 730,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 3282.22
+    },
+    {
+      "id": 731,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1986.72
+    },
+    {
+      "id": 732,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1083.07
+    },
+    {
+      "id": 733,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2059.04
+    },
+    {
+      "id": 734,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1778.84
+    },
+    {
+      "id": 735,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 3058.65
+    },
+    {
+      "id": 736,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 3297.7
+    },
+    {
+      "id": 737,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2379.11
+    },
+    {
+      "id": 738,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 3524.74
+    },
+    {
+      "id": 739,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 2129.05
+    },
+    {
+      "id": 740,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1287.8
+    },
+    {
+      "id": 741,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1834.4
+    },
+    {
+      "id": 742,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 3463.26
+    },
+    {
+      "id": 743,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 959.99
+    },
+    {
+      "id": 744,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 3636.56
+    },
+    {
+      "id": 745,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1900.04
+    },
+    {
+      "id": 746,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 2824.71
+    },
+    {
+      "id": 747,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2076.2
+    },
+    {
+      "id": 748,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 3168.45
+    },
+    {
+      "id": 749,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1029.9
+    },
+    {
+      "id": 750,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1551.52
+    },
+    {
+      "id": 751,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 2230.0
+    },
+    {
+      "id": 752,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2101.46
+    },
+    {
+      "id": 753,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2499.7
+    },
+    {
+      "id": 754,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2055.25
+    },
+    {
+      "id": 755,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1313.18
+    },
+    {
+      "id": 756,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1859.41
+    },
+    {
+      "id": 757,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1494.96
+    },
+    {
+      "id": 758,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 3061.19
+    },
+    {
+      "id": 759,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 3288.54
+    },
+    {
+      "id": 760,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2920.72
+    },
+    {
+      "id": 761,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2495.08
+    },
+    {
+      "id": 762,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2018.32
+    },
+    {
+      "id": 763,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1958.4
+    },
+    {
+      "id": 764,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 3479.52
+    },
+    {
+      "id": 765,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -1165.47
+    },
+    {
+      "id": 766,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -545.44
+    },
+    {
+      "id": 767,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -835.92
+    },
+    {
+      "id": 768,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -532.28
+    },
+    {
+      "id": 769,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -1114.05
+    },
+    {
+      "id": 770,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -410.52
+    },
+    {
+      "id": 771,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -748.68
+    },
+    {
+      "id": 772,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -1195.47
+    },
+    {
+      "id": 773,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -395.99
+    },
+    {
+      "id": 774,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -768.0
+    },
+    {
+      "id": 775,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -351.98
+    },
+    {
+      "id": 776,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -697.49
+    },
+    {
+      "id": 777,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -577.6
+    },
+    {
+      "id": 778,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -1091.63
+    },
+    {
+      "id": 779,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -817.09
+    },
+    {
+      "id": 780,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -518.95
+    },
+    {
+      "id": 781,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -1213.37
+    },
+    {
+      "id": 782,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -970.08
+    },
+    {
+      "id": 783,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -1158.08
+    },
+    {
+      "id": 784,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -521.48
+    },
+    {
+      "id": 785,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -1305.82
+    },
+    {
+      "id": 786,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -435.61
+    },
+    {
+      "id": 787,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -710.19
+    },
+    {
+      "id": 788,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -550.36
+    },
+    {
+      "id": 789,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -422.49
+    },
+    {
+      "id": 790,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -1291.07
+    },
+    {
+      "id": 791,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -999.84
+    },
+    {
+      "id": 792,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -461.75
+    },
+    {
+      "id": 793,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -1083.57
+    },
+    {
+      "id": 794,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -817.77
+    },
+    {
+      "id": 795,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -918.75
+    },
+    {
+      "id": 796,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -1011.81
+    },
+    {
+      "id": 797,
+      "account_id": 14,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -17449.1
+    },
+    {
+      "id": 798,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 331.27
+    },
+    {
+      "id": 799,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 536.74
+    },
+    {
+      "id": 800,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 468.84
+    },
+    {
+      "id": 801,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 493.59
+    },
+    {
+      "id": 802,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 492.86
+    },
+    {
+      "id": 803,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 532.8
+    },
+    {
+      "id": 804,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 582.67
+    },
+    {
+      "id": 805,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 560.36
+    },
+    {
+      "id": 806,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 436.77
+    },
+    {
+      "id": 807,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 395.39
+    },
+    {
+      "id": 808,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 401.19
+    },
+    {
+      "id": 809,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 488.01
+    },
+    {
+      "id": 810,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 341.62
+    },
+    {
+      "id": 811,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 551.65
+    },
+    {
+      "id": 812,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 191.96
+    },
+    {
+      "id": 813,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 395.46
+    },
+    {
+      "id": 814,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 500.79
+    },
+    {
+      "id": 815,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 190.33
+    },
+    {
+      "id": 816,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 216.84
+    },
+    {
+      "id": 817,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 495.83
+    },
+    {
+      "id": 818,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 339.28
+    },
+    {
+      "id": 819,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 535.88
+    },
+    {
+      "id": 820,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 546.36
+    },
+    {
+      "id": 821,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 351.34
+    },
+    {
+      "id": 822,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 155.37
+    },
+    {
+      "id": 823,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 550.39
+    },
+    {
+      "id": 824,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 287.76
+    },
+    {
+      "id": 825,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 303.27
+    },
+    {
+      "id": 826,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 263.07
+    },
+    {
+      "id": 827,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 459.81
+    },
+    {
+      "id": 828,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 559.43
+    },
+    {
+      "id": 829,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 323.93
+    },
+    {
+      "id": 830,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 459.18
+    },
+    {
+      "id": 831,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 376.36
+    },
+    {
+      "id": 832,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 572.45
+    },
+    {
+      "id": 833,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 264.18
+    },
+    {
+      "id": 834,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 172.74
+    },
+    {
+      "id": 835,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 303.97
+    },
+    {
+      "id": 836,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 350.01
+    },
+    {
+      "id": 837,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 179.0
+    },
+    {
+      "id": 838,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 434.37
+    },
+    {
+      "id": 839,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 515.86
+    },
+    {
+      "id": 840,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 445.28
+    },
+    {
+      "id": 841,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 168.48
+    },
+    {
+      "id": 842,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 305.35
+    },
+    {
+      "id": 843,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 530.99
+    },
+    {
+      "id": 844,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 388.57
+    },
+    {
+      "id": 845,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 244.53
+    },
+    {
+      "id": 846,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 368.83
+    },
+    {
+      "id": 847,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -129.52
+    },
+    {
+      "id": 848,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -58.63
+    },
+    {
+      "id": 849,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -177.02
+    },
+    {
+      "id": 850,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -105.14
+    },
+    {
+      "id": 851,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -117.72
+    },
+    {
+      "id": 852,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -61.92
+    },
+    {
+      "id": 853,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -135.78
+    },
+    {
+      "id": 854,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -161.21
+    },
+    {
+      "id": 855,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -107.48
+    },
+    {
+      "id": 856,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -79.24
+    },
+    {
+      "id": 857,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -68.19
+    },
+    {
+      "id": 858,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -99.66
+    },
+    {
+      "id": 859,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -159.84
+    },
+    {
+      "id": 860,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -126.99
+    },
+    {
+      "id": 861,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -138.2
+    },
+    {
+      "id": 862,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -124.55
+    },
+    {
+      "id": 863,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -124.28
+    },
+    {
+      "id": 864,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -115.29
+    },
+    {
+      "id": 865,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -82.99
+    },
+    {
+      "id": 866,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -180.03
+    },
+    {
+      "id": 867,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -187.57
+    },
+    {
+      "id": 868,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -85.71
+    },
+    {
+      "id": 869,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -186.43
+    },
+    {
+      "id": 870,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -65.14
+    },
+    {
+      "id": 871,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -102.92
+    },
+    {
+      "id": 872,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -148.56
+    },
+    {
+      "id": 873,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -172.75
+    },
+    {
+      "id": 874,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -121.61
+    },
+    {
+      "id": 875,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -150.01
+    },
+    {
+      "id": 876,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -62.89
+    },
+    {
+      "id": 877,
+      "account_id": 15,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -7523.78
+    },
+    {
+      "id": 878,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 625.12
+    },
+    {
+      "id": 879,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 548.65
+    },
+    {
+      "id": 880,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 456.21
+    },
+    {
+      "id": 881,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 355.38
+    },
+    {
+      "id": 882,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 822.3
+    },
+    {
+      "id": 883,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 390.04
+    },
+    {
+      "id": 884,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 650.06
+    },
+    {
+      "id": 885,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 594.41
+    },
+    {
+      "id": 886,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 615.9
+    },
+    {
+      "id": 887,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 494.42
+    },
+    {
+      "id": 888,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 800.35
+    },
+    {
+      "id": 889,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 390.18
+    },
+    {
+      "id": 890,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 355.33
+    },
+    {
+      "id": 891,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 779.62
+    },
+    {
+      "id": 892,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 537.14
+    },
+    {
+      "id": 893,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 852.33
+    },
+    {
+      "id": 894,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 827.36
+    },
+    {
+      "id": 895,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 674.09
+    },
+    {
+      "id": 896,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 616.56
+    },
+    {
+      "id": 897,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 666.59
+    },
+    {
+      "id": 898,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 430.34
+    },
+    {
+      "id": 899,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 244.33
+    },
+    {
+      "id": 900,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 857.91
+    },
+    {
+      "id": 901,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 435.46
+    },
+    {
+      "id": 902,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 666.44
+    },
+    {
+      "id": 903,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 307.22
+    },
+    {
+      "id": 904,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 652.86
+    },
+    {
+      "id": 905,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 496.77
+    },
+    {
+      "id": 906,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 616.05
+    },
+    {
+      "id": 907,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 892.11
+    },
+    {
+      "id": 908,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 752.68
+    },
+    {
+      "id": 909,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 250.52
+    },
+    {
+      "id": 910,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 464.97
+    },
+    {
+      "id": 911,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 799.33
+    },
+    {
+      "id": 912,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 463.18
+    },
+    {
+      "id": 913,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 462.98
+    },
+    {
+      "id": 914,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 310.87
+    },
+    {
+      "id": 915,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 588.73
+    },
+    {
+      "id": 916,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 332.89
+    },
+    {
+      "id": 917,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 282.07
+    },
+    {
+      "id": 918,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -336.2
+    },
+    {
+      "id": 919,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -339.71
+    },
+    {
+      "id": 920,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -284.75
+    },
+    {
+      "id": 921,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -122.87
+    },
+    {
+      "id": 922,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -167.19
+    },
+    {
+      "id": 923,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -357.52
+    },
+    {
+      "id": 924,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -158.25
+    },
+    {
+      "id": 925,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -172.93
+    },
+    {
+      "id": 926,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -410.01
+    },
+    {
+      "id": 927,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -126.86
+    },
+    {
+      "id": 928,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -105.65
+    },
+    {
+      "id": 929,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -366.03
+    },
+    {
+      "id": 930,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -360.66
+    },
+    {
+      "id": 931,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -114.52
+    },
+    {
+      "id": 932,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -241.29
+    },
+    {
+      "id": 933,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -382.46
+    },
+    {
+      "id": 934,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -141.81
+    },
+    {
+      "id": 935,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -327.03
+    },
+    {
+      "id": 936,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -409.57
+    },
+    {
+      "id": 937,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -197.64
+    },
+    {
+      "id": 938,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -180.47
+    },
+    {
+      "id": 939,
+      "account_id": 16,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -5056.33
+    },
+    {
+      "id": 940,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 3202.99
+    },
+    {
+      "id": 941,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 1769.48
+    },
+    {
+      "id": 942,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 953.7
+    },
+    {
+      "id": 943,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 3150.44
+    },
+    {
+      "id": 944,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1364.01
+    },
+    {
+      "id": 945,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 3496.36
+    },
+    {
+      "id": 946,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 1216.43
+    },
+    {
+      "id": 947,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2257.59
+    },
+    {
+      "id": 948,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2335.01
+    },
+    {
+      "id": 949,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 2337.93
+    },
+    {
+      "id": 950,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1608.95
+    },
+    {
+      "id": 951,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2177.14
+    },
+    {
+      "id": 952,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2776.58
+    },
+    {
+      "id": 953,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2286.78
+    },
+    {
+      "id": 954,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 3171.0
+    },
+    {
+      "id": 955,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 1490.8
+    },
+    {
+      "id": 956,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 1727.66
+    },
+    {
+      "id": 957,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 1248.89
+    },
+    {
+      "id": 958,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 2575.95
+    },
+    {
+      "id": 959,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 2003.41
+    },
+    {
+      "id": 960,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1413.8
+    },
+    {
+      "id": 961,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 1777.01
+    },
+    {
+      "id": 962,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2773.43
+    },
+    {
+      "id": 963,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2172.36
+    },
+    {
+      "id": 964,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 1260.29
+    },
+    {
+      "id": 965,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 2199.06
+    },
+    {
+      "id": 966,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1434.63
+    },
+    {
+      "id": 967,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 3238.11
+    },
+    {
+      "id": 968,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 1362.22
+    },
+    {
+      "id": 969,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 2834.19
+    },
+    {
+      "id": 970,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2787.38
+    },
+    {
+      "id": 971,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 1580.64
+    },
+    {
+      "id": 972,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2726.2
+    },
+    {
+      "id": 973,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1113.26
+    },
+    {
+      "id": 974,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 1904.22
+    },
+    {
+      "id": 975,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 1152.3
+    },
+    {
+      "id": 976,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 1367.49
+    },
+    {
+      "id": 977,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2783.82
+    },
+    {
+      "id": 978,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 1167.74
+    },
+    {
+      "id": 979,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 3227.63
+    },
+    {
+      "id": 980,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -917.03
+    },
+    {
+      "id": 981,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -335.31
+    },
+    {
+      "id": 982,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -481.51
+    },
+    {
+      "id": 983,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -337.09
+    },
+    {
+      "id": 984,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -682.08
+    },
+    {
+      "id": 985,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -707.8
+    },
+    {
+      "id": 986,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -1036.52
+    },
+    {
+      "id": 987,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -1134.97
+    },
+    {
+      "id": 988,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1093.67
+    },
+    {
+      "id": 989,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -749.89
+    },
+    {
+      "id": 990,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -1062.05
+    },
+    {
+      "id": 991,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -813.25
+    },
+    {
+      "id": 992,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -860.17
+    },
+    {
+      "id": 993,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -685.94
+    },
+    {
+      "id": 994,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -450.5
+    },
+    {
+      "id": 995,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -523.56
+    },
+    {
+      "id": 996,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -450.72
+    },
+    {
+      "id": 997,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -342.43
+    },
+    {
+      "id": 998,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -1182.6
+    },
+    {
+      "id": 999,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -868.75
+    },
+    {
+      "id": 1000,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -894.15
+    },
+    {
+      "id": 1001,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -1116.95
+    },
+    {
+      "id": 1002,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -647.84
+    },
+    {
+      "id": 1003,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1076.24
+    },
+    {
+      "id": 1004,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -655.17
+    },
+    {
+      "id": 1005,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -557.24
+    },
+    {
+      "id": 1006,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -348.52
+    },
+    {
+      "id": 1007,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -1053.25
+    },
+    {
+      "id": 1008,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -605.74
+    },
+    {
+      "id": 1009,
+      "account_id": 17,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -16755.9
+    },
+    {
+      "id": 1058,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 887.78
+    },
+    {
+      "id": 1059,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1881.43
+    },
+    {
+      "id": 1060,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2961.35
+    },
+    {
+      "id": 1061,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1427.82
+    },
+    {
+      "id": 1062,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1368.96
+    },
+    {
+      "id": 1063,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1557.18
+    },
+    {
+      "id": 1064,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 2806.02
+    },
+    {
+      "id": 1065,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1982.74
+    },
+    {
+      "id": 1066,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2974.94
+    },
+    {
+      "id": 1067,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1864.74
+    },
+    {
+      "id": 1068,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2606.26
+    },
+    {
+      "id": 1069,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1316.01
+    },
+    {
+      "id": 1070,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 784.65
+    },
+    {
+      "id": 1071,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1600.88
+    },
+    {
+      "id": 1072,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1110.6
+    },
+    {
+      "id": 1073,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1692.52
+    },
+    {
+      "id": 1074,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2114.66
+    },
+    {
+      "id": 1075,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1433.36
+    },
+    {
+      "id": 1076,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1368.28
+    },
+    {
+      "id": 1077,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2733.12
+    },
+    {
+      "id": 1078,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1322.15
+    },
+    {
+      "id": 1079,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 2920.84
+    },
+    {
+      "id": 1080,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1976.6
+    },
+    {
+      "id": 1081,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 2625.61
+    },
+    {
+      "id": 1082,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1516.06
+    },
+    {
+      "id": 1083,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1620.99
+    },
+    {
+      "id": 1084,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2686.74
+    },
+    {
+      "id": 1085,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1057.8
+    },
+    {
+      "id": 1086,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1885.76
+    },
+    {
+      "id": 1087,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 961.18
+    },
+    {
+      "id": 1088,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1814.37
+    },
+    {
+      "id": 1089,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1728.67
+    },
+    {
+      "id": 1090,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2117.67
+    },
+    {
+      "id": 1091,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1730.83
+    },
+    {
+      "id": 1092,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1846.42
+    },
+    {
+      "id": 1093,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2726.96
+    },
+    {
+      "id": 1094,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2304.35
+    },
+    {
+      "id": 1095,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 2245.47
+    },
+    {
+      "id": 1096,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1754.19
+    },
+    {
+      "id": 1097,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2320.57
+    },
+    {
+      "id": 1098,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2827.67
+    },
+    {
+      "id": 1099,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 2643.91
+    },
+    {
+      "id": 1100,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -686.72
+    },
+    {
+      "id": 1101,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -1130.8
+    },
+    {
+      "id": 1102,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -967.02
+    },
+    {
+      "id": 1103,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -320.1
+    },
+    {
+      "id": 1104,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -615.71
+    },
+    {
+      "id": 1105,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -889.23
+    },
+    {
+      "id": 1106,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -750.82
+    },
+    {
+      "id": 1107,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -312.74
+    },
+    {
+      "id": 1108,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -963.98
+    },
+    {
+      "id": 1109,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -976.17
+    },
+    {
+      "id": 1110,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -551.94
+    },
+    {
+      "id": 1111,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -1141.94
+    },
+    {
+      "id": 1112,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -1012.55
+    },
+    {
+      "id": 1113,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -824.23
+    },
+    {
+      "id": 1114,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -922.6
+    },
+    {
+      "id": 1115,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -766.8
+    },
+    {
+      "id": 1116,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -497.67
+    },
+    {
+      "id": 1117,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -434.16
+    },
+    {
+      "id": 1118,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -705.58
+    },
+    {
+      "id": 1119,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -1113.87
+    },
+    {
+      "id": 1120,
+      "account_id": 19,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -27523.5
+    },
+    {
+      "id": 1121,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 246.74
+    },
+    {
+      "id": 1122,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 350.43
+    },
+    {
+      "id": 1123,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 615.74
+    },
+    {
+      "id": 1124,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 185.5
+    },
+    {
+      "id": 1125,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 219.52
+    },
+    {
+      "id": 1126,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 501.75
+    },
+    {
+      "id": 1127,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 310.25
+    },
+    {
+      "id": 1128,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 559.43
+    },
+    {
+      "id": 1129,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 373.63
+    },
+    {
+      "id": 1130,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 257.55
+    },
+    {
+      "id": 1131,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 542.5
+    },
+    {
+      "id": 1132,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 563.4
+    },
+    {
+      "id": 1133,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 447.61
+    },
+    {
+      "id": 1134,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 576.3
+    },
+    {
+      "id": 1135,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 490.42
+    },
+    {
+      "id": 1136,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 546.59
+    },
+    {
+      "id": 1137,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 376.18
+    },
+    {
+      "id": 1138,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 545.08
+    },
+    {
+      "id": 1139,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 532.11
+    },
+    {
+      "id": 1140,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 412.73
+    },
+    {
+      "id": 1141,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 210.67
+    },
+    {
+      "id": 1142,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 515.18
+    },
+    {
+      "id": 1143,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 306.16
+    },
+    {
+      "id": 1144,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 267.06
+    },
+    {
+      "id": 1145,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 589.38
+    },
+    {
+      "id": 1146,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 159.86
+    },
+    {
+      "id": 1147,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 162.75
+    },
+    {
+      "id": 1148,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 566.72
+    },
+    {
+      "id": 1149,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 528.72
+    },
+    {
+      "id": 1150,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 407.14
+    },
+    {
+      "id": 1151,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 586.62
+    },
+    {
+      "id": 1152,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 489.63
+    },
+    {
+      "id": 1153,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -195.43
+    },
+    {
+      "id": 1154,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -350.5
+    },
+    {
+      "id": 1155,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -242.07
+    },
+    {
+      "id": 1156,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -394.12
+    },
+    {
+      "id": 1157,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -308.45
+    },
+    {
+      "id": 1158,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -368.54
+    },
+    {
+      "id": 1159,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -377.07
+    },
+    {
+      "id": 1160,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -367.36
+    },
+    {
+      "id": 1161,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -177.32
+    },
+    {
+      "id": 1162,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -286.7
+    },
+    {
+      "id": 1163,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -386.16
+    },
+    {
+      "id": 1164,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -219.44
+    },
+    {
+      "id": 1165,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -356.74
+    },
+    {
+      "id": 1166,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -259.67
+    },
+    {
+      "id": 1167,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -157.49
+    },
+    {
+      "id": 1168,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -284.94
+    },
+    {
+      "id": 1169,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -324.04
+    },
+    {
+      "id": 1170,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -358.31
+    },
+    {
+      "id": 1171,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -123.23
+    },
+    {
+      "id": 1172,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -195.12
+    },
+    {
+      "id": 1173,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -149.76
+    },
+    {
+      "id": 1174,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -372.56
+    },
+    {
+      "id": 1175,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -345.35
+    },
+    {
+      "id": 1176,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -340.15
+    },
+    {
+      "id": 1177,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -121.86
+    },
+    {
+      "id": 1178,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -309.79
+    },
+    {
+      "id": 1179,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -282.3
+    },
+    {
+      "id": 1180,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -172.69
+    },
+    {
+      "id": 1181,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -106.04
+    },
+    {
+      "id": 1182,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -235.86
+    },
+    {
+      "id": 1183,
+      "account_id": 20,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 2925.71
+    },
+    {
+      "id": 1184,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 1612.45
+    },
+    {
+      "id": 1185,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 999.53
+    },
+    {
+      "id": 1186,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 1995.99
+    },
+    {
+      "id": 1187,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 973.14
+    },
+    {
+      "id": 1188,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 1698.94
+    },
+    {
+      "id": 1189,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 986.89
+    },
+    {
+      "id": 1190,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 1365.72
+    },
+    {
+      "id": 1191,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 1104.3
+    },
+    {
+      "id": 1192,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 561.73
+    },
+    {
+      "id": 1193,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 880.3
+    },
+    {
+      "id": 1194,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 1698.3
+    },
+    {
+      "id": 1195,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 1773.13
+    },
+    {
+      "id": 1196,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 640.63
+    },
+    {
+      "id": 1197,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 913.69
+    },
+    {
+      "id": 1198,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 930.08
+    },
+    {
+      "id": 1199,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 807.45
+    },
+    {
+      "id": 1200,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 1067.19
+    },
+    {
+      "id": 1201,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 568.42
+    },
+    {
+      "id": 1202,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -606.15
+    },
+    {
+      "id": 1203,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -541.02
+    },
+    {
+      "id": 1204,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -975.24
+    },
+    {
+      "id": 1205,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -769.34
+    },
+    {
+      "id": 1206,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -911.75
+    },
+    {
+      "id": 1207,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -399.39
+    },
+    {
+      "id": 1208,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -330.62
+    },
+    {
+      "id": 1209,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -513.48
+    },
+    {
+      "id": 1210,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -320.12
+    },
+    {
+      "id": 1211,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -653.41
+    },
+    {
+      "id": 1212,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -894.57
+    },
+    {
+      "id": 1213,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -516.83
+    },
+    {
+      "id": 1214,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": -703.92
+    },
+    {
+      "id": 1215,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -746.55
+    },
+    {
+      "id": 1216,
+      "account_id": 21,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 304.48
+    },
+    {
+      "id": 1217,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 6578.54
+    },
+    {
+      "id": 1218,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 3851.52
+    },
+    {
+      "id": 1219,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2794.79
+    },
+    {
+      "id": 1220,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 5916.01
+    },
+    {
+      "id": 1221,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 2058.84
+    },
+    {
+      "id": 1222,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 6445.73
+    },
+    {
+      "id": 1223,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 4491.57
+    },
+    {
+      "id": 1224,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 5647.29
+    },
+    {
+      "id": 1225,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 4037.48
+    },
+    {
+      "id": 1226,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 3023.48
+    },
+    {
+      "id": 1227,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 3686.9
+    },
+    {
+      "id": 1228,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 5762.86
+    },
+    {
+      "id": 1229,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 2588.12
+    },
+    {
+      "id": 1230,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 4653.04
+    },
+    {
+      "id": 1231,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2940.31
+    },
+    {
+      "id": 1232,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 3912.79
+    },
+    {
+      "id": 1233,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 4556.55
+    },
+    {
+      "id": 1234,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 6736.35
+    },
+    {
+      "id": 1235,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 6691.46
+    },
+    {
+      "id": 1236,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -2472.63
+    },
+    {
+      "id": 1237,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -930.54
+    },
+    {
+      "id": 1238,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1000.08
+    },
+    {
+      "id": 1239,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1981.75
+    },
+    {
+      "id": 1240,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1045.38
+    },
+    {
+      "id": 1241,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -2490.43
+    },
+    {
+      "id": 1242,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -2453.5
+    },
+    {
+      "id": 1243,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1498.22
+    },
+    {
+      "id": 1244,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1487.74
+    },
+    {
+      "id": 1245,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1836.42
+    },
+    {
+      "id": 1246,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -2901.9
+    },
+    {
+      "id": 1247,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -3101.09
+    },
+    {
+      "id": 1248,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -2524.49
+    },
+    {
+      "id": 1249,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -2435.68
+    },
+    {
+      "id": 1250,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -2310.11
+    },
+    {
+      "id": 1251,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -2832.65
+    },
+    {
+      "id": 1252,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -3286.05
+    },
+    {
+      "id": 1253,
+      "account_id": 22,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -4784.96
+    },
+    {
+      "id": 1313,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1968.8
+    },
+    {
+      "id": 1314,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1635.19
+    },
+    {
+      "id": 1315,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1280.68
+    },
+    {
+      "id": 1316,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 682.28
+    },
+    {
+      "id": 1317,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 2413.25
+    },
+    {
+      "id": 1318,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1799.06
+    },
+    {
+      "id": 1319,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 792.96
+    },
+    {
+      "id": 1320,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 749.85
+    },
+    {
+      "id": 1321,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1667.76
+    },
+    {
+      "id": 1322,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1129.01
+    },
+    {
+      "id": 1323,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1099.5
+    },
+    {
+      "id": 1324,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 989.79
+    },
+    {
+      "id": 1325,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2187.26
+    },
+    {
+      "id": 1326,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1138.5
+    },
+    {
+      "id": 1327,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1018.29
+    },
+    {
+      "id": 1328,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1603.29
+    },
+    {
+      "id": 1329,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1890.34
+    },
+    {
+      "id": 1330,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 895.68
+    },
+    {
+      "id": 1331,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1149.54
+    },
+    {
+      "id": 1332,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1959.46
+    },
+    {
+      "id": 1333,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1920.33
+    },
+    {
+      "id": 1334,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 753.66
+    },
+    {
+      "id": 1335,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1795.61
+    },
+    {
+      "id": 1336,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1672.67
+    },
+    {
+      "id": 1337,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1505.58
+    },
+    {
+      "id": 1338,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2359.17
+    },
+    {
+      "id": 1339,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1143.36
+    },
+    {
+      "id": 1340,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2076.59
+    },
+    {
+      "id": 1341,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1586.28
+    },
+    {
+      "id": 1342,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 756.88
+    },
+    {
+      "id": 1343,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1073.39
+    },
+    {
+      "id": 1344,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1278.55
+    },
+    {
+      "id": 1345,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1042.26
+    },
+    {
+      "id": 1346,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1230.13
+    },
+    {
+      "id": 1347,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 882.58
+    },
+    {
+      "id": 1348,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2149.16
+    },
+    {
+      "id": 1349,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1109.57
+    },
+    {
+      "id": 1350,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 888.43
+    },
+    {
+      "id": 1351,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 903.61
+    },
+    {
+      "id": 1352,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1744.96
+    },
+    {
+      "id": 1353,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 1371.27
+    },
+    {
+      "id": 1354,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2197.44
+    },
+    {
+      "id": 1355,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 649.89
+    },
+    {
+      "id": 1356,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1724.02
+    },
+    {
+      "id": 1357,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2296.23
+    },
+    {
+      "id": 1358,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2342.55
+    },
+    {
+      "id": 1359,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2227.29
+    },
+    {
+      "id": 1360,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1456.89
+    },
+    {
+      "id": 1361,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1229.97
+    },
+    {
+      "id": 1362,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1058.16
+    },
+    {
+      "id": 1363,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1897.31
+    },
+    {
+      "id": 1364,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1574.9
+    },
+    {
+      "id": 1365,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2272.83
+    },
+    {
+      "id": 1366,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -404.77
+    },
+    {
+      "id": 1367,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -712.08
+    },
+    {
+      "id": 1368,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -628.77
+    },
+    {
+      "id": 1369,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -396.8
+    },
+    {
+      "id": 1370,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -281.06
+    },
+    {
+      "id": 1371,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -390.03
+    },
+    {
+      "id": 1372,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -324.43
+    },
+    {
+      "id": 1373,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -241.95
+    },
+    {
+      "id": 1374,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -549.38
+    },
+    {
+      "id": 1375,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -482.01
+    },
+    {
+      "id": 1376,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -711.33
+    },
+    {
+      "id": 1377,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -735.02
+    },
+    {
+      "id": 1378,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -757.78
+    },
+    {
+      "id": 1379,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -814.32
+    },
+    {
+      "id": 1380,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -398.35
+    },
+    {
+      "id": 1381,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -744.32
+    },
+    {
+      "id": 1382,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -610.72
+    },
+    {
+      "id": 1383,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": -731.31
+    },
+    {
+      "id": 1384,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -692.77
+    },
+    {
+      "id": 1385,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -646.81
+    },
+    {
+      "id": 1386,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -292.26
+    },
+    {
+      "id": 1387,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -391.23
+    },
+    {
+      "id": 1388,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -680.21
+    },
+    {
+      "id": 1389,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -479.49
+    },
+    {
+      "id": 1390,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -648.08
+    },
+    {
+      "id": 1391,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -680.28
+    },
+    {
+      "id": 1392,
+      "account_id": 24,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -25796.4
+    },
+    {
+      "id": 1393,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 380.74
+    },
+    {
+      "id": 1394,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 812.21
+    },
+    {
+      "id": 1395,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 337.71
+    },
+    {
+      "id": 1396,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 791.82
+    },
+    {
+      "id": 1397,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 731.88
+    },
+    {
+      "id": 1398,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 588.85
+    },
+    {
+      "id": 1399,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 514.14
+    },
+    {
+      "id": 1400,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 418.18
+    },
+    {
+      "id": 1401,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 245.31
+    },
+    {
+      "id": 1402,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 625.05
+    },
+    {
+      "id": 1403,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 214.47
+    },
+    {
+      "id": 1404,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 705.32
+    },
+    {
+      "id": 1405,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 567.54
+    },
+    {
+      "id": 1406,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 246.75
+    },
+    {
+      "id": 1407,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 557.13
+    },
+    {
+      "id": 1408,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 618.12
+    },
+    {
+      "id": 1409,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 295.31
+    },
+    {
+      "id": 1410,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 691.97
+    },
+    {
+      "id": 1411,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 668.08
+    },
+    {
+      "id": 1412,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 387.58
+    },
+    {
+      "id": 1413,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 626.89
+    },
+    {
+      "id": 1414,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 794.11
+    },
+    {
+      "id": 1415,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 717.39
+    },
+    {
+      "id": 1416,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 667.72
+    },
+    {
+      "id": 1417,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 583.47
+    },
+    {
+      "id": 1418,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 422.18
+    },
+    {
+      "id": 1419,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 525.61
+    },
+    {
+      "id": 1420,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -275.64
+    },
+    {
+      "id": 1421,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -282.16
+    },
+    {
+      "id": 1422,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": -340.03
+    },
+    {
+      "id": 1423,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -262.78
+    },
+    {
+      "id": 1424,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -108.47
+    },
+    {
+      "id": 1425,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -131.35
+    },
+    {
+      "id": 1426,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -161.33
+    },
+    {
+      "id": 1427,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -135.29
+    },
+    {
+      "id": 1428,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -187.52
+    },
+    {
+      "id": 1429,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -334.32
+    },
+    {
+      "id": 1430,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": -208.64
+    },
+    {
+      "id": 1431,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -92.44
+    },
+    {
+      "id": 1432,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -310.07
+    },
+    {
+      "id": 1433,
+      "account_id": 25,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": -3705.49
+    },
+    {
+      "id": 1434,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 993.88
+    },
+    {
+      "id": 1435,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 1025.3
+    },
+    {
+      "id": 1436,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 582.7
+    },
+    {
+      "id": 1437,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 682.15
+    },
+    {
+      "id": 1438,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 407.23
+    },
+    {
+      "id": 1439,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 1311.18
+    },
+    {
+      "id": 1440,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 735.05
+    },
+    {
+      "id": 1441,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 462.89
+    },
+    {
+      "id": 1442,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 1151.4
+    },
+    {
+      "id": 1443,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 506.56
+    },
+    {
+      "id": 1444,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 1085.88
+    },
+    {
+      "id": 1445,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 943.32
+    },
+    {
+      "id": 1446,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 1223.24
+    },
+    {
+      "id": 1447,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 1395.42
+    },
+    {
+      "id": 1448,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 1203.8
+    },
+    {
+      "id": 1449,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 586.04
+    },
+    {
+      "id": 1450,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 1162.27
+    },
+    {
+      "id": 1451,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 1109.85
+    },
+    {
+      "id": 1452,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 1461.01
+    },
+    {
+      "id": 1453,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 1484.18
+    },
+    {
+      "id": 1454,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 652.15
+    },
+    {
+      "id": 1455,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 1426.66
+    },
+    {
+      "id": 1456,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": -376.44
+    },
+    {
+      "id": 1457,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -243.97
+    },
+    {
+      "id": 1458,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -158.08
+    },
+    {
+      "id": 1459,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -506.15
+    },
+    {
+      "id": 1460,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -465.57
+    },
+    {
+      "id": 1461,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -468.22
+    },
+    {
+      "id": 1462,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -170.98
+    },
+    {
+      "id": 1463,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -416.9
+    },
+    {
+      "id": 1464,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -290.53
+    },
+    {
+      "id": 1465,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -492.43
+    },
+    {
+      "id": 1466,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -412.99
+    },
+    {
+      "id": 1467,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -294.36
+    },
+    {
+      "id": 1468,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -267.98
+    },
+    {
+      "id": 1469,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -309.45
+    },
+    {
+      "id": 1470,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -361.48
+    },
+    {
+      "id": 1471,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -495.61
+    },
+    {
+      "id": 1472,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -151.16
+    },
+    {
+      "id": 1473,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -463.62
+    },
+    {
+      "id": 1474,
+      "account_id": 26,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": -3246.28
+    },
+    {
+      "id": 1475,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 2938.02
+    },
+    {
+      "id": 1476,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 3323.53
+    },
+    {
+      "id": 1477,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1416.47
+    },
+    {
+      "id": 1478,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 1597.53
+    },
+    {
+      "id": 1479,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2888.3
+    },
+    {
+      "id": 1480,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 3247.4
+    },
+    {
+      "id": 1481,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 2673.03
+    },
+    {
+      "id": 1482,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2526.64
+    },
+    {
+      "id": 1483,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 3683.0
+    },
+    {
+      "id": 1484,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 3348.02
+    },
+    {
+      "id": 1485,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2388.76
+    },
+    {
+      "id": 1486,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 1985.73
+    },
+    {
+      "id": 1487,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1895.89
+    },
+    {
+      "id": 1488,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2936.42
+    },
+    {
+      "id": 1489,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 3498.38
+    },
+    {
+      "id": 1490,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1181.43
+    },
+    {
+      "id": 1491,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2080.31
+    },
+    {
+      "id": 1492,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 3832.64
+    },
+    {
+      "id": 1493,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 1378.83
+    },
+    {
+      "id": 1494,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 3057.55
+    },
+    {
+      "id": 1495,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 1376.12
+    },
+    {
+      "id": 1496,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 2786.23
+    },
+    {
+      "id": 1497,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 1251.62
+    },
+    {
+      "id": 1498,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 3638.31
+    },
+    {
+      "id": 1499,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 1197.36
+    },
+    {
+      "id": 1500,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 3212.32
+    },
+    {
+      "id": 1501,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 2299.21
+    },
+    {
+      "id": 1502,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 3745.91
+    },
+    {
+      "id": 1503,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 1503.57
+    },
+    {
+      "id": 1504,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1778.51
+    },
+    {
+      "id": 1505,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": 2691.26
+    },
+    {
+      "id": 1506,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 2701.93
+    },
+    {
+      "id": 1507,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 2852.97
+    },
+    {
+      "id": 1508,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2065.26
+    },
+    {
+      "id": 1509,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -1329.08
+    },
+    {
+      "id": 1510,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -412.22
+    },
+    {
+      "id": 1511,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -1571.55
+    },
+    {
+      "id": 1512,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -544.23
+    },
+    {
+      "id": 1513,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1489.42
+    },
+    {
+      "id": 1514,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -998.89
+    },
+    {
+      "id": 1515,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -916.62
+    },
+    {
+      "id": 1516,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -856.64
+    },
+    {
+      "id": 1517,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1030.24
+    },
+    {
+      "id": 1518,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -781.98
+    },
+    {
+      "id": 1519,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1006.11
+    },
+    {
+      "id": 1520,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -962.08
+    },
+    {
+      "id": 1521,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -1514.13
+    },
+    {
+      "id": 1522,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -909.37
+    },
+    {
+      "id": 1523,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1007.45
+    },
+    {
+      "id": 1524,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -1226.28
+    },
+    {
+      "id": 1525,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1497.35
+    },
+    {
+      "id": 1526,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1316.32
+    },
+    {
+      "id": 1527,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1062.46
+    },
+    {
+      "id": 1528,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -530.13
+    },
+    {
+      "id": 1529,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -422.91
+    },
+    {
+      "id": 1530,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -971.9
+    },
+    {
+      "id": 1531,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1211.58
+    },
+    {
+      "id": 1532,
+      "account_id": 27,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -16409.5
+    },
+    {
+      "id": 1602,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1917.13
+    },
+    {
+      "id": 1603,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1515.99
+    },
+    {
+      "id": 1604,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 732.13
+    },
+    {
+      "id": 1605,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2480.8
+    },
+    {
+      "id": 1606,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 2183.16
+    },
+    {
+      "id": 1607,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 866.91
+    },
+    {
+      "id": 1608,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 2290.01
+    },
+    {
+      "id": 1609,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1824.05
+    },
+    {
+      "id": 1610,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1338.75
+    },
+    {
+      "id": 1611,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1486.17
+    },
+    {
+      "id": 1612,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2270.85
+    },
+    {
+      "id": 1613,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1425.77
+    },
+    {
+      "id": 1614,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1439.16
+    },
+    {
+      "id": 1615,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2438.62
+    },
+    {
+      "id": 1616,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1996.03
+    },
+    {
+      "id": 1617,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1922.31
+    },
+    {
+      "id": 1618,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 1281.8
+    },
+    {
+      "id": 1619,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1341.63
+    },
+    {
+      "id": 1620,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1354.61
+    },
+    {
+      "id": 1621,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2412.34
+    },
+    {
+      "id": 1622,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1218.64
+    },
+    {
+      "id": 1623,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 2535.01
+    },
+    {
+      "id": 1624,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 2273.52
+    },
+    {
+      "id": 1625,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1645.01
+    },
+    {
+      "id": 1626,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": 1326.61
+    },
+    {
+      "id": 1627,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 896.11
+    },
+    {
+      "id": 1628,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": 1235.51
+    },
+    {
+      "id": 1629,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 1845.58
+    },
+    {
+      "id": 1630,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1598.24
+    },
+    {
+      "id": 1631,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1596.1
+    },
+    {
+      "id": 1632,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": 2135.07
+    },
+    {
+      "id": 1633,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1010.11
+    },
+    {
+      "id": 1634,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1347.55
+    },
+    {
+      "id": 1635,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": 1582.58
+    },
+    {
+      "id": 1636,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": 1577.45
+    },
+    {
+      "id": 1637,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": 1080.31
+    },
+    {
+      "id": 1638,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": 960.52
+    },
+    {
+      "id": 1639,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -455.15
+    },
+    {
+      "id": 1640,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -419.67
+    },
+    {
+      "id": 1641,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -955.26
+    },
+    {
+      "id": 1642,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -1200.02
+    },
+    {
+      "id": 1643,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -657.98
+    },
+    {
+      "id": 1644,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -966.23
+    },
+    {
+      "id": 1645,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -998.62
+    },
+    {
+      "id": 1646,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -708.7
+    },
+    {
+      "id": 1647,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -520.06
+    },
+    {
+      "id": 1648,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -1116.81
+    },
+    {
+      "id": 1649,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -453.91
+    },
+    {
+      "id": 1650,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -425.84
+    },
+    {
+      "id": 1651,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "XAU/USD",
+      "pnl": -378.38
+    },
+    {
+      "id": 1652,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -753.27
+    },
+    {
+      "id": 1653,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -1057.62
+    },
+    {
+      "id": 1654,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -623.92
+    },
+    {
+      "id": 1655,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -715.31
+    },
+    {
+      "id": 1656,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -314.47
+    },
+    {
+      "id": 1657,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "EUR/USD",
+      "pnl": -769.46
+    },
+    {
+      "id": 1658,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -1242.79
+    },
+    {
+      "id": 1659,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -771.48
+    },
+    {
+      "id": 1660,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -745.14
+    },
+    {
+      "id": 1661,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "BTC/USD",
+      "pnl": -892.49
+    },
+    {
+      "id": 1662,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -1100.08
+    },
+    {
+      "id": 1663,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "US30",
+      "pnl": -1078.52
+    },
+    {
+      "id": 1664,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -1126.98
+    },
+    {
+      "id": 1665,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "GBP/USD",
+      "pnl": -977.67
+    },
+    {
+      "id": 1666,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -957.33
+    },
+    {
+      "id": 1667,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -621.1
+    },
+    {
+      "id": 1668,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "USD/JPY",
+      "pnl": -357.78
+    },
+    {
+      "id": 1669,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -705.64
+    },
+    {
+      "id": 1670,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -852.62
+    },
+    {
+      "id": 1671,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "NAS100",
+      "pnl": -1238.64
+    },
+    {
+      "id": 1672,
+      "account_id": 29,
+      "user_id": 50,
+      "symbol": "ETH/USD",
+      "pnl": 3776.84
+    },
+    {
+      "id": 1673,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 658.17
+    },
+    {
+      "id": 1674,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 303.5
+    },
+    {
+      "id": 1675,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 613.61
+    },
+    {
+      "id": 1676,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 350.14
+    },
+    {
+      "id": 1677,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 488.96
+    },
+    {
+      "id": 1678,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 549.74
+    },
+    {
+      "id": 1679,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 491.42
+    },
+    {
+      "id": 1680,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 755.05
+    },
+    {
+      "id": 1681,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 233.81
+    },
+    {
+      "id": 1682,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 222.0
+    },
+    {
+      "id": 1683,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 380.78
+    },
+    {
+      "id": 1684,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 386.96
+    },
+    {
+      "id": 1685,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 214.12
+    },
+    {
+      "id": 1686,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 705.62
+    },
+    {
+      "id": 1687,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 301.1
+    },
+    {
+      "id": 1688,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 583.77
+    },
+    {
+      "id": 1689,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 667.06
+    },
+    {
+      "id": 1690,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 440.99
+    },
+    {
+      "id": 1691,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "USD/JPY",
+      "pnl": 498.55
+    },
+    {
+      "id": 1692,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 423.76
+    },
+    {
+      "id": 1693,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 754.56
+    },
+    {
+      "id": 1694,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": 242.94
+    },
+    {
+      "id": 1695,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "GBP/USD",
+      "pnl": 259.23
+    },
+    {
+      "id": 1696,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 506.21
+    },
+    {
+      "id": 1697,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "NAS100",
+      "pnl": 218.54
+    },
+    {
+      "id": 1698,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": 266.05
+    },
+    {
+      "id": 1699,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 681.11
+    },
+    {
+      "id": 1700,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": 690.4
+    },
+    {
+      "id": 1701,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": 754.1
+    },
+    {
+      "id": 1702,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": 295.55
+    },
+    {
+      "id": 1703,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -100.87
+    },
+    {
+      "id": 1704,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -203.99
+    },
+    {
+      "id": 1705,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -170.01
+    },
+    {
+      "id": 1706,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -295.65
+    },
+    {
+      "id": 1707,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -253.64
+    },
+    {
+      "id": 1708,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -314.87
+    },
+    {
+      "id": 1709,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -239.66
+    },
+    {
+      "id": 1710,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -272.51
+    },
+    {
+      "id": 1711,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "BTC/USD",
+      "pnl": -209.73
+    },
+    {
+      "id": 1712,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "ETH/USD",
+      "pnl": -261.32
+    },
+    {
+      "id": 1713,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -303.32
+    },
+    {
+      "id": 1714,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -146.81
+    },
+    {
+      "id": 1715,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -94.47
+    },
+    {
+      "id": 1716,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -118.59
+    },
+    {
+      "id": 1717,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "US30",
+      "pnl": -278.91
+    },
+    {
+      "id": 1718,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -238.17
+    },
+    {
+      "id": 1719,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "XAU/USD",
+      "pnl": -216.98
+    },
+    {
+      "id": 1720,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -196.77
+    },
+    {
+      "id": 1721,
+      "account_id": 30,
+      "user_id": 51,
+      "symbol": "EUR/USD",
+      "pnl": -1821.53
+    },
+    {
+      "id": 1722,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 423.79
+    },
+    {
+      "id": 1723,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 557.13
+    },
+    {
+      "id": 1724,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 538.37
+    },
+    {
+      "id": 1725,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 514.25
+    },
+    {
+      "id": 1726,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 874.49
+    },
+    {
+      "id": 1727,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 768.47
+    },
+    {
+      "id": 1728,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 753.07
+    },
+    {
+      "id": 1729,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 642.24
+    },
+    {
+      "id": 1730,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 926.08
+    },
+    {
+      "id": 1731,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 465.46
+    },
+    {
+      "id": 1732,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 339.84
+    },
+    {
+      "id": 1733,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 522.02
+    },
+    {
+      "id": 1734,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 878.09
+    },
+    {
+      "id": 1735,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 399.15
+    },
+    {
+      "id": 1736,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": 551.27
+    },
+    {
+      "id": 1737,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 407.36
+    },
+    {
+      "id": 1738,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 903.72
+    },
+    {
+      "id": 1739,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 246.73
+    },
+    {
+      "id": 1740,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 442.59
+    },
+    {
+      "id": 1741,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 381.74
+    },
+    {
+      "id": 1742,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 674.58
+    },
+    {
+      "id": 1743,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 288.52
+    },
+    {
+      "id": 1744,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 307.22
+    },
+    {
+      "id": 1745,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 499.78
+    },
+    {
+      "id": 1746,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 552.82
+    },
+    {
+      "id": 1747,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 269.16
+    },
+    {
+      "id": 1748,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 950.55
+    },
+    {
+      "id": 1749,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": 365.16
+    },
+    {
+      "id": 1750,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 889.61
+    },
+    {
+      "id": 1751,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": 708.56
+    },
+    {
+      "id": 1752,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": 962.78
+    },
+    {
+      "id": 1753,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": 856.19
+    },
+    {
+      "id": 1754,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": 455.55
+    },
+    {
+      "id": 1755,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "XAU/USD",
+      "pnl": 681.67
+    },
+    {
+      "id": 1756,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": 439.06
+    },
+    {
+      "id": 1757,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -125.75
+    },
+    {
+      "id": 1758,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -374.35
+    },
+    {
+      "id": 1759,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -268.59
+    },
+    {
+      "id": 1760,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -377.61
+    },
+    {
+      "id": 1761,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -114.67
+    },
+    {
+      "id": 1762,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -210.37
+    },
+    {
+      "id": 1763,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -114.14
+    },
+    {
+      "id": 1764,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -312.18
+    },
+    {
+      "id": 1765,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -159.14
+    },
+    {
+      "id": 1766,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -145.87
+    },
+    {
+      "id": 1767,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": -216.83
+    },
+    {
+      "id": 1768,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -393.77
+    },
+    {
+      "id": 1769,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -320.96
+    },
+    {
+      "id": 1770,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -344.93
+    },
+    {
+      "id": 1771,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "EUR/USD",
+      "pnl": -228.56
+    },
+    {
+      "id": 1772,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "BTC/USD",
+      "pnl": -173.39
+    },
+    {
+      "id": 1773,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "USD/JPY",
+      "pnl": -335.19
+    },
+    {
+      "id": 1774,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "ETH/USD",
+      "pnl": -304.28
+    },
+    {
+      "id": 1775,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "US30",
+      "pnl": -354.15
+    },
+    {
+      "id": 1776,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "NAS100",
+      "pnl": -278.73
+    },
+    {
+      "id": 1777,
+      "account_id": 31,
+      "user_id": 52,
+      "symbol": "GBP/USD",
+      "pnl": -3283.61
+    },
+    {
+      "id": 1778,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 4491.05
+    },
+    {
+      "id": 1779,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 4538.92
+    },
+    {
+      "id": 1780,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1307.44
+    },
+    {
+      "id": 1781,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2569.07
+    },
+    {
+      "id": 1782,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2514.37
+    },
+    {
+      "id": 1783,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 3032.74
+    },
+    {
+      "id": 1784,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 2030.19
+    },
+    {
+      "id": 1785,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 3814.21
+    },
+    {
+      "id": 1786,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 4200.25
+    },
+    {
+      "id": 1787,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 1811.37
+    },
+    {
+      "id": 1788,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1625.42
+    },
+    {
+      "id": 1789,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 4496.09
+    },
+    {
+      "id": 1790,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 4092.11
+    },
+    {
+      "id": 1791,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 2095.78
+    },
+    {
+      "id": 1792,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 2349.96
+    },
+    {
+      "id": 1793,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 1303.81
+    },
+    {
+      "id": 1794,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": 4460.5
+    },
+    {
+      "id": 1795,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": 3062.31
+    },
+    {
+      "id": 1796,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 4788.36
+    },
+    {
+      "id": 1797,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": 1881.61
+    },
+    {
+      "id": 1798,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": 3188.41
+    },
+    {
+      "id": 1799,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": 4150.65
+    },
+    {
+      "id": 1800,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": 4110.82
+    },
+    {
+      "id": 1801,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1684.47
+    },
+    {
+      "id": 1802,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -2150.14
+    },
+    {
+      "id": 1803,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1890.77
+    },
+    {
+      "id": 1804,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1867.42
+    },
+    {
+      "id": 1805,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -1819.06
+    },
+    {
+      "id": 1806,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -961.85
+    },
+    {
+      "id": 1807,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": -1480.88
+    },
+    {
+      "id": 1808,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -773.58
+    },
+    {
+      "id": 1809,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1393.94
+    },
+    {
+      "id": 1810,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -2394.04
+    },
+    {
+      "id": 1811,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1803.5
+    },
+    {
+      "id": 1812,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "USD/JPY",
+      "pnl": -1503.71
+    },
+    {
+      "id": 1813,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -2364.82
+    },
+    {
+      "id": 1814,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "NAS100",
+      "pnl": -1476.84
+    },
+    {
+      "id": 1815,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1942.76
+    },
+    {
+      "id": 1816,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "ETH/USD",
+      "pnl": -1628.55
+    },
+    {
+      "id": 1817,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -814.13
+    },
+    {
+      "id": 1818,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -2377.78
+    },
+    {
+      "id": 1819,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "US30",
+      "pnl": -1703.98
+    },
+    {
+      "id": 1820,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "EUR/USD",
+      "pnl": -1008.55
+    },
+    {
+      "id": 1821,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "XAU/USD",
+      "pnl": -1827.74
+    },
+    {
+      "id": 1822,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1235.98
+    },
+    {
+      "id": 1823,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "GBP/USD",
+      "pnl": -1965.22
+    },
+    {
+      "id": 1824,
+      "account_id": 32,
+      "user_id": 53,
+      "symbol": "BTC/USD",
+      "pnl": 11154.2
+    },
+    {
+      "id": 1896,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 11.65
+    },
+    {
+      "id": 1897,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 5.54
+    },
+    {
+      "id": 1898,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 7.86
+    },
+    {
+      "id": 1899,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 7.86
+    },
+    {
+      "id": 1900,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 4.52
+    },
+    {
+      "id": 1901,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 5.91
+    },
+    {
+      "id": 1902,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 9.73
+    },
+    {
+      "id": 1903,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 11.76
+    },
+    {
+      "id": 1904,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": 6.26
+    },
+    {
+      "id": 1905,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": 3.64
+    },
+    {
+      "id": 1906,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 5.61
+    },
+    {
+      "id": 1907,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 11.1
+    },
+    {
+      "id": 1908,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": 6.13
+    },
+    {
+      "id": 1909,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": 5.86
+    },
+    {
+      "id": 1910,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": 10.37
+    },
+    {
+      "id": 1911,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 5.62
+    },
+    {
+      "id": 1912,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 10.12
+    },
+    {
+      "id": 1913,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 4.97
+    },
+    {
+      "id": 1914,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 5.72
+    },
+    {
+      "id": 1915,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": 7.66
+    },
+    {
+      "id": 1916,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 3.72
+    },
+    {
+      "id": 1917,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": 8.38
+    },
+    {
+      "id": 1918,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 8.66
+    },
+    {
+      "id": 1919,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": 4.49
+    },
+    {
+      "id": 1920,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 6.62
+    },
+    {
+      "id": 1921,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 8.89
+    },
+    {
+      "id": 1922,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": 3.77
+    },
+    {
+      "id": 1923,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": 4.75
+    },
+    {
+      "id": 1924,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 7.39
+    },
+    {
+      "id": 1925,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 8.17
+    },
+    {
+      "id": 1926,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 4.32
+    },
+    {
+      "id": 1927,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 10.34
+    },
+    {
+      "id": 1928,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": 9.0
+    },
+    {
+      "id": 1929,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 4.29
+    },
+    {
+      "id": 1930,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 4.23
+    },
+    {
+      "id": 1931,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 3.87
+    },
+    {
+      "id": 1932,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 8.05
+    },
+    {
+      "id": 1933,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": 8.24
+    },
+    {
+      "id": 1934,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 7.72
+    },
+    {
+      "id": 1935,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 8.63
+    },
+    {
+      "id": 1936,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": 11.04
+    },
+    {
+      "id": 1937,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 4.49
+    },
+    {
+      "id": 1938,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": 4.62
+    },
+    {
+      "id": 1939,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": 7.43
+    },
+    {
+      "id": 1940,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": 4.26
+    },
+    {
+      "id": 1941,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": 4.27
+    },
+    {
+      "id": 1942,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 5.53
+    },
+    {
+      "id": 1943,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": 11.87
+    },
+    {
+      "id": 1944,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": 4.0
+    },
+    {
+      "id": 1945,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": 4.83
+    },
+    {
+      "id": 1946,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": -3.58
+    },
+    {
+      "id": 1947,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": -1.89
+    },
+    {
+      "id": 1948,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": -3.13
+    },
+    {
+      "id": 1949,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": -2.8
+    },
+    {
+      "id": 1950,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": -3.3
+    },
+    {
+      "id": 1951,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": -1.19
+    },
+    {
+      "id": 1952,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": -3.01
+    },
+    {
+      "id": 1953,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": -2.88
+    },
+    {
+      "id": 1954,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": -4.13
+    },
+    {
+      "id": 1955,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": -2.09
+    },
+    {
+      "id": 1956,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "NAS100",
+      "pnl": -3.2
+    },
+    {
+      "id": 1957,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": -2.8
+    },
+    {
+      "id": 1958,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": -2.58
+    },
+    {
+      "id": 1959,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": -1.23
+    },
+    {
+      "id": 1960,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": -1.63
+    },
+    {
+      "id": 1961,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": -3.73
+    },
+    {
+      "id": 1962,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": -1.51
+    },
+    {
+      "id": 1963,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": -3.22
+    },
+    {
+      "id": 1964,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": -3.68
+    },
+    {
+      "id": 1965,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": -1.57
+    },
+    {
+      "id": 1966,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "XAU/USD",
+      "pnl": -1.16
+    },
+    {
+      "id": 1967,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": -2.89
+    },
+    {
+      "id": 1968,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": -1.61
+    },
+    {
+      "id": 1969,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "EUR/USD",
+      "pnl": -2.71
+    },
+    {
+      "id": 1970,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "BTC/USD",
+      "pnl": -3.41
+    },
+    {
+      "id": 1971,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "US30",
+      "pnl": -3.33
+    },
+    {
+      "id": 1972,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "USD/JPY",
+      "pnl": -1.43
+    },
+    {
+      "id": 1973,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "GBP/USD",
+      "pnl": -3.63
+    },
+    {
+      "id": 1974,
+      "account_id": 34,
+      "user_id": 55,
+      "symbol": "ETH/USD",
+      "pnl": -70.41
+    },
+    {
+      "id": 1975,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": 1757.3
+    },
+    {
+      "id": 1976,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "GBP/USD",
+      "pnl": 1687.2
+    },
+    {
+      "id": 1977,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "ETH/USD",
+      "pnl": 786.57
+    },
+    {
+      "id": 1978,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": 1166.68
+    },
+    {
+      "id": 1979,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "GBP/USD",
+      "pnl": 1004.36
+    },
+    {
+      "id": 1980,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "ETH/USD",
+      "pnl": 2144.27
+    },
+    {
+      "id": 1981,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "BTC/USD",
+      "pnl": 660.51
+    },
+    {
+      "id": 1982,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "US30",
+      "pnl": 1441.45
+    },
+    {
+      "id": 1983,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": 2028.48
+    },
+    {
+      "id": 1984,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": 896.52
+    },
+    {
+      "id": 1985,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": 1664.62
+    },
+    {
+      "id": 1986,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": 1560.97
+    },
+    {
+      "id": 1987,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "US30",
+      "pnl": 810.57
+    },
+    {
+      "id": 1988,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "XAU/USD",
+      "pnl": 1910.48
+    },
+    {
+      "id": 1989,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "BTC/USD",
+      "pnl": 1651.83
+    },
+    {
+      "id": 1990,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": 2007.69
+    },
+    {
+      "id": 1991,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "GBP/USD",
+      "pnl": -861.33
+    },
+    {
+      "id": 1992,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": -624.69
+    },
+    {
+      "id": 1993,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "EUR/USD",
+      "pnl": -917.96
+    },
+    {
+      "id": 1994,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": -821.05
+    },
+    {
+      "id": 1995,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "GBP/USD",
+      "pnl": -414.88
+    },
+    {
+      "id": 1996,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": -343.43
+    },
+    {
+      "id": 1997,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "US30",
+      "pnl": -701.22
+    },
+    {
+      "id": 1998,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": -841.71
+    },
+    {
+      "id": 1999,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "XAU/USD",
+      "pnl": -295.13
+    },
+    {
+      "id": 2000,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "BTC/USD",
+      "pnl": -466.72
+    },
+    {
+      "id": 2001,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "XAU/USD",
+      "pnl": -414.62
+    },
+    {
+      "id": 2002,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "XAU/USD",
+      "pnl": -526.57
+    },
+    {
+      "id": 2003,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "USD/JPY",
+      "pnl": -938.8
+    },
+    {
+      "id": 2004,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "NAS100",
+      "pnl": -858.89
+    },
+    {
+      "id": 2005,
+      "account_id": 35,
+      "user_id": 56,
+      "symbol": "XAU/USD",
+      "pnl": -3652.49
+    },
+    {
+      "id": 2006,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "EUR/USD",
+      "pnl": 90.37
+    },
+    {
+      "id": 2007,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "GBP/USD",
+      "pnl": 103.58
+    },
+    {
+      "id": 2008,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "EUR/USD",
+      "pnl": 98.68
+    },
+    {
+      "id": 2009,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": 93.93
+    },
+    {
+      "id": 2010,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "ETH/USD",
+      "pnl": 53.37
+    },
+    {
+      "id": 2011,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "US30",
+      "pnl": 60.51
+    },
+    {
+      "id": 2012,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": 94.03
+    },
+    {
+      "id": 2013,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "XAU/USD",
+      "pnl": 107.58
+    },
+    {
+      "id": 2014,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "ETH/USD",
+      "pnl": 55.76
+    },
+    {
+      "id": 2015,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "EUR/USD",
+      "pnl": 49.7
+    },
+    {
+      "id": 2016,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": 73.71
+    },
+    {
+      "id": 2017,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "USD/JPY",
+      "pnl": 46.64
+    },
+    {
+      "id": 2018,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "ETH/USD",
+      "pnl": 29.31
+    },
+    {
+      "id": 2019,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": 90.05
+    },
+    {
+      "id": 2020,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "US30",
+      "pnl": 87.52
+    },
+    {
+      "id": 2021,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": 67.07
+    },
+    {
+      "id": 2022,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": 112.88
+    },
+    {
+      "id": 2023,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": 49.17
+    },
+    {
+      "id": 2024,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "GBP/USD",
+      "pnl": 65.17
+    },
+    {
+      "id": 2025,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "USD/JPY",
+      "pnl": 109.9
+    },
+    {
+      "id": 2026,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "ETH/USD",
+      "pnl": -198.6
+    },
+    {
+      "id": 2027,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": -551.97
+    },
+    {
+      "id": 2028,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "USD/JPY",
+      "pnl": -173.52
+    },
+    {
+      "id": 2029,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "EUR/USD",
+      "pnl": -237.26
+    },
+    {
+      "id": 2030,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": -338.53
+    },
+    {
+      "id": 2031,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "ETH/USD",
+      "pnl": -427.11
+    },
+    {
+      "id": 2032,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "EUR/USD",
+      "pnl": -462.56
+    },
+    {
+      "id": 2033,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": -336.19
+    },
+    {
+      "id": 2034,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "XAU/USD",
+      "pnl": -427.65
+    },
+    {
+      "id": 2035,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "USD/JPY",
+      "pnl": -380.37
+    },
+    {
+      "id": 2036,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "BTC/USD",
+      "pnl": -307.8
+    },
+    {
+      "id": 2037,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": -492.58
+    },
+    {
+      "id": 2038,
+      "account_id": 36,
+      "user_id": 57,
+      "symbol": "NAS100",
+      "pnl": 295.18
+    },
+    {
+      "id": 2039,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 6.56
+    },
+    {
+      "id": 2040,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": 4.82
+    },
+    {
+      "id": 2041,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": 4.85
+    },
+    {
+      "id": 2042,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 10.38
+    },
+    {
+      "id": 2043,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 4.26
+    },
+    {
+      "id": 2044,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 8.14
+    },
+    {
+      "id": 2045,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 10.06
+    },
+    {
+      "id": 2046,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": 3.76
+    },
+    {
+      "id": 2047,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "BTC/USD",
+      "pnl": 3.85
+    },
+    {
+      "id": 2048,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "BTC/USD",
+      "pnl": 4.34
+    },
+    {
+      "id": 2049,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": 5.26
+    },
+    {
+      "id": 2050,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 6.52
+    },
+    {
+      "id": 2051,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": 10.67
+    },
+    {
+      "id": 2052,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 3.74
+    },
+    {
+      "id": 2053,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 3.58
+    },
+    {
+      "id": 2054,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": 10.15
+    },
+    {
+      "id": 2055,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "BTC/USD",
+      "pnl": 4.51
+    },
+    {
+      "id": 2056,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 9.41
+    },
+    {
+      "id": 2057,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": 10.67
+    },
+    {
+      "id": 2058,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": 9.39
+    },
+    {
+      "id": 2059,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 9.29
+    },
+    {
+      "id": 2060,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 6.22
+    },
+    {
+      "id": 2061,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 7.67
+    },
+    {
+      "id": 2062,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 3.33
+    },
+    {
+      "id": 2063,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": 7.27
+    },
+    {
+      "id": 2064,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 6.62
+    },
+    {
+      "id": 2065,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 7.4
+    },
+    {
+      "id": 2066,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 8.94
+    },
+    {
+      "id": 2067,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 7.6
+    },
+    {
+      "id": 2068,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 8.97
+    },
+    {
+      "id": 2069,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 9.85
+    },
+    {
+      "id": 2070,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 9.21
+    },
+    {
+      "id": 2071,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": 10.48
+    },
+    {
+      "id": 2072,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": 6.71
+    },
+    {
+      "id": 2073,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": 9.86
+    },
+    {
+      "id": 2074,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 7.42
+    },
+    {
+      "id": 2075,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": 10.08
+    },
+    {
+      "id": 2076,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": 7.22
+    },
+    {
+      "id": 2077,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": 5.26
+    },
+    {
+      "id": 2078,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 10.1
+    },
+    {
+      "id": 2079,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": 5.76
+    },
+    {
+      "id": 2080,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": -46.7
+    },
+    {
+      "id": 2081,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -43.84
+    },
+    {
+      "id": 2082,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": -49.68
+    },
+    {
+      "id": 2083,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": -15.69
+    },
+    {
+      "id": 2084,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -14.51
+    },
+    {
+      "id": 2085,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -40.35
+    },
+    {
+      "id": 2086,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "BTC/USD",
+      "pnl": -47.66
+    },
+    {
+      "id": 2087,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": -27.98
+    },
+    {
+      "id": 2088,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": -50.44
+    },
+    {
+      "id": 2089,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "BTC/USD",
+      "pnl": -32.18
+    },
+    {
+      "id": 2090,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": -23.57
+    },
+    {
+      "id": 2091,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": -43.94
+    },
+    {
+      "id": 2092,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": -40.71
+    },
+    {
+      "id": 2093,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": -23.0
+    },
+    {
+      "id": 2094,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -51.97
+    },
+    {
+      "id": 2095,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": -37.77
+    },
+    {
+      "id": 2096,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -16.65
+    },
+    {
+      "id": 2097,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": -21.72
+    },
+    {
+      "id": 2098,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "NAS100",
+      "pnl": -49.62
+    },
+    {
+      "id": 2099,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -35.83
+    },
+    {
+      "id": 2100,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "US30",
+      "pnl": -43.83
+    },
+    {
+      "id": 2101,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": -33.8
+    },
+    {
+      "id": 2102,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "EUR/USD",
+      "pnl": -35.34
+    },
+    {
+      "id": 2103,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": -52.64
+    },
+    {
+      "id": 2104,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "ETH/USD",
+      "pnl": -49.67
+    },
+    {
+      "id": 2105,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "USD/JPY",
+      "pnl": -15.35
+    },
+    {
+      "id": 2106,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "XAU/USD",
+      "pnl": -27.77
+    },
+    {
+      "id": 2107,
+      "account_id": 37,
+      "user_id": 58,
+      "symbol": "GBP/USD",
+      "pnl": 172.04
+    },
+    {
+      "id": 2108,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": 392.29
+    },
+    {
+      "id": 2109,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 247.11
+    },
+    {
+      "id": 2110,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 122.31
+    },
+    {
+      "id": 2111,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 227.07
+    },
+    {
+      "id": 2112,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 127.19
+    },
+    {
+      "id": 2113,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": 328.05
+    },
+    {
+      "id": 2114,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": 353.45
+    },
+    {
+      "id": 2115,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 177.0
+    },
+    {
+      "id": 2116,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": 282.09
+    },
+    {
+      "id": 2117,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "ETH/USD",
+      "pnl": 139.13
+    },
+    {
+      "id": 2118,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": 372.27
+    },
+    {
+      "id": 2119,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "US30",
+      "pnl": 207.04
+    },
+    {
+      "id": 2120,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "EUR/USD",
+      "pnl": 419.96
+    },
+    {
+      "id": 2121,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "XAU/USD",
+      "pnl": 149.37
+    },
+    {
+      "id": 2122,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "ETH/USD",
+      "pnl": 381.73
+    },
+    {
+      "id": 2123,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "EUR/USD",
+      "pnl": 323.76
+    },
+    {
+      "id": 2124,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "US30",
+      "pnl": 250.33
+    },
+    {
+      "id": 2125,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": 241.19
+    },
+    {
+      "id": 2126,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "US30",
+      "pnl": 129.7
+    },
+    {
+      "id": 2127,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": 163.59
+    },
+    {
+      "id": 2128,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": 373.92
+    },
+    {
+      "id": 2129,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": 198.47
+    },
+    {
+      "id": 2130,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "NAS100",
+      "pnl": 401.06
+    },
+    {
+      "id": 2131,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "ETH/USD",
+      "pnl": -82.65
+    },
+    {
+      "id": 2132,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": -144.17
+    },
+    {
+      "id": 2133,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": -112.04
+    },
+    {
+      "id": 2134,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": -53.11
+    },
+    {
+      "id": 2135,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "USD/JPY",
+      "pnl": -73.47
+    },
+    {
+      "id": 2136,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "NAS100",
+      "pnl": -132.23
+    },
+    {
+      "id": 2137,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "XAU/USD",
+      "pnl": -123.05
+    },
+    {
+      "id": 2138,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": -119.38
+    },
+    {
+      "id": 2139,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "EUR/USD",
+      "pnl": -153.22
+    },
+    {
+      "id": 2140,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "US30",
+      "pnl": -136.92
+    },
+    {
+      "id": 2141,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "BTC/USD",
+      "pnl": -41.77
+    },
+    {
+      "id": 2142,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "NAS100",
+      "pnl": -94.83
+    },
+    {
+      "id": 2143,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": -75.85
+    },
+    {
+      "id": 2144,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": -128.61
+    },
+    {
+      "id": 2145,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "EUR/USD",
+      "pnl": -72.15
+    },
+    {
+      "id": 2146,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "US30",
+      "pnl": -147.4
+    },
+    {
+      "id": 2147,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "XAU/USD",
+      "pnl": -100.41
+    },
+    {
+      "id": 2148,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "EUR/USD",
+      "pnl": -54.72
+    },
+    {
+      "id": 2149,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "GBP/USD",
+      "pnl": -112.01
+    },
+    {
+      "id": 2150,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "NAS100",
+      "pnl": -135.06
+    },
+    {
+      "id": 2151,
+      "account_id": 38,
+      "user_id": 59,
+      "symbol": "XAU/USD",
+      "pnl": -1114.98
+    },
+    {
+      "id": 2152,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "USD/JPY",
+      "pnl": 33.77
+    },
+    {
+      "id": 2153,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 20.38
+    },
+    {
+      "id": 2154,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "XAU/USD",
+      "pnl": 32.18
+    },
+    {
+      "id": 2155,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": 31.25
+    },
+    {
+      "id": 2156,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 13.97
+    },
+    {
+      "id": 2157,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": 32.88
+    },
+    {
+      "id": 2158,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 34.15
+    },
+    {
+      "id": 2159,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": 33.81
+    },
+    {
+      "id": 2160,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "EUR/USD",
+      "pnl": 37.69
+    },
+    {
+      "id": 2161,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 14.9
+    },
+    {
+      "id": 2162,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": 29.49
+    },
+    {
+      "id": 2163,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 31.21
+    },
+    {
+      "id": 2164,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 17.82
+    },
+    {
+      "id": 2165,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 18.43
+    },
+    {
+      "id": 2166,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 19.51
+    },
+    {
+      "id": 2167,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 23.34
+    },
+    {
+      "id": 2168,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "XAU/USD",
+      "pnl": 13.38
+    },
+    {
+      "id": 2169,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 32.04
+    },
+    {
+      "id": 2170,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": 11.21
+    },
+    {
+      "id": 2171,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": 14.55
+    },
+    {
+      "id": 2172,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 32.01
+    },
+    {
+      "id": 2173,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "EUR/USD",
+      "pnl": 23.48
+    },
+    {
+      "id": 2174,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": 38.79
+    },
+    {
+      "id": 2175,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": 10.89
+    },
+    {
+      "id": 2176,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "XAU/USD",
+      "pnl": 24.98
+    },
+    {
+      "id": 2177,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": 14.45
+    },
+    {
+      "id": 2178,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "USD/JPY",
+      "pnl": 33.39
+    },
+    {
+      "id": 2179,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": 27.1
+    },
+    {
+      "id": 2180,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "EUR/USD",
+      "pnl": 17.43
+    },
+    {
+      "id": 2181,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": 28.25
+    },
+    {
+      "id": 2182,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "USD/JPY",
+      "pnl": 16.08
+    },
+    {
+      "id": 2183,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": 11.48
+    },
+    {
+      "id": 2184,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 26.11
+    },
+    {
+      "id": 2185,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": 10.39
+    },
+    {
+      "id": 2186,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "USD/JPY",
+      "pnl": -34.48
+    },
+    {
+      "id": 2187,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "USD/JPY",
+      "pnl": -81.66
+    },
+    {
+      "id": 2188,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": -69.09
+    },
+    {
+      "id": 2189,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": -69.66
+    },
+    {
+      "id": 2190,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": -45.68
+    },
+    {
+      "id": 2191,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": -58.52
+    },
+    {
+      "id": 2192,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": -39.36
+    },
+    {
+      "id": 2193,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": -35.38
+    },
+    {
+      "id": 2194,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": -89.09
+    },
+    {
+      "id": 2195,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": -64.04
+    },
+    {
+      "id": 2196,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "ETH/USD",
+      "pnl": -54.99
+    },
+    {
+      "id": 2197,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": -81.97
+    },
+    {
+      "id": 2198,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": -30.25
+    },
+    {
+      "id": 2199,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "EUR/USD",
+      "pnl": -30.36
+    },
+    {
+      "id": 2200,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "EUR/USD",
+      "pnl": -71.66
+    },
+    {
+      "id": 2201,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "NAS100",
+      "pnl": -37.66
+    },
+    {
+      "id": 2202,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "BTC/USD",
+      "pnl": -60.43
+    },
+    {
+      "id": 2203,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": -71.69
+    },
+    {
+      "id": 2204,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "GBP/USD",
+      "pnl": -47.62
+    },
+    {
+      "id": 2205,
+      "account_id": 39,
+      "user_id": 60,
+      "symbol": "US30",
+      "pnl": -487.2
+    }
+  ],
+  "leaderboard": [
+    {
+      "id": 11,
+      "user_id": 53,
+      "username": "DubaiWhale",
+      "profit": 45000.0
+    },
+    {
+      "id": 12,
+      "user_id": 53,
+      "username": "DubaiWhale",
+      "profit": 45000.0
+    },
+    {
+      "id": 13,
+      "user_id": 53,
+      "username": "DubaiWhale",
+      "profit": 45000.0
+    },
+    {
+      "id": 14,
+      "user_id": 53,
+      "username": "DubaiWhale",
+      "profit": 44999.9
+    },
+    {
+      "id": 15,
+      "user_id": 50,
+      "username": "SarahFX",
+      "profit": 38000.1
+    },
+    {
+      "id": 16,
+      "user_id": 50,
+      "username": "SarahFX",
+      "profit": 38000.0
+    },
+    {
+      "id": 17,
+      "user_id": 50,
+      "username": "SarahFX",
+      "profit": 38000.0
+    },
+    {
+      "id": 18,
+      "user_id": 50,
+      "username": "SarahFX",
+      "profit": 38000.0
+    },
+    {
+      "id": 19,
+      "user_id": 28,
+      "username": "alex_pro",
+      "profit": 25400.0
+    },
+    {
+      "id": 27,
+      "user_id": 52,
+      "username": "EuroKing",
+      "profit": 12000.0
+    },
+    {
+      "id": 28,
+      "user_id": 52,
+      "username": "EuroKing",
+      "profit": 12000.0
+    },
+    {
+      "id": 30,
+      "user_id": 52,
+      "username": "EuroKing",
+      "profit": 12000.0
+    },
+    {
+      "id": 31,
+      "user_id": 52,
+      "username": "EuroKing",
+      "profit": 12000.0
+    },
+    {
+      "id": 33,
+      "user_id": 56,
+      "username": "sophian",
+      "profit": 10500.0
+    },
+    {
+      "id": 36,
+      "user_id": 51,
+      "username": "TokyoDrift",
+      "profit": 8200.0
+    },
+    {
+      "id": 37,
+      "user_id": 51,
+      "username": "TokyoDrift",
+      "profit": 8200.0
+    },
+    {
+      "id": 38,
+      "user_id": 51,
+      "username": "TokyoDrift",
+      "profit": 8200.0
+    },
+    {
+      "id": 39,
+      "user_id": 51,
+      "username": "TokyoDrift",
+      "profit": 8199.96
+    },
+    {
+      "id": 45,
+      "user_id": 59,
+      "username": "alibs",
+      "profit": 2800.05
+    },
+    {
+      "id": 51,
+      "user_id": 55,
+      "username": "lucasm",
+      "profit": 200.03
+    },
+    {
+      "id": 54,
+      "user_id": 58,
+      "username": "emilyz",
+      "profit": -499.99
+    }
+  ],
+  "admin_logs": [
+    {
+      "id": 1,
+      "admin_id": 2,
+      "target_account_id": 1,
+      "action": "set_passed"
+    },
+    {
+      "id": 7,
+      "admin_id": 2,
+      "target_account_id": 14,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 8,
+      "admin_id": 2,
+      "target_account_id": 15,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 9,
+      "admin_id": 2,
+      "target_account_id": 16,
+      "action": "backfill_status_passed"
+    },
+    {
+      "id": 11,
+      "admin_id": 2,
+      "target_account_id": 19,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 12,
+      "admin_id": 2,
+      "target_account_id": 20,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 13,
+      "admin_id": 2,
+      "target_account_id": 21,
+      "action": "backfill_status_passed"
+    },
+    {
+      "id": 15,
+      "admin_id": 2,
+      "target_account_id": 24,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 16,
+      "admin_id": 2,
+      "target_account_id": 25,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 17,
+      "admin_id": 2,
+      "target_account_id": 26,
+      "action": "backfill_status_passed"
+    },
+    {
+      "id": 19,
+      "admin_id": 2,
+      "target_account_id": 29,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 20,
+      "admin_id": 2,
+      "target_account_id": 30,
+      "action": "backfill_status_funded"
+    },
+    {
+      "id": 21,
+      "admin_id": 2,
+      "target_account_id": 31,
+      "action": "backfill_status_passed"
+    },
+    {
+      "id": 22,
+      "admin_id": 2,
+      "target_account_id": 35,
+      "action": "backfill_status_passed"
+    },
+    {
+      "id": 23,
+      "admin_id": 2,
+      "target_account_id": 36,
+      "action": "backfill_status_failed"
+    },
+    {
+      "id": 24,
+      "admin_id": 2,
+      "target_account_id": 39,
+      "action": "backfill_status_failed"
+    }
+  ],
+  "performance_snapshots": [
+    {
+      "id": 106,
+      "account_id": 1,
+      "profit": 25400.0
+    },
+    {
+      "id": 119,
+      "account_id": 14,
+      "profit": 38000.0
+    },
+    {
+      "id": 120,
+      "account_id": 15,
+      "profit": 8199.96
+    },
+    {
+      "id": 121,
+      "account_id": 16,
+      "profit": 12000.0
+    },
+    {
+      "id": 122,
+      "account_id": 17,
+      "profit": 45000.0
+    },
+    {
+      "id": 124,
+      "account_id": 19,
+      "profit": 38000.0
+    },
+    {
+      "id": 125,
+      "account_id": 20,
+      "profit": 8200.0
+    },
+    {
+      "id": 126,
+      "account_id": 21,
+      "profit": 12000.0
+    },
+    {
+      "id": 127,
+      "account_id": 22,
+      "profit": 45000.0
+    },
+    {
+      "id": 129,
+      "account_id": 24,
+      "profit": 38000.1
+    },
+    {
+      "id": 130,
+      "account_id": 25,
+      "profit": 8200.0
+    },
+    {
+      "id": 131,
+      "account_id": 26,
+      "profit": 12000.0
+    },
+    {
+      "id": 132,
+      "account_id": 27,
+      "profit": 45000.0
+    },
+    {
+      "id": 134,
+      "account_id": 29,
+      "profit": 38000.0
+    },
+    {
+      "id": 135,
+      "account_id": 30,
+      "profit": 8200.0
+    },
+    {
+      "id": 136,
+      "account_id": 31,
+      "profit": 12000.0
+    },
+    {
+      "id": 137,
+      "account_id": 32,
+      "profit": 44999.9
+    },
+    {
+      "id": 139,
+      "account_id": 34,
+      "profit": 200.03
+    },
+    {
+      "id": 140,
+      "account_id": 35,
+      "profit": 10500.0
+    },
+    {
+      "id": 141,
+      "account_id": 36,
+      "profit": -2500.03
+    },
+    {
+      "id": 142,
+      "account_id": 37,
+      "profit": -499.99
+    },
+    {
+      "id": 143,
+      "account_id": 38,
+      "profit": 2800.05
+    },
+    {
+      "id": 144,
+      "account_id": 39,
+      "profit": -750.0
+    }
+  ],
+  "transactions": [],
+  "posts": [],
+  "comments": [],
+  "post_likes": [],
+  "floor_messages": [
+    {
+      "id": 6,
+      "user_id": 28
+    },
+    {
+      "id": 7,
+      "user_id": 28
+    },
+    {
+      "id": 13,
+      "user_id": 29
+    }
+  ],
+  "user_course_progress": [],
+  "user_lesson_progress": [],
+  "user_quiz_attempts": [],
+  "user_badges": [],
+  "user_xp": [],
+  "risk_alerts": [],
+  "challenges": []
+}

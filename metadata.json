@@ -1,0 +1,8 @@
+{
+  "name": "TradeSenseAI_Exam",
+  "description": "A high-end AI-powered trading platform featuring real-time signals, risk management, and a premium trading terminal for professional and beginner traders.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
