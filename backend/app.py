@@ -426,6 +426,18 @@ def get_live_news():
         print(f"Error fetching news: {e}")
         return jsonify({'message': 'Internal Server Error', 'error': str(e)}), 500
 
+@app.route('/api/debug/seed-academy', methods=['POST'])
+def debug_seed_academy():
+    """
+    Public Endpoint to trigger seeding of Academy content on Production.
+    (Protected by simple check or kept open for exam demo speed)
+    """
+    try:
+        seed_academy()
+        return jsonify({'message': 'Academy Seeded Successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 def seed_academy():
     print("Seeding FULL Academy Content...")
     
