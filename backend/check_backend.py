@@ -5,7 +5,7 @@ print("🔍 Checking backend server status...\n")
 
 # Check health endpoint
 try:
-    health_response = requests.get('https://faty2002.pythonanywhere.com/api/health', timeout=2)
+    health_response = requests.get('http://localhost:5000/api/health', timeout=2)
     print(f"✅ Health endpoint: {health_response.status_code}")
     print(f"   Response: {health_response.json()}\n")
 except Exception as e:
@@ -14,8 +14,8 @@ except Exception as e:
 
 # Check if auth endpoints exist
 endpoints_to_test = [
-    ('POST', 'https://faty2002.pythonanywhere.com/api/auth/login'),
-    ('POST', 'https://faty2002.pythonanywhere.com/api/auth/register'),
+    ('POST', 'http://localhost:5000/api/auth/login'),
+    ('POST', 'http://localhost:5000/api/auth/register'),
 ]
 
 for method, url in endpoints_to_test:
@@ -36,7 +36,7 @@ for method, url in endpoints_to_test:
 print("🔐 Testing login with test user...")
 try:
     login_response = requests.post(
-        'https://faty2002.pythonanywhere.com/api/auth/login',
+        'http://localhost:5000/api/auth/login',
         json={'email': 'admin@tradesense.com', 'password': 'admin123'},
         timeout=2
     )

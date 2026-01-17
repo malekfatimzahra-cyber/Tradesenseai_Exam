@@ -10,6 +10,9 @@ const MOCK_PASSWORDS: Record<string, string> = {
   'admin@tradesense.ai': 'headeradmin', // For the header quick login if needed
 };
 
+// Start using a dynamic base URL to handle both local dev (via proxy) and production
+const API_BASE = 'http://localhost:5000/api';
+
 interface PropFirmState {
   // Auth & Users
   currentUser: User | null;
@@ -161,7 +164,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
 
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/open', {
+      const res = await fetch(`${API_BASE}/trading/open`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -234,7 +237,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
         return;
       }
 
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/close', {
+      const res = await fetch(`${API_BASE}/trading/close`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -286,7 +289,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     const timeoutId = setTimeout(() => controller.abort(), 8000);
 
     try {
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/login', {
+      const res = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -338,7 +341,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     set({ isLoading: true, error: null });
 
     try {
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/register', {
+      const res = await fetch(`${API_BASE}/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -401,7 +404,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       await get().fetchCourses();
 
       // 2. Fetch active challenge from UNIFIED endpoint (garantit persistance SQL)
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/unified-payment/active-challenge', {
+      const res = await fetch(`${API_BASE}/unified-payment/active-challenge`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -492,7 +495,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       const token = localStorage.getItem('auth_token');
       if (!token) return;
 
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/auth/me', {
+      const res = await fetch(`${API_BASE}/auth/me`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -529,7 +532,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/admin/users', { headers: { 'Authorization': `Bearer ${token}` } });
+      const res = await fetch(`${API_BASE}/admin/users`, { headers: { 'Authorization': `Bearer ${token}` } });
       if (res.ok) {
         const data = await res.json();
         const users: User[] = data.map((u: any) => ({
@@ -549,7 +552,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   updateUserStatus: async (userId, status) => {
     try {
       const token = localStorage.getItem('auth_token');
-      await fetch(`https://faty2002.pythonanywhere.com/api/admin/users/${userId}/status`, {
+      await fetch(`${API_BASE}/admin/users/${userId}/status`, {
         method: 'POST',
         body: JSON.stringify({ status }),
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
@@ -561,7 +564,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   updateUserRole: async (userId, role) => {
     try {
       const token = localStorage.getItem('auth_token');
-      await fetch(`https://faty2002.pythonanywhere.com/api/admin/users/${userId}/role`, {
+      await fetch(`${API_BASE}/admin/users/${userId}/role`, {
         method: 'POST',
         body: JSON.stringify({ role }),
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
@@ -574,7 +577,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/account', {
+      const res = await fetch(`${API_BASE}/trading/account`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -601,7 +604,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
 
   fetchPlans: async () => {
     try {
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/challenges/plans');
+      const res = await fetch(`${API_BASE}/challenges/plans`);
       if (res.ok) {
         const json = await res.json();
         if (json.ok && json.data) {
@@ -616,7 +619,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
       const token = localStorage.getItem('auth_token');
       if (!token) return;
 
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/academy/courses', {
+      const res = await fetch(`${API_BASE}/academy/courses`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -641,7 +644,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/active', {
+      const res = await fetch(`${API_BASE}/trading/active`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -667,7 +670,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
     try {
       const token = localStorage.getItem('auth_token');
       if (!token) return;
-      const res = await fetch('https://faty2002.pythonanywhere.com/api/trading/history', {
+      const res = await fetch(`${API_BASE}/trading/history`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -694,7 +697,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   fetchAiSignals: async (asset) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/signals?asset=${asset}`, {
+      const res = await fetch(`${API_BASE}/ai-agency/signals?asset=${asset}`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -711,7 +714,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   fetchRiskCheck: async () => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/risk-check`, {
+      const res = await fetch(`${API_BASE}/ai-agency/risk-check`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -730,7 +733,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   validateTrade: async (trade) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/validate-trade`, {
+      const res = await fetch(`${API_BASE}/ai-agency/validate-trade`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -751,7 +754,7 @@ export const useStore = create<PropFirmState>((set, get) => ({
   explainPriceAction: async (asset, price, change) => {
     try {
       const token = localStorage.getItem('auth_token');
-      const res = await fetch(`https://faty2002.pythonanywhere.com/api/ai-agency/explain-price-action`, {
+      const res = await fetch(`${API_BASE}/ai-agency/explain-price-action`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

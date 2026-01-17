@@ -46,7 +46,7 @@ const GeminiChatWidget: React.FC = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('https://faty2002.pythonanywhere.com/api/gemini-chat', {
+            const response = await fetch('/api/gemini-chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: userMsg.content })

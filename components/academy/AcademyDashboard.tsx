@@ -57,7 +57,7 @@ const AcademyDashboard: React.FC = () => {
 
             try {
                 const token = localStorage.getItem('auth_token');
-                const apiBase = 'https://faty2002.pythonanywhere.com';
+                const apiBase = '';
 
                 // Build query params
                 const params = new URLSearchParams();

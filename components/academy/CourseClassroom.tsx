@@ -128,7 +128,7 @@ const CourseClassroom: React.FC = () => {
         setError(null);
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = 'https://faty2002.pythonanywhere.com';
+            const apiBase = '';
             const response = await fetch(`${apiBase}/api/academy/courses/${courseId}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -183,7 +183,7 @@ const CourseClassroom: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = 'https://faty2002.pythonanywhere.com';
+            const apiBase = '';
             const response = await fetch(`${apiBase}/api/academy/lessons/${currentLesson.id}/quiz`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -214,7 +214,7 @@ const CourseClassroom: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = 'https://faty2002.pythonanywhere.com';
+            const apiBase = '';
             const response = await fetch(`${apiBase}/api/academy/quizzes/submit`, {
                 method: 'POST',
                 headers: {

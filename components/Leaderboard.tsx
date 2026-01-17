@@ -37,7 +37,7 @@ const Leaderboard: React.FC = () => {
     const fetchLeaders = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`https://faty2002.pythonanywhere.com/api/community/leaderboard?period=${timeframe}`, {
+        const res = await fetch(`/api/community/leaderboard?period=${timeframe}`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
           }
@@ -375,6 +375,7 @@ const PodiumCard = ({ trader, rank, onClick }: { trader: EliteTrader; rank: numb
 };
 
 const TraderDrawer = ({ trader, onClose, isPremium }: { trader: EliteTrader; onClose: () => void; isPremium: boolean }) => {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose}></div>

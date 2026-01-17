@@ -19,10 +19,15 @@ from flask_cors import CORS
 # ... imports ...
 
 app = Flask(__name__)
-CORS(app)
+# Enable CORS for all domains (Production ready for Vercel/Anywhere)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+@app.route('/')
+def home():
+    return "Hello from Backend!", 200
 
 # --- MODIFICATION DE LA BASE DE DONNÉES ---
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://root:password@localhost/tradesense')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://root:2002@localhost/tradesense')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev_secret_key')
 

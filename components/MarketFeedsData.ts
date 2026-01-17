@@ -1,7 +1,7 @@
 
 import { AssetPrice, Market } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://faty2002.pythonanywhere.com';
+const API_BASE = '';
 
 type ApiMarket = 'US' | 'MA';
 
