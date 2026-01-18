@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from models import db, User, UserRole, ChallengeStatus, Account, Trade, TradeType, TradeStatus, Course, Module, Lesson, Quiz, Question, Option, CourseCategory, CourseLevel, Badge, UserBadge, UserXP, UserLessonProgress, UserCourseProgress
+from models import db, User, UserRole, ChallengeStatus, Account, Trade, TradeType, TradeStatus, Course, Module, Lesson, Quiz, Question, Option, CourseCategory, CourseLevel, Badge, UserBadge, UserXP, UserLessonProgress, UserCourseProgress, Leaderboard, PerformanceSnapshot, AdminActionLog
 from engine import evaluate_challenge_rules
 import jwt
 import datetime
@@ -425,6 +425,59 @@ def get_live_news():
     except Exception as e:
         print(f"Error fetching news: {e}")
         return jsonify({'message': 'Internal Server Error', 'error': str(e)}), 500
+
+@app.route('/api/debug/seed-leaderboard', methods=['POST'])
+def debug_seed_leaderboard():
+    """Seeds fake leaderboard data for demo/production"""
+    try:
+        import json
+        
+        # Elite Traders Data
+        elite_traders = [
+            {"username": "AtlasTrader_MA", "fullname": "Karim Benali", "country": "MA", "plan": "Elite $100k", "initial": 100000, "equity": 124500, "status": ChallengeStatus.FUNDED, "badges": ["Elite", "Sniper", "Risk Manager"], "win_rate": 78.5, "roi": 24.5, "consistency": 92, "risk_score": 9.5},
+            {"username": "SarahFX", "fullname": "Sarah Connor", "country": "US", "plan": "Pro $200k", "initial": 200000, "equity": 238000, "status": ChallengeStatus.FUNDED, "badges": ["Consistent", "Shark"], "win_rate": 65.2, "roi": 19.0, "consistency": 88, "risk_score": 8.0},
+            {"username": "TokyoDrift", "fullname": "Kenji Sato", "country": "JP", "plan": "Starter $50k", "initial": 50000, "equity": 58200, "status": ChallengeStatus.FUNDED, "badges": ["Algo", "disciplined"], "win_rate": 81.0, "roi": 16.4, "consistency": 95, "risk_score": 9.8},
+            {"username": "EuroKing", "fullname": "Hans Zimmer", "country": "DE", "plan": "Elite $100k", "initial": 100000, "equity": 112000, "status": ChallengeStatus.PASSED, "badges": ["Funded"], "win_rate": 55.5, "roi": 12.0, "consistency": 70, "risk_score": 6.5},
+            {"username": "DubaiWhale", "fullname": "Ahmed Al-Maktoum", "country": "AE", "plan": "VIP $500k", "initial": 500000, "equity": 545000, "status": ChallengeStatus.ACTIVE, "badges": ["VIP", "Whale"], "win_rate": 60.0, "roi": 9.0, "consistency": 85, "risk_score": 7.5}
+        ]
+
+        # Loop to create users and leaderboard entries
+        for i, trader_data in enumerate(elite_traders):
+            user = User.query.filter_by(username=trader_data['username']).first()
+            if not user:
+                user = User(username=trader_data['username'], full_name=trader_data['fullname'], email=f"{trader_data['username'].lower()}@tradesense.ai", role=UserRole.USER)
+                user.set_password("password123")
+                db.session.add(user)
+                db.session.commit()
+            
+            # Create Account if not exists
+            account = Account(user_id=user.id, plan_name=trader_data['plan'], initial_balance=trader_data['initial'], current_balance=trader_data['equity'], equity=trader_data['equity'], status=trader_data['status'], created_at=datetime.datetime.utcnow() - datetime.timedelta(days=random.randint(30, 90)))
+            db.session.add(account)
+            db.session.commit()
+
+            # Create Leaderboard Entry (ALL_TIME)
+            snapshots_json = [] # Simplified for inline
+            steps = 20
+            current_eq = trader_data['initial']
+            step_val = (trader_data['equity'] - current_eq) / steps
+            for d in range(steps):
+                current_eq += step_val + (random.uniform(-step_val * 0.5, step_val * 1.5) * 0.2)
+                snapshots_json.append(current_eq)
+            snapshots_json.append(trader_data['equity'])
+
+            lb_entry = Leaderboard(
+                user_id=user.id, account_id=account.id, username=user.username, country=trader_data['country'],
+                profit=trader_data['equity'] - trader_data['initial'], roi=trader_data['roi'], win_rate=trader_data['win_rate'],
+                funded_amount=trader_data['initial'], consistency_score=trader_data['consistency'], risk_score=trader_data['risk_score'],
+                ranking=i + 1, period='ALL_TIME', badges=json.dumps(trader_data['badges']), equity_curve=json.dumps(snapshots_json)
+            )
+            db.session.add(lb_entry)
+            db.session.commit()
+
+        return jsonify({'message': 'Leaderboard Seeded Successfully'}), 200
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/debug/seed-academy', methods=['POST'])
 def debug_seed_academy():

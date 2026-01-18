@@ -128,7 +128,7 @@ const CourseClassroom: React.FC = () => {
         setError(null);
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = '';
+            const apiBase = 'https://faty2002.pythonanywhere.com';
             const response = await fetch(`${apiBase}/api/academy/courses/${courseId}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
