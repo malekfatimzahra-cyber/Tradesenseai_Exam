@@ -104,8 +104,9 @@ from middleware import token_required
 #     token = jwt.encode({'user_id': user.id, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, app.config['SECRET_KEY'])
 #     return jsonify({'token': token, 'user': user.to_dict()})
 
+# --- Health Check ---
 @app.route('/api/health', methods=['GET'])
-def health():
+def health_check():
     return jsonify({'status': 'ok'}), 200
 
 # --- Module A: Challenge & Trade Routes ---

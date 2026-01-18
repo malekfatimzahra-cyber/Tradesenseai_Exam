@@ -11,7 +11,8 @@ const MOCK_PASSWORDS: Record<string, string> = {
 };
 
 // Standard local development URL
-export const API_BASE = 'http://localhost:5000/api';
+// Use relative path to leverage Vite Proxy in dev, and work naturally in prod
+export const API_BASE = window.location.origin.includes('localhost') ? '/api' : '/api';
 
 interface PropFirmState {
   // Auth & Users
