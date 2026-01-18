@@ -1,5 +1,9 @@
 from flask import Blueprint, request, jsonify
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+    HAS_GENAI = True
+except ImportError:
+    HAS_GENAI = False
 import os
 
 gemini_chat_bp = Blueprint('gemini_chat', __name__)
@@ -38,6 +42,9 @@ def gemini_chat():
     # --------------------------------------
 
     try:
+        if not HAS_GENAI:
+            raise ImportError("Google Generative AI library not installed.")
+            
         genai.configure(api_key=api_key)
         model = genai.GenerativeModel('gemini-pro')
         

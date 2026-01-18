@@ -479,7 +479,10 @@ def debug_seed_leaderboard():
         return jsonify({'message': 'Leaderboard Seeded Successfully'}), 200
     except Exception as e:
         db.session.rollback()
-        return jsonify({'error': str(e)}), 500
+        import traceback
+        error_details = traceback.format_exc()
+        print("LEADERBOARD SEED ERROR:", error_details)
+        return jsonify({'error': str(e), 'traceback': error_details}), 500
 
 @app.route('/api/debug/seed-academy', methods=['POST'])
 def debug_seed_academy():
@@ -488,10 +491,14 @@ def debug_seed_academy():
     (Protected by simple check or kept open for exam demo speed)
     """
     try:
+        import traceback
         seed_academy()
         return jsonify({'message': 'Academy Seeded Successfully'}), 200
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        import traceback
+        error_details = traceback.format_exc()
+        print("SEEDING ERROR:", error_details)
+        return jsonify({'error': str(e), 'traceback': error_details}), 500
 
 def seed_academy():
     print("Seeding FULL Academy Content...")

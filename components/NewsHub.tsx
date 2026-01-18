@@ -103,7 +103,7 @@ const NewsHub: React.FC = () => {
     setIsNewsLoading(true);
     setNewsError('');
     try {
-      const response = await fetch('/api/news/live');
+      const response = await fetch('https://faty2002.pythonanywhere.com/api/news/live');
       if (!response.ok) {
         throw new Error('Failed to fetch news');
       }
