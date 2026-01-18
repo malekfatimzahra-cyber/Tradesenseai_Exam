@@ -32,6 +32,40 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev_secret_key')
 
 db.init_app(app)
 
+# Create tables if they don't exist
+with app.app_context():
+    try:
+        db.create_all()
+        print("✅ Database tables initialized.")
+        
+        # Basic Seeding if empty
+        if User.query.count() == 0:
+            print("🌱 Seeding initial data...")
+            # Create a default admin/user
+            admin = User(
+                full_name="Admin TradeSense",
+                email="malekfatimzahra@gmail.com",
+                username="admin",
+                role=UserRole.ADMIN
+            )
+            admin.set_password("admin123")
+            
+            test_user = User(
+                full_name="Test User",
+                email="test@tradesense.com",
+                username="testuser",
+                role=UserRole.USER
+            )
+            test_user.set_password("user123")
+            
+            db.session.add(admin)
+            db.session.add(test_user)
+            db.session.commit()
+            print("✅ Initial seeding complete.")
+
+    except Exception as e:
+        print(f"❌ Error initializing tables: {e}")
+
 from payments import payments_bp
 from challenges import challenges_bp
 from market_data import market_bp
