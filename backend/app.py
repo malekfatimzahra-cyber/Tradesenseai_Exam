@@ -61,7 +61,9 @@ app.register_blueprint(ai_analysis_bp, url_prefix='/api')
 app.register_blueprint(gemini_chat_bp, url_prefix='/api')
 app.register_blueprint(mock_payment_bp, url_prefix='/api')
 app.register_blueprint(paypal_config_bp, url_prefix='/api/paypal')
+from unified_payment import unified_payment_bp
 app.register_blueprint(payment_bp, url_prefix='/api/payment')
+app.register_blueprint(unified_payment_bp, url_prefix='/api/unified-payment')
 
 from user_routes import user_bp
 app.register_blueprint(user_bp, url_prefix='/api/users')
