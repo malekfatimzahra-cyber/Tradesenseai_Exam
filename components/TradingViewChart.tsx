@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { createChart, ColorType, IChartApi, ISeriesApi } from 'lightweight-charts';
+import { API_BASE } from '../store';
 
 interface ChartProps {
     symbol: string;
@@ -32,7 +33,7 @@ const TradingViewWidget: React.FC<{ symbol: string }> = ({ symbol }) => {
 
 // 2. Lightweight Chart Component (Encapsulates all the local chart logic)
 const LightweightChart: React.FC<ChartProps> = ({ symbol, colors = {}, marketType }) => {
-    const apiBase = '';
+    const apiBase = API_BASE.endsWith('/') ? API_BASE.slice(0, -1) : API_BASE;
     const chartContainerRef = useRef<HTMLDivElement>(null);
     const chartRef = useRef<IChartApi | null>(null);
     const seriesRef = useRef<ISeriesApi<"Candlestick"> | null>(null);
@@ -70,7 +71,7 @@ const LightweightChart: React.FC<ChartProps> = ({ symbol, colors = {}, marketTyp
     // Fetch historical data
     const fetchHistoricalData = async () => {
         try {
-            const response = await fetch(`/api/market/history/${encodeURIComponent(symbol)}`);
+            const response = await fetch(`${apiBase}/market/history/${encodeURIComponent(symbol)}`);
             const result = await response.json();
 
             if (result.data && seriesRef.current) {
@@ -171,7 +172,7 @@ const LightweightChart: React.FC<ChartProps> = ({ symbol, colors = {}, marketTyp
         if (initError || !seriesRef.current) return;
 
         const interval = setInterval(async () => {
-            const endpoint = marketType === 'MA' ? '/api/market/ma' : '/api/market/us';
+            const endpoint = marketType === 'MA' ? '/market/ma' : '/market/us';
             try {
                 const response = await fetch(`${apiBase}${endpoint}?symbol=${encodeURIComponent(symbol)}`);
                 const data = await response.json();

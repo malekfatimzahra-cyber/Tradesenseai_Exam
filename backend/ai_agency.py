@@ -18,7 +18,7 @@ def get_gemini_model():
 @ai_agency_bp.route('/signals', methods=['GET'])
 @token_required
 def get_ai_signals(current_user):
-    asset = request.args.get('asset', 'BTC-USD')
+    asset = request.args.get('asset', 'BTC-USD').replace('/', '-')
     # Fetch last 3 signals for this asset
     signals = MarketSignal.query.filter_by(asset=asset).order_by(MarketSignal.created_at.desc()).limit(3).all()
     
@@ -77,7 +77,7 @@ def get_ai_signals(current_user):
 @ai_agency_bp.route('/trade-plan', methods=['GET'])
 @token_required
 def get_trade_plan(current_user):
-    asset = request.args.get('asset', 'BTC-USD')
+    asset = request.args.get('asset', 'BTC-USD').replace('/', '-')
     model = get_gemini_model()
     if not model:
         return jsonify({'message': 'AI service unavailable'}), 503
@@ -146,7 +146,7 @@ def run_risk_check(current_user):
 @token_required
 def validate_trade(current_user):
     data = request.json
-    asset = data.get('asset')
+    asset = data.get('asset', 'BTC-USD').replace('/', '-')
     side = data.get('type')
     amount = float(data.get('amount', 0))
     entry = float(data.get('entry', 0))
@@ -200,11 +200,57 @@ def validate_trade(current_user):
         print(f"Validation Error: {e}")
         return jsonify({'status': 'APPROVED', 'message': 'System Bypass'})
 
+@ai_agency_bp.route('/evaluate', methods=['POST'])
+@token_required
+def evaluate_trader(current_user):
+    data = request.json
+    history = data.get('history', [])
+    account_data = data.get('account', {})
+    
+    model = get_gemini_model()
+    if not model:
+        # Mock Response if AI offline
+        return jsonify({
+            "disciplineScore": 85,
+            "riskRating": "B+",
+            "feedback": "Consistent performance. Minimize over-leveraging during high volatility sessions.",
+            "suggestedLessonId": "risk-101"
+        })
+
+    prompt = f"""
+    Act as a Prop Firm Risk Manager. Evaluate this trader's performance:
+    - History: {history[:20]} (Showing last 20 trades)
+    - Account: {account_data}
+    
+    Analyze their risk management, consistency, and discipline.
+    Provide ONLY a JSON response:
+    {{
+        "disciplineScore": number (0-100),
+        "riskRating": "A" | "B" | "C" | "D" | "F",
+        "feedback": "string (max 30 words)",
+        "suggestedLessonId": "string"
+    }}
+    """
+    
+    try:
+        response = model.generate_content(prompt)
+        text = response.text.replace("```json", "").replace("```", "").strip()
+        import json
+        return jsonify(json.loads(text))
+    except Exception as e:
+        return jsonify({
+            "disciplineScore": 70,
+            "riskRating": "C",
+            "feedback": "Analysis failed, but keep following your stop loss rules.",
+            "suggestedLessonId": "psychology-1"
+        })
+
 @ai_agency_bp.route('/explain-price-action', methods=['POST'])
 @token_required
 def explain_price_action(current_user):
+# ... (rest of the file)
     data = request.json
-    asset = data.get('asset', 'BTC-USD')
+    asset = data.get('asset', 'BTC-USD').replace('/', '-')
     change = data.get('change', 0)
     price = data.get('price', 0)
     

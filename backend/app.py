@@ -12,12 +12,6 @@ import os
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 load_dotenv() # Fallback to .env
 
-import os
-from flask import Flask, jsonify, request
-from flask_cors import CORS
-
-# ... imports ...
-
 app = Flask(__name__)
 # Enable CORS for all domains (Production ready for Vercel/Anywhere)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -27,7 +21,12 @@ def home():
     return "Hello from Backend!", 200
 
 # --- MODIFICATION DE LA BASE DE DONNÉES ---
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://root:2002@localhost/tradesense')
+db_url = os.getenv('DATABASE_URL', 'mysql+pymysql://root:2002@localhost/tradesense')
+# SQLAlchemy requires mysql+pymysql:// instead of just mysql://
+if db_url and db_url.startswith('mysql://'):
+    db_url = db_url.replace('mysql://', 'mysql+pymysql://', 1)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev_secret_key')
 

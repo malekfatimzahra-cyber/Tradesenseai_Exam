@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { API_BASE } from '../store';
 
 type AIAnalysis = {
     symbol: string;
@@ -30,9 +31,10 @@ export default function AITradingAssistant({ symbol }: Props) {
         try {
             // Remove slashes from symbol (Flask doesn't handle encoded slashes well in routes)
             const cleanSymbol = symbol.replace(/\//g, '');
-            // console.log('Fetching AI analysis for symbol:', symbol, 'cleaned:', cleanSymbol);
 
-            const response = await fetch(`/api/ai-analysis/${cleanSymbol}`);
+            // Construct full URL using API_BASE
+            const baseUrl = API_BASE.endsWith('/') ? API_BASE.slice(0, -1) : API_BASE;
+            const response = await fetch(`${baseUrl}/ai-analysis/${cleanSymbol}`);
 
             // console.log('AI Analysis response status:', response.status);
 

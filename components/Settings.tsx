@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { usePreferencesStore, Theme, Language } from '../preferencesStore';
-import { useStore } from '../store';
+import { useStore, API_BASE } from '../store';
 import { Dialog, Transition } from '@headlessui/react';
 import {
   User, Shield, Sliders, Palette, Bell,
@@ -167,7 +167,8 @@ const Settings: React.FC = () => {
       // 1. Call Backend (best effort)
       const token = localStorage.getItem('auth_token');
       if (token) {
-        await fetch('/api/auth/logout', {
+        const baseUrl = API_BASE.endsWith('/') ? API_BASE.slice(0, -1) : API_BASE;
+        await fetch(`${baseUrl}/auth/logout`, {
           method: 'POST',
           headers: { 'Authorization': `Bearer ${token}` }
         }).catch(() => { }); // Ignore errors if backend endpoint missing

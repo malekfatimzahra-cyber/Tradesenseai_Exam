@@ -1,43 +1,34 @@
-
-import { GoogleGenAI, Type } from "@google/genai";
-import { Trade, AIPropEvaluation, TradingAccount, TradingSignal, NewsItem, Course } from "./types";
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+import { API_BASE } from "./store";
+import { Trade, AIPropEvaluation, TradingSignal, NewsItem } from "./types";
 
 // AI evaluation of trader performance
-export const evaluatePropTrader = async (history: Trade[], account: TradingAccount): Promise<AIPropEvaluation> => {
-  const winRate = history.length > 0 ? (history.filter(t => (t.pnl || 0) > 0).length / history.length) * 100 : 0;
-  const avgPnl = history.length > 0 ? history.reduce((acc, t) => acc + (t.pnl || 0), 0) / history.length : 0;
-  
-  const prompt = `Act as a Prop Firm Risk Manager. Evaluate this trader's performance:
-    - Total Trades: ${history.length}
-    - Win Rate: ${winRate.toFixed(1)}%
-    - Average PnL: $${avgPnl.toFixed(2)}
-    - Current Account Status: ${account.status}
-    - Initial Balance: $${account.initialBalance}
-    - Current Balance: $${account.currentBalance}
-    
-    Analyze their risk management, consistency, and discipline. Provide a score (0-100) and a grade (A-F).`;
+export const evaluatePropTrader = async (history: Trade[], account: any): Promise<AIPropEvaluation> => {
+  try {
+    const token = localStorage.getItem('auth_token');
+    const baseUrl = API_BASE.endsWith('/') ? API_BASE.slice(0, -1) : API_BASE;
+    const response = await fetch(`${baseUrl}/ai-agency/evaluate`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ history, account })
+    });
 
-  const response = await ai.models.generateContent({
-    model: 'gemini-3-flash-preview',
-    contents: prompt,
-    config: {
-      responseMimeType: "application/json",
-      responseSchema: {
-        type: Type.OBJECT,
-        properties: {
-          disciplineScore: { type: Type.NUMBER },
-          riskRating: { type: Type.STRING },
-          feedback: { type: Type.STRING },
-          suggestedLessonId: { type: Type.STRING }
-        },
-        required: ["disciplineScore", "riskRating", "feedback"]
-      }
+    if (response.ok) {
+      return await response.json();
     }
-  });
+  } catch (e) {
+    console.error("Evaluation error", e);
+  }
 
-  return JSON.parse(response.text);
+  // Fallback
+  return {
+    disciplineScore: 75,
+    riskRating: 'B',
+    feedback: 'Keep maintaining consistent position sizes.',
+    suggestedLessonId: 'risk-1'
+  };
 };
 
 // Added missing generateAISignal function

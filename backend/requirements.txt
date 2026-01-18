@@ -14,4 +14,3 @@ python-dotenv
 pymysql
 cryptography
 gunicorn
-mysql-connector-python
