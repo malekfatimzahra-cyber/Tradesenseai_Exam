@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, Send, X, MessageCircle, Bot, User, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { API_BASE } from '../store';
 
 interface Message {
     id: string;
@@ -46,7 +47,7 @@ const GeminiChatWidget: React.FC = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('https://faty2002.pythonanywhere.com/api/gemini-chat', {
+            const response = await fetch(`${API_BASE}/gemini-chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: userMsg.content })

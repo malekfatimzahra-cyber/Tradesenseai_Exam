@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import db, Course, Module, Lesson, Quiz, Question, Option, UserLessonProgress, UserCourseProgress, UserXP, UserBadge, Badge, UserQuizAttempt
+from models import db, Course, Module, Lesson, Quiz, Question, Option, UserLessonProgress, UserCourseProgress, UserXP, UserBadge, Badge, UserQuizAttempt, UserQuizAnswer
 from middleware import token_required
 import datetime
 from sqlalchemy import text
@@ -386,6 +386,24 @@ def submit_quiz(current_user, quiz_id):
         attempt_number=attempt_count + 1
     )
     db.session.add(attempt)
+    db.session.flush() # Get attempt ID
+
+    # Save detailed answers
+    for res in results:
+        # res has: question_id, is_correct, explanation
+        # we need selected_option_id
+        # user_answers key might be string or int
+        q_id_str = str(res['question_id'])
+        q_id_int = res['question_id']
+        selected_opt_id = user_answers.get(q_id_str) or user_answers.get(q_id_int)
+        
+        answer_record = UserQuizAnswer(
+            attempt_id=attempt.id,
+            question_id=res['question_id'],
+            selected_option_id=int(selected_opt_id) if selected_opt_id else None,
+            is_correct=res['is_correct']
+        )
+        db.session.add(answer_record)
     
     if passed:
         award_xp(current_user.id, 100)
@@ -404,3 +422,19 @@ def submit_quiz(current_user, quiz_id):
         'results': results,
         'message': 'Success!' if passed else 'You failed. Try again.'
     }), 200
+
+@academy_bp.route('/quizzes/<int:quiz_id>/attempts', methods=['GET'])
+@token_required
+def get_quiz_attempts(current_user, quiz_id):
+    """Get history of attempts for a quiz"""
+    attempts = UserQuizAttempt.query.filter_by(
+        user_id=current_user.id, 
+        quiz_id=quiz_id
+    ).order_by(UserQuizAttempt.created_at.desc()).all()
+    
+    return jsonify([{
+        'id': a.id,
+        'score': a.score,
+        'passed': a.passed,
+        'date': a.created_at.isoformat()
+    } for a in attempts]), 200

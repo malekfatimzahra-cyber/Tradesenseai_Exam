@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Newspaper, Bot, Calendar, TrendingUp, TrendingDown, Minus, Sparkles, RefreshCw, AlertCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { API_BASE } from '../store';
 
 // Types
 interface NewsItem {
@@ -103,7 +104,7 @@ const NewsHub: React.FC = () => {
     setIsNewsLoading(true);
     setNewsError('');
     try {
-      const response = await fetch('https://faty2002.pythonanywhere.com/api/news/live');
+      const response = await fetch(`${API_BASE}/news/live`);
       if (!response.ok) {
         throw new Error('Failed to fetch news');
       }

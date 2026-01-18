@@ -10,8 +10,8 @@ const MOCK_PASSWORDS: Record<string, string> = {
   'admin@tradesense.ai': 'headeradmin', // For the header quick login if needed
 };
 
-// Start using a dynamic base URL to handle both local dev (via proxy) and production
-const API_BASE = 'https://faty2002.pythonanywhere.com/api';
+// Standard local development URL
+export const API_BASE = 'http://localhost:5000/api';
 
 interface PropFirmState {
   // Auth & Users

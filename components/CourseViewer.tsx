@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronDown, CheckCircle, PlayCircle, Trophy, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Quiz from './academy/Quiz';
+import { API_BASE } from '../store';
 
 interface Lesson {
     id: number;
@@ -61,7 +62,7 @@ const CourseViewer: React.FC = () => {
         setLoading(true);
         try {
             const token = localStorage.getItem('auth_token');
-            const res = await fetch(`https://faty2002.pythonanywhere.com/api/academy/courses/${courseId}`, {
+            const res = await fetch(`${API_BASE}/academy/courses/${courseId}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -104,13 +105,13 @@ const CourseViewer: React.FC = () => {
             }
         }
 
-        if (foundLesson) {
+        if (foundLesson && foundLesson.content) {
             setActiveLesson(foundLesson);
         } else {
-            // Fetch if not found (fallback)
+            // Fetch if not found or if content is missing (structure only has metadata)
             try {
                 const token = localStorage.getItem('auth_token');
-                const res = await fetch(`/api/academy/lesson/${lessonId}`, {
+                const res = await fetch(`${API_BASE}/academy/lesson/${lessonId}`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 if (res.ok) {
@@ -128,7 +129,7 @@ const CourseViewer: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const res = await fetch(`/api/academy/lessons/${selectedLessonId}/complete`, {
+            const res = await fetch(`${API_BASE}/academy/lessons/${selectedLessonId}/complete`, {
                 method: 'POST',
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -188,16 +189,35 @@ const CourseViewer: React.FC = () => {
         }
     };
 
-    const handleStartModuleQuiz = (moduleId: number) => {
+    const handleStartModuleQuiz = async (moduleId: number) => {
         const mod = course?.modules.find(m => m.id === moduleId);
-        if (mod && mod.module_quiz) {
-            setActiveQuizTitle(mod.title);
-            setActiveQuizQuestions(mod.module_quiz);
-            setActiveQuizId(mod.quiz_id || null);
-            setActiveModuleId(moduleId);
-            setViewMode('MODULE_QUIZ');
-            setSelectedLessonId(null);
-            setActiveLesson(null);
+        if (mod && mod.quiz_id) {
+            setLoading(true);
+            try {
+                const token = localStorage.getItem('auth_token');
+                // Fetch the full quiz details including questions
+                const res = await fetch(`${API_BASE}/academy/modules/${moduleId}/quiz`, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+
+                if (res.ok) {
+                    const quizData = await res.json();
+
+                    setActiveQuizTitle(quizData.title);
+                    setActiveQuizQuestions(quizData.questions);
+                    setActiveQuizId(quizData.id);
+                    setActiveModuleId(moduleId);
+                    setViewMode('MODULE_QUIZ');
+                    setSelectedLessonId(null);
+                    setActiveLesson(null);
+                } else {
+                    console.error("Failed to load quiz");
+                }
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setLoading(false);
+            }
         }
     };
 
@@ -207,7 +227,7 @@ const CourseViewer: React.FC = () => {
         try {
             const token = localStorage.getItem('auth_token');
             // We need to pass the answers to the backend for persistence as requested
-            const res = await fetch(`/api/academy/quizzes/${activeQuizId}/submit`, {
+            const res = await fetch(`${API_BASE}/academy/quizzes/${activeQuizId}/submit`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -303,7 +323,7 @@ const CourseViewer: React.FC = () => {
                                         </button>
                                     ))}
 
-                                    {mod.module_quiz && (
+                                    {mod.quiz_id && (
                                         <button
                                             onClick={() => handleStartModuleQuiz(mod.id)}
                                             className={`flex items-center w-full p-2.5 text-xs font-bold rounded-lg mt-2 transition-all

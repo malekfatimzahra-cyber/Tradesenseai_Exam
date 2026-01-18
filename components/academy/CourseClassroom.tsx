@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { API_BASE } from '../../store';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -128,8 +129,7 @@ const CourseClassroom: React.FC = () => {
         setError(null);
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = 'https://faty2002.pythonanywhere.com';
-            const response = await fetch(`${apiBase}/api/academy/courses/${courseId}`, {
+            const response = await fetch(`${API_BASE}/academy/courses/${courseId}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -183,8 +183,7 @@ const CourseClassroom: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = '';
-            const response = await fetch(`${apiBase}/api/academy/lessons/${currentLesson.id}/quiz`, {
+            const response = await fetch(`${API_BASE}/academy/lessons/${currentLesson.id}/quiz`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -214,8 +213,7 @@ const CourseClassroom: React.FC = () => {
 
         try {
             const token = localStorage.getItem('auth_token');
-            const apiBase = '';
-            const response = await fetch(`${apiBase}/api/academy/quizzes/submit`, {
+            const response = await fetch(`${API_BASE}/academy/quizzes/submit`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

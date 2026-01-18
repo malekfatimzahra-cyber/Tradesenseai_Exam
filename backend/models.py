@@ -537,6 +537,16 @@ class UserQuizAttempt(db.Model): # New
     attempt_number = db.Column(db.Integer, default=1)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
+    answers = db.relationship('UserQuizAnswer', backref='attempt', lazy=True, cascade="all, delete-orphan")
+
+class UserQuizAnswer(db.Model):
+    __tablename__ = 'user_quiz_answers'
+    id = db.Column(db.Integer, primary_key=True)
+    attempt_id = db.Column(db.Integer, db.ForeignKey('user_quiz_attempts.id'), nullable=False)
+    question_id = db.Column(db.Integer, db.ForeignKey('questions.id'), nullable=False)
+    selected_option_id = db.Column(db.Integer, db.ForeignKey('options.id'), nullable=True)
+    is_correct = db.Column(db.Boolean, default=False)
+
 class UserBadge(db.Model):
     __tablename__ = 'user_badges'
     id = db.Column(db.Integer, primary_key=True)
@@ -756,3 +766,54 @@ class UserPreferences(db.Model):
             'currency': self.currency,
             'notifications_enabled': self.notifications_enabled
         }
+
+class CourseTranslation(db.Model):
+    __tablename__ = 'course_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    course_id = db.Column(db.Integer, db.ForeignKey('courses.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    title = db.Column(db.String(255), nullable=False)
+    description = db.Column(db.Text, nullable=True)
+    __table_args__ = (db.UniqueConstraint('course_id', 'lang', name='unique_course_lang'),)
+
+class ModuleTranslation(db.Model):
+    __tablename__ = 'module_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    module_id = db.Column(db.Integer, db.ForeignKey('modules.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    title = db.Column(db.String(255), nullable=False)
+    __table_args__ = (db.UniqueConstraint('module_id', 'lang', name='unique_module_lang'),)
+
+class LessonTranslation(db.Model):
+    __tablename__ = 'lesson_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    lesson_id = db.Column(db.Integer, db.ForeignKey('lessons.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    title = db.Column(db.String(255), nullable=False)
+    content = db.Column(db.Text, nullable=True)
+    __table_args__ = (db.UniqueConstraint('lesson_id', 'lang', name='unique_lesson_lang'),)
+
+class QuizTranslation(db.Model):
+    __tablename__ = 'quiz_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    quiz_id = db.Column(db.Integer, db.ForeignKey('quizzes.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    title = db.Column(db.String(150), nullable=True)
+    __table_args__ = (db.UniqueConstraint('quiz_id', 'lang', name='unique_quiz_lang'),)
+
+class QuestionTranslation(db.Model):
+    __tablename__ = 'question_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, db.ForeignKey('questions.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    text = db.Column(db.Text, nullable=False)
+    explanation = db.Column(db.Text, nullable=True)
+    __table_args__ = (db.UniqueConstraint('question_id', 'lang', name='unique_question_lang'),)
+
+class OptionTranslation(db.Model):
+    __tablename__ = 'option_translations'
+    id = db.Column(db.Integer, primary_key=True)
+    option_id = db.Column(db.Integer, db.ForeignKey('options.id', ondelete='CASCADE'), nullable=False)
+    lang = db.Column(db.String(2), nullable=False)
+    text = db.Column(db.String(200), nullable=False)
+    __table_args__ = (db.UniqueConstraint('option_id', 'lang', name='unique_option_lang'),)

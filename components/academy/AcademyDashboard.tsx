@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useStore } from '../../store';
+import { useStore, API_BASE } from '../../store';
 
 // Types
 interface Course {
@@ -57,7 +57,6 @@ const AcademyDashboard: React.FC = () => {
 
             try {
                 const token = localStorage.getItem('auth_token');
-                const apiBase = 'https://faty2002.pythonanywhere.com';
 
                 // Build query params
                 const params = new URLSearchParams();
@@ -68,7 +67,7 @@ const AcademyDashboard: React.FC = () => {
                 // Wait, let's check if I can easily get i18n instance.
 
 
-                const response = await fetch(`${apiBase}/api/academy/courses?${params.toString()}`, {
+                const response = await fetch(`${API_BASE}/academy/courses?${params.toString()}`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
 
