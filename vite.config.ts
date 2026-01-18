@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
       proxy: {
         '/api': {
-          target: 'http://127.0.0.1:5000',
+          target: 'https://tradesenseai-exam.onrender.com',
           changeOrigin: true,
           secure: false,
         },

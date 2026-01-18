@@ -11,8 +11,8 @@ const MOCK_PASSWORDS: Record<string, string> = {
 };
 
 // Standard local development URL
-// Use relative path to leverage Vite Proxy in dev, and work naturally in prod
-export const API_BASE = window.location.origin.includes('localhost') ? '/api' : '/api';
+// Production Render Backend URL
+export const API_BASE = 'https://tradesenseai-exam.onrender.com/api';
 
 interface PropFirmState {
   // Auth & Users
