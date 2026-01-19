@@ -1,7 +1,5 @@
-
 import { AssetPrice, Market } from '../types';
-
-const API_BASE = '';
+import { API_BASE } from '../store';
 
 type ApiMarket = 'US' | 'MA';
 

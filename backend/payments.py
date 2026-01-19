@@ -136,8 +136,8 @@ def create_paypal_payment(current_user):
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                "return_url": f"https://tradesenseai-exam.onrender.com/api/payments/paypal/execute?user_id={current_user.id}&plan={plan_id}",
-                "cancel_url": "https://tradesenseai-exam.onrender.com/api/payments/paypal/cancel"
+                "return_url": f"http://localhost:5000/api/payments/paypal/execute?user_id={current_user.id}&plan={plan_id}",
+                "cancel_url": "http://localhost:5000/api/payments/paypal/cancel"
             },
             "transactions": [{
                 "item_list": {

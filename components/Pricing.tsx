@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useStore } from '../store';
+import { useStore, API_BASE } from '../store';
 import { useTranslation } from 'react-i18next';
 import PaymentModal from './PaymentModal';
 
@@ -15,7 +15,7 @@ const Pricing: React.FC = () => {
 
   // Check PayPal Availability
   React.useEffect(() => {
-    fetch('/api/payments/paypal-availability')
+    fetch(`${API_BASE}/payments/paypal-availability`)
       .then(res => res.json())
       .then(data => setPaypalEnabled(data.enabled))
       .catch(err => console.error("Failed to check PayPal status", err));

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CreditCard, CheckCircle, Loader, Wallet } from 'lucide-react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
+import { API_BASE } from '../store';
 
 interface PaymentModalProps {
     isOpen: boolean;
@@ -26,7 +27,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, challenge,
     // Fetch PayPal Config on Open
     useEffect(() => {
         if (isOpen) {
-            fetch('/api/paypal/status')
+            fetch(`${API_BASE}/paypal/status`)
                 .then(res => res.json())
                 .then(data => {
                     if (data.enabled && data.client_id) {
@@ -54,7 +55,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, challenge,
         setIsProcessing(true);
         try {
             const token = localStorage.getItem('auth_token');
-            const response = await fetch('/api/payment/success', {
+            const response = await fetch(`${API_BASE}/payment/success`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -96,7 +97,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, challenge,
             const token = localStorage.getItem('auth_token');
 
             // 2. Call Mock Backend
-            const response = await fetch('/api/mock-payment', {
+            const response = await fetch(`${API_BASE}/mock-payment`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

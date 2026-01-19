@@ -4,7 +4,7 @@ import {
     Filter, ChevronLeft, ChevronRight, Shield, RefreshCw
 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
-import { useStore } from '../store';
+import { useStore, API_BASE } from '../store';
 
 // Types
 interface Challenge {
@@ -50,7 +50,7 @@ const AdminDashboard: React.FC = () => {
         const fetchStats = async () => {
             try {
                 // Use Admin Key directly for instant access
-                const res = await fetch('/api/admin/dashboard', {
+                const res = await fetch(`${API_BASE}/admin/dashboard`, {
                     headers: {
                         'Authorization': `Bearer demo`, // Dummy token if needed
                         'X-ADMIN-KEY': 'TRADESENSE_SUPER_SECRET_2026'
@@ -84,7 +84,7 @@ const AdminDashboard: React.FC = () => {
                     status: statusFilter
                 });
 
-                const res = await fetch(`/api/admin/challenges?${query.toString()}`, {
+                const res = await fetch(`${API_BASE}/admin/challenges?${query.toString()}`, {
                     headers: {
                         'Authorization': `Bearer demo`,
                         'X-ADMIN-KEY': 'TRADESENSE_SUPER_SECRET_2026'
@@ -117,7 +117,7 @@ const AdminDashboard: React.FC = () => {
         if (!window.confirm(`Are you sure you want to set this challenge to ${newStatus}?`)) return;
 
         try {
-            const res = await fetch(`/api/admin/challenges/${id}/status`, {
+            const res = await fetch(`${API_BASE}/admin/challenges/${id}/status`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useStore } from '../../store';
+import { useStore, API_BASE } from '../../store';
 import ActiveChallengeCard from './ActiveChallengeCard';
 import PricingCard from './PricingCard';
 import UnifiedPaymentModal from './UnifiedPaymentModal';  // NOUVEAU
@@ -25,7 +25,7 @@ const ChallengesPage: React.FC = () => {
         fetchActiveAccount();
 
         // Check PayPal configuration via backend
-        fetch('/api/paypal/status')
+        fetch(`${API_BASE}/paypal/status`)
             .then(res => res.json())
             .then(data => {
                 setPaypalConfigured(data.enabled && data.email_configured);

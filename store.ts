@@ -12,7 +12,7 @@ const MOCK_PASSWORDS: Record<string, string> = {
 
 // Standard local development URL
 // Production Render Backend URL
-export const API_BASE = 'https://tradesenseai-exam.onrender.com/api';
+export const API_BASE = '/api';
 
 interface PropFirmState {
   // Auth & Users

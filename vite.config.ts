@@ -6,11 +6,11 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     server: {
-      port: 3000,
+      port: 5173,
       host: '0.0.0.0',
       proxy: {
         '/api': {
-          target: 'https://tradesenseai-exam.onrender.com',
+          target: 'http://127.0.0.1:5000',
           changeOrigin: true,
           secure: false,
         },

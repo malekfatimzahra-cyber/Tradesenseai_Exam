@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useStore } from '../store';
+import { useStore, API_BASE } from '../store';
 import AdminDashboard from './AdminDashboard'; // Import Admin Dashboard
 import { LeaderboardEntry } from '../types';
 
@@ -37,7 +37,7 @@ const Leaderboard: React.FC = () => {
     const fetchLeaders = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/community/leaderboard?period=${timeframe}`, {
+        const res = await fetch(`${API_BASE}/community/leaderboard?period=${timeframe}`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
           }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChallengePlan } from '../../types';
 import { X, CreditCard, Loader2, CheckCircle2 } from 'lucide-react';
+import { API_BASE } from '../../store';
 
 interface UnifiedPaymentModalProps {
     plan: ChallengePlan | null;
@@ -35,7 +36,7 @@ const UnifiedPaymentModal: React.FC<UnifiedPaymentModalProps> = ({ plan, provide
             // ========================================
             // UNIFIED PAYMENT ENDPOINT
             // ========================================
-            const response = await fetch('/api/unified-payment/process', {
+            const response = await fetch(`${API_BASE}/unified-payment/process`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

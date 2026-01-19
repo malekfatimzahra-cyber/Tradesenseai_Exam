@@ -20,6 +20,10 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 def home():
     return "Hello from Backend!", 200
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 # --- MODIFICATION DE LA BASE DE DONNÉES ---
 db_url = os.getenv('DATABASE_URL', 'mysql+pymysql://root:2002@localhost/tradesense')
 # SQLAlchemy requires mysql+pymysql:// instead of just mysql://
@@ -38,30 +42,74 @@ with app.app_context():
         db.create_all()
         print("✅ Database tables initialized.")
         
-        # Basic Seeding if empty
+        # 1. Seed Users if empty
         if User.query.count() == 0:
-            print("🌱 Seeding initial data...")
-            # Create a default admin/user
-            admin = User(
-                full_name="Admin TradeSense",
-                email="malekfatimzahra@gmail.com",
-                username="admin",
-                role=UserRole.ADMIN
-            )
+            print("🌱 Seeding initial users...")
+            admin = User(full_name="Admin TradeSense", email="malekfatimzahra@gmail.com", username="admin", role=UserRole.ADMIN)
             admin.set_password("admin123")
-            
-            test_user = User(
-                full_name="Test User",
-                email="test@tradesense.com",
-                username="testuser",
-                role=UserRole.USER
-            )
-            test_user.set_password("user123")
-            
             db.session.add(admin)
-            db.session.add(test_user)
             db.session.commit()
-            print("✅ Initial seeding complete.")
+            print("✅ Initial users complete.")
+            
+        # 2. Seed Plans if empty
+        from models import ChallengePlan
+        if ChallengePlan.query.count() == 0:
+            print("🌱 Seeding plans...")
+            plans = [
+                { 'id': 'starter', 'name': 'Starter Challenge', 'capital': 5000, 'profit_target': 500, 'max_drawdown': 500, 'daily_loss_limit': 250, 'price': 200, 'currency': 'MAD' },
+                { 'id': 'pro', 'name': 'Professional Pro', 'capital': 25000, 'profit_target': 2500, 'max_drawdown': 2500, 'daily_loss_limit': 1250, 'price': 500, 'currency': 'MAD' },
+                { 'id': 'elite', 'name': 'Elite Institutional', 'capital': 100000, 'profit_target': 10000, 'max_drawdown': 10000, 'daily_loss_limit': 5000, 'price': 1000, 'currency': 'MAD' },
+            ]
+            for p in plans:
+                db.session.add(ChallengePlan(**p, is_active=True))
+            db.session.commit()
+            print("✅ Plans seeded.")
+            
+        # 3. Seed Courses if empty
+        from models import Course, CourseCategory, CourseLevel
+        if Course.query.count() == 0:
+            print("🌱 Seeding academy...")
+            courses = [
+                {
+                    "title": "Introduction au Trading",
+                    "category": CourseCategory.TECHNICAL,
+                    "level": CourseLevel.BEGINNER,
+                    "description": "Apprenez les bases du trading Forex et CFD. Maîtrisez les concepts de base du marché.",
+                    "thumbnail_url": "https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg"
+                },
+                {
+                    "title": "Analyse Technique Avancée",
+                    "category": CourseCategory.TECHNICAL,
+                    "level": CourseLevel.INTERMEDIATE,
+                    "description": "Maîtrisez les indicateurs techniques et patterns graphiques pour prédire les mouvements.",
+                    "thumbnail_url": "https://img.freepik.com/free-vector/trading-concept-with-tablet_23-2148564070.jpg"
+                }
+            ]
+            for c_data in courses:
+                course = Course(**c_data, lang="fr", duration_minutes=120, xp_reward=1000)
+                db.session.add(course)
+            db.session.commit()
+            print("✅ Academy seeded.")
+            
+        # 4. Seed Leaderboard (Accounts) if only 1 user or few accounts
+        from models import Account, ChallengeStatus
+        import random
+        if Account.query.count() <= 1:
+            print("🌱 Seeding leaderboard...")
+            names = [("Othman Chakir", "ochakir"), ("Imane Benjelloun", "ibenjelloun"), ("Mehdi Lazrak", "mlazrak"), ("Khadija Tazi", "ktazi")]
+            for full_name, username in names:
+                temp_user = User(full_name=full_name, email=f"{username}@demo.com", username=username, role=UserRole.USER)
+                temp_user.set_password("demo123")
+                db.session.add(temp_user)
+                db.session.flush()
+                st_balance = random.choice([5000, 25000, 100000])
+                equity = st_balance * (1 + random.uniform(-0.05, 0.15))
+                acc = Account(user_id=temp_user.id, plan_name=random.choice(['Starter', 'Pro', 'Elite']), initial_balance=st_balance, current_balance=equity, equity=equity, daily_starting_equity=st_balance, status=ChallengeStatus.ACTIVE)
+                db.session.add(acc)
+            db.session.commit()
+            print("✅ Leaderboard seeded.")
+
+        print("✅ Full Seeding logic complete.")
 
     except Exception as e:
         print(f"❌ Error initializing tables: {e}")

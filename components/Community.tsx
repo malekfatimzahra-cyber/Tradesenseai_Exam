@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MessageCircle, Users, Share2, Heart, TrendingUp, Home, UserPlus, Calendar, Hash, Award, Image, Send, MoreHorizontal, UserCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-hot-toast';
+import { API_BASE } from '../store';
 
 
 interface Post {
@@ -99,7 +100,7 @@ const Community: React.FC = () => {
 
       try {
         // 1. Fetch Top Traders for Sidebar
-        const adminRes = await fetch('/api/admin/users', { headers: { 'X-ADMIN-KEY': 'TRADESENSE_SUPER_SECRET_2026' } });
+        const adminRes = await fetch(`${API_BASE}/admin/users`, { headers: { 'X-ADMIN-KEY': 'TRADESENSE_SUPER_SECRET_2026' } });
         if (adminRes.ok) {
           const users = await adminRes.json();
           setAllUsers(users);
@@ -115,7 +116,7 @@ const Community: React.FC = () => {
         }
 
         // 2. Fetch Posts from NEW Endpoint
-        const postsRes = await fetch('/api/community/posts', { headers });
+        const postsRes = await fetch(`${API_BASE}/community/posts`, { headers });
         if (postsRes.ok) {
           const dbPosts = await postsRes.json();
           const formattedPosts: Post[] = dbPosts.map((p: any) => ({
@@ -130,7 +131,7 @@ const Community: React.FC = () => {
             timestamp: new Date(p.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
             content: p.content,
             asset: p.tags ? p.tags.split(',')[0] : undefined,
-            postImage: p.image_url ? `/api/community${p.image_url}` : undefined,
+            postImage: p.image_url ? `${API_BASE}/community${p.image_url}` : undefined,
             likes: p.likes,
             comments: p.comments_count,
             shares: 0,
@@ -154,7 +155,7 @@ const Community: React.FC = () => {
     if (token) headers['Authorization'] = `Bearer ${token}`;
 
     try {
-      const res = await fetch(`/api/community/posts/${postId}/comments`, { headers });
+      const res = await fetch(`${API_BASE}/community/posts/${postId}/comments`, { headers });
       if (res.ok) {
         const comments = await res.json();
         // Map backend comment to frontend structure
@@ -180,7 +181,7 @@ const Community: React.FC = () => {
     if (!token) return toast.error('Veuillez vous connecter pour liker.');
 
     try {
-      const res = await fetch(`/api/community/posts/${postId}/like`, {
+      const res = await fetch(`${API_BASE}/community/posts/${postId}/like`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -216,7 +217,7 @@ const Community: React.FC = () => {
     if (selectedImage) formData.append('image', selectedImage);
 
     try {
-      const res = await fetch('/api/community/posts', {
+      const res = await fetch(`${API_BASE}/community/posts`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -237,7 +238,7 @@ const Community: React.FC = () => {
           timestamp: 'Just now',
           content: newPostData.content,
           asset: newPostData.tags ? newPostData.tags.split(',')[0] : undefined,
-          postImage: newPostData.image_url ? `/api/community${newPostData.image_url}` : undefined,
+          postImage: newPostData.image_url ? `${API_BASE}/community${newPostData.image_url}` : undefined,
           likes: 0, comments: 0, shares: 0, isLiked: false
         };
         setPosts([newPost, ...posts]);
@@ -258,7 +259,7 @@ const Community: React.FC = () => {
     if (!token) return toast.error('Veuillez vous connecter.');
 
     try {
-      const res = await fetch(`/api/community/posts/${postId}/comments`, {
+      const res = await fetch(`${API_BASE}/community/posts/${postId}/comments`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

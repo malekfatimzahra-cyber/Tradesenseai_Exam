@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Search, CheckCircle, XCircle, AlertTriangle, User, DollarSign, Activity } from 'lucide-react';
 import { toast } from 'react-hot-toast';
+import { API_BASE } from '../store';
 
 interface Challenge {
     id: number;
@@ -35,7 +36,7 @@ const AdminPanel: React.FC = () => {
     const fetchPaypalConfig = async () => {
         const token = localStorage.getItem('auth_token');
         try {
-            const res = await fetch('/api/payments/config/paypal', {
+            const res = await fetch(`${API_BASE}/payments/config/paypal`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             if (res.ok) {
@@ -48,7 +49,7 @@ const AdminPanel: React.FC = () => {
     const savePaypalConfig = async () => {
         const token = localStorage.getItem('auth_token');
         try {
-            const res = await fetch('/api/payments/config/paypal', {
+            const res = await fetch(`${API_BASE}/payments/config/paypal`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -80,7 +81,7 @@ const AdminPanel: React.FC = () => {
     const verifyAndFetch = async (key: string) => {
         setLoading(true);
         try {
-            const response = await fetch('/api/admin/users', {
+            const response = await fetch(`${API_BASE}/admin/users`, {
                 headers: {
                     'X-ADMIN-KEY': key
                 }
@@ -118,7 +119,7 @@ const AdminPanel: React.FC = () => {
             // Optional: Prompt for note
             const note = window.prompt("Add Admin Note (Optional):", currentNote || "");
 
-            const res = await fetch(`/api/admin/challenges/${challengeId}/status`, {
+            const res = await fetch(`${API_BASE}/admin/challenges/${challengeId}/status`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
