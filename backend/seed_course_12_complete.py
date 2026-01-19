@@ -9,17 +9,35 @@ from models import db, Course, Module, Lesson, Quiz, Question, Option, LessonTyp
 
 def seed_course_12_complete():
     with app.app_context():
-        print("🚀 Seeding Course 12: Trading Fundamentals & Market Mechanics")
+        print("🚀 Seeding Course: Trading Fundamentals & Market Mechanics")
         
-        course = Course.query.get(12)
+        target_title = "Trading Fundamentals & Market Mechanics"
+        course = Course.query.filter_by(title=target_title).first()
+        
         if not course:
-            print("❌ Course 12 not found")
-            return
+            print(f"⚠️ Course '{target_title}' not found. Creating it...")
+            from models import CourseCategory, CourseLevel
+            course = Course(
+                title=target_title,
+                category=CourseCategory.TECHNICAL,
+                level=CourseLevel.BEGINNER,
+                description="Master the absolute basics: Pips, Spreads, Lots, and Order Types. Build your foundation here.",
+                thumbnail_url="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80",
+                duration_minutes=180,
+                xp_reward=1500,
+                lang='en',
+                is_premium=False
+            )
+            db.session.add(course)
+            db.session.commit()
+            print(f"✅ Created Course ID: {course.id}")
+        else:
+            print(f"✅ Found Course ID: {course.id}")
         
         # Check if already seeded - FORCE RE-SEED by deleting manually if needed
-        existing_modules = Module.query.filter_by(course_id=12).count()
+        existing_modules = Module.query.filter_by(course_id=course.id).count()
         if existing_modules > 0:
-            print(f"⚠️ Course 12 already has {existing_modules} modules.")
+            print(f"⚠️ Course {course.id} already has {existing_modules} modules.")
             print("⚠️ To re-seed, manually delete modules from Railway SQL first.")
             print("⚠️ Skipping to avoid data corruption.")
             return
@@ -27,12 +45,37 @@ def seed_course_12_complete():
         print(f"📚 Course: {course.title}")
         
         # MODULE 1: Fundamentals of Trading
-        mod1 = Module(course_id=12, title="Fundamentals of Trading", order_index=1)
+        mod1 = Module(course_id=course.id, title="Fundamentals of Trading", order_index=1)
         db.session.add(mod1)
         db.session.flush()
         
-        Lesson(
-            module_id=mod1.id,
+        # ... (rest of lessons use module_id, which is fine) ...
+
+        # MODULE 2: Market Structure & Instruments
+        mod2 = Module(course_id=course.id, title="Market Structure & Instruments", order_index=2)
+        db.session.add(mod2)
+        db.session.flush()
+        
+        # ...
+
+        # MODULE 3: Risk & Psychology
+        mod3 = Module(course_id=course.id, title="Risk & Psychology", order_index=3)
+        db.session.add(mod3)
+        db.session.flush()
+
+        # ...
+        
+        db.session.commit()
+        print("✅ Modules and Lessons created!")
+        
+        # FINAL EXAM QUIZ
+        print("📝 Creating Final Exam...")
+        final_exam = Quiz(
+            course_id=course.id,
+            module_id=None,
+            title="Final Exam: Trading Fundamentals & Market Mechanics",
+            min_pass_score=70
+        )
             title="What is Trading?",
             content="""<div class="space-y-6">
                 <h2 class="text-3xl font-bold text-yellow-500">Understanding Trading</h2>

@@ -20,16 +20,15 @@ def seed_complete_course_with_quizzes():
         # Check if course exists
         existing_course = Course.query.filter_by(title=course_title).first()
         if existing_course:
-            print(f"♻️ Course '{course_title}' already exists. Updating content...")
-            course = existing_course
-            # Optional: Clear existing modules/lessons if you want a fresh start
-            # db.session.delete(course)
-            # db.session.commit()
-            # refetch or recreate... let's update in place or append missing
-        else:
-            print(f"📚 Creating new course: {course_title}")
-            course = Course(
-                title=course_title,
+            print(f"♻️ Course '{course_title}' found. DELETING to ensure clean fresh seed...")
+            db.session.delete(existing_course)
+            db.session.commit()
+            print("🗑️ Old course deleted.")
+        
+        print(f"📚 Creating new course: {course_title}")
+        course = Course(
+            title=course_title,
+             # ... rest of creation logic remains valid because we deleted 'existing_course' so we flow into creation
                 lang='fr',
                 description="Le guide ultime pour débuter sur les marchés financiers. Apprenez tout de A à Z : vocabulaire, analyse, psychologie et gestion du risque.",
                 category=CourseCategory.TECHNICAL,
@@ -39,8 +38,8 @@ def seed_complete_course_with_quizzes():
                 xp_reward=2500,
                 is_premium=False
             )
-            db.session.add(course)
-            db.session.flush()
+        db.session.add(course)
+        db.session.flush()
 
         # 2. Define Content Structure
         # Format: (Module Title, [List of Lessons], Quiz Data)

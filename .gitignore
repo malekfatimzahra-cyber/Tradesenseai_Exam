@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Backend/Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+env/
+venv/
+instance/
+.pytest_cache/
+tradesense.db
+
+# Secrets
+.env
+
+# Nested duplicates / Trash
+Tradesenseai_Exam/
