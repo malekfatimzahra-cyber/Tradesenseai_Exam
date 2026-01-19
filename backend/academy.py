@@ -229,20 +229,10 @@ def get_course_details(current_user, course_id):
 @academy_bp.route('/lesson/<int:lesson_id>', methods=['GET'])
 @token_required
 def get_lesson(current_user, lesson_id):
-    """Fetch lesson content with i18n"""
-    lang = request.args.get('lang', 'fr')
+    """Fetch lesson content - simplified without translations"""
+    lesson = Lesson.query.get(lesson_id)
     
-    sql = """
-        SELECT l.*, 
-               COALESCE(lt.title, l.title) as translated_title,
-               COALESCE(lt.content, l.content) as translated_content
-        FROM lessons l
-        LEFT JOIN lesson_translations lt ON l.id = lt.lesson_id AND lt.lang = :lang
-        WHERE l.id = :lesson_id
-    """
-    row = db.session.execute(text(sql), {'lesson_id': lesson_id, 'lang': lang}).fetchone()
-    
-    if not row:
+    if not lesson:
         return jsonify({'message': 'Lesson not found'}), 404
         
     # Handle access tracking
@@ -255,12 +245,12 @@ def get_lesson(current_user, lesson_id):
     db.session.commit()
     
     return jsonify({
-        'id': row.id,
-        'title': row.translated_title,
-        'content': row.translated_content,
-        'type': row.lesson_type, # Might need enum handling
-        'video_url': row.video_url,
-        'duration_minutes': 10 # Default
+        'id': lesson.id,
+        'title': lesson.title,
+        'content': lesson.content,
+        'type': lesson.lesson_type.value if lesson.lesson_type else 'TEXT',
+        'video_url': lesson.video_url,
+        'duration_minutes': 10
     }), 200
 
 @academy_bp.route('/lessons/<int:lesson_id>/complete', methods=['POST'])
