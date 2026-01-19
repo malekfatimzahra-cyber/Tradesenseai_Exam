@@ -45,10 +45,14 @@ def get_courses(current_user):
 @academy_bp.route('/course/<int:course_id>', methods=['GET'])
 @token_required
 def get_course_details(current_user, course_id):
+    print(f"📡 API Request: GET /course/{course_id}")
     course = Course.query.get(course_id)
     
     if not course:
+        print(f"❌ Course {course_id} NOT FOUND in DB.")
         return jsonify({'message': 'Course not found'}), 404
+    
+    print(f"✅ Found Course: {course.title} (ID: {course.id})")
     
     modules_data = []
     for module in sorted(course.modules, key=lambda m: m.order_index):

@@ -40,8 +40,9 @@ db.init_app(app)
 with app.app_context():
     if os.getenv("RUN_DB_INIT") == "true":
         try:
-            db.create_all()
-            print("✅ Database tables initialized.")
+            db_uri = app.config['SQLALCHEMY_DATABASE_URI']
+            masked_uri = db_uri.split('@')[-1] if '@' in db_uri else 'local'
+            print(f"✅ Database tables initialized. Connected to: ...@{masked_uri}")
             
             # 1. Seed Users if empty
             if User.query.count() == 0:

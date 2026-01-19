@@ -41,10 +41,13 @@ const CourseViewer: React.FC = () => {
         setLoading(true);
         try {
             const token = localStorage.getItem('auth_token');
-            // FIX: Singular 'course'
-            const res = await fetch(`${API_BASE}/academy/course/${courseId}`, {
+            const url = `${API_BASE}/academy/course/${courseId}`;
+            console.log("📡 Fetching Course:", courseId, "URL:", url);
+
+            const res = await fetch(url, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
+            console.log("📡 Response Status:", res.status);
 
             if (res.ok) {
                 const data = await res.json();
