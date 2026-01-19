@@ -38,7 +38,10 @@ db.init_app(app)
 
 # Create tables if they don't exist
 with app.app_context():
-    if os.getenv("RUN_DB_INIT") == "true":
+    # AUTO-SEEDING: Always check if DB is empty and seed if necessary
+    # (Removes reliance on RUN_DB_INIT for basic functionality)
+    if True: # Always check
+    
         try:
             db_uri = app.config['SQLALCHEMY_DATABASE_URI']
             masked_uri = db_uri.split('@')[-1] if '@' in db_uri else 'local'

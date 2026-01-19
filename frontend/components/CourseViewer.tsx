@@ -62,7 +62,8 @@ const CourseViewer: React.FC = () => {
                     }
                 }
             } else {
-                setError("Cours introuvable (404).");
+                console.warn(`Course ${courseId} not found (404). Backend might be empty.`);
+                setError(`Cours introuvable (404). Vérifiez que le cours ID=${courseId} existe en base de données.`);
             }
         } catch (err) {
             console.error(err);
